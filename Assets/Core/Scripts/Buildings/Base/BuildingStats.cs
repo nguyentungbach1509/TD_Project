@@ -10,6 +10,7 @@ namespace Game.Scripts.BuidlingLogic
         private string key;
         private string name;
         private string description;
+        private BuildingTileSize tileSize;
         private int level;
 
         private EBuidlingType type;
@@ -29,6 +30,7 @@ namespace Game.Scripts.BuidlingLogic
         public string Key => key;
         public string BuildingName => name;
         public string Description => description;
+        public BuildingTileSize Size => tileSize;
         public int Level => level;  
 
         public EBuidlingType Type => type;
@@ -51,6 +53,7 @@ namespace Game.Scripts.BuidlingLogic
             key = data.Key;
             name = data.BuildingName;
             description = data.Description;
+            tileSize = data.Size;
             type = data.Type;
             maxHp = data.MaxHp;
             health = data.MaxHp;

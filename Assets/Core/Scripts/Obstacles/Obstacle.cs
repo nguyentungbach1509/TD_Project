@@ -1,4 +1,5 @@
 using SubScripts.Pooling;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Scripts.Map.Obstacles
@@ -8,9 +9,9 @@ namespace Game.Scripts.Map.Obstacles
     {
         [SerializeField] protected float interactRange;
 
-        protected Vector3Int[] positions;
+        protected List<Vector3Int> positions;
 
-        public Vector3Int[] Positions => positions;
+        public List<Vector3Int> Positions => positions;
         public float InteractRange => interactRange;    
 
         public virtual void Init()
@@ -20,7 +21,7 @@ namespace Game.Scripts.Map.Obstacles
 
         public abstract void SetPlace(Vector3Int pos);
 
-        public abstract void Interact();
+        public abstract void Interact(Vector3Int pos);
         protected abstract bool InInteractRange();
         
     }

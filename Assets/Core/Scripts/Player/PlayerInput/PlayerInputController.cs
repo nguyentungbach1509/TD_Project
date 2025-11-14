@@ -19,9 +19,11 @@ namespace Game.Scripts.Player.Controller
 
         public Dictionary<string, InputAction> Input => actions;
 
-        public Action<Vector3Int> OnMouseClick;
-        public Action OnMouseUp;
+        public Action<Vector3Int> OnMouseLeftClick;
+        public Action OnMouseLeftUp;
 
+        public Action<Vector3Int> OnMouseRightClick;
+        public Action OnMouseRightUp;
 
         public void Init()
         {
@@ -34,8 +36,11 @@ namespace Game.Scripts.Player.Controller
                 LoadBinding(action); // load key đã custom (nếu có)
             }
 
-            actions[Constants.Left_Click].started += MouseInput_OnClick;
-            actions[Constants.Left_Click].canceled += MouseInput_OnUp;
+            actions[Constants.Left_Click].started += MouseLeftInput_OnClick;
+            actions[Constants.Left_Click].canceled += MouseLeftInput_OnUp;
+
+            actions[Constants.Right_Click].started += MouseRightInput_OnClick;
+            actions[Constants.Right_Click].canceled += MouseRightInput_OnUp;
         }
 
         public void StartRebind(string actionName, int bindingIndex)
@@ -75,17 +80,30 @@ namespace Game.Scripts.Player.Controller
             }
         }
         #region Mouse Input
-        private void MouseInput_OnClick(InputAction.CallbackContext ctx)
+        private void MouseLeftInput_OnClick(InputAction.CallbackContext ctx)
         {
             Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
             Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
             worldPos.z = 0;
-            OnMouseClick?.Invoke(gridManager.WorldToGrid(worldPos));
+            OnMouseLeftClick?.Invoke(gridManager.WorldToGrid(worldPos));
         }
 
-        private void MouseInput_OnUp(InputAction.CallbackContext ctx)
+        private void MouseLeftInput_OnUp(InputAction.CallbackContext ctx)
         {
-            OnMouseUp?.Invoke();
+            OnMouseLeftUp?.Invoke();
+        }
+
+        private void MouseRightInput_OnClick(InputAction.CallbackContext ctx)
+        {
+            Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
+            Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
+            worldPos.z = 0;
+            OnMouseRightClick?.Invoke(gridManager.WorldToGrid(worldPos));
+        }
+
+        private void MouseRightInput_OnUp(InputAction.CallbackContext ctx)
+        {
+            OnMouseRightUp?.Invoke();
         }
 
         public Vector3Int GridMousePos()

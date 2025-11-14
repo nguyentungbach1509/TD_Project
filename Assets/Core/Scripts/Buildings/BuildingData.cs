@@ -23,29 +23,37 @@ namespace Game.Scripts.BuidlingLogic.Data
     [CreateAssetMenu(menuName = "Data/Buildings/Stats")]
     public class BuildingData : ScriptableObject
     {
+        [Header("Base data")]
         [SerializeField] protected string key;
         [SerializeField] protected string buildingName;
         [SerializeField] protected string description;
         [SerializeField] protected EBuidlingType type;
+        [SerializeField] protected BuildingTileSize size;
+
+        [Header("Stats Data")]
         [SerializeField] protected float maxHp;
         [SerializeField] protected float armor;
         [SerializeField] protected float damage;
+
+        [Header("Appearance Data")]
         [SerializeField] protected Sprite buildingIcon;
         [SerializeField] protected Sprite buildingModel;
+
+        [Header("Cost Data")]
         [SerializeField] protected int golds;
         [SerializeField] protected int lumbers;
         [SerializeField] protected int foods;
 
-        [Header("Update Requirements")]
+        [Header("Update Requirements Data")]
         [SerializeField] protected UpdateRequirement[] requirements;
 
-        [Header("Prefab")]
+        [Header("Prefab Data")]
         [SerializeField] protected Building prefab;
 
         public string Key => key;   
         public string BuildingName => buildingName;
         public string Description => description;
-
+        public BuildingTileSize Size => size;
 
         public EBuidlingType Type => type;
         public float MaxHp => maxHp;
@@ -83,6 +91,13 @@ namespace Game.Scripts.BuidlingLogic.Data
     {
         public EBuidlingType RequiredBuildings;
         public int LevelBuilding;
+    }
+
+    [Serializable] 
+    public class BuildingTileSize
+    {
+        public int Width;
+        public int Height;
     }
 }
 

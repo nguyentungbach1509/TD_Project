@@ -24,7 +24,7 @@ namespace Game.Scripts.BuidlingLogic
         private bool isDone;
 
         private Coroutine progressingCoroutine;
-
+        
         private bool isInit;
 
         private GridManager gridManager => GridManager.Instance;
@@ -41,6 +41,7 @@ namespace Game.Scripts.BuidlingLogic
             OnProgressChange -= hud.ProgressBar.UpdateProgressBar;
             OnProgressChange += hud.ProgressBar.UpdateProgressBar;
 
+            positions = new();
             stats = new BuildingStats(data, hud);
             inProgressing = true;
             isInit = true;
@@ -48,31 +49,56 @@ namespace Game.Scripts.BuidlingLogic
 
         public override void SetPlace(Vector3Int pos)
         {
-            TileCustom tile = gridManager.GetTile(pos);
-            if (tile.IsOccupied) return;
-            tile.SetObstacle(this);
-            StartBuild();
+            if (!IsAvailableTile(pos)) return;
+            for(int i = 0; i < positions.Count; i++)
+            {
+                TileCustom tile = gridManager.GetTile(positions[i]);
+                tile.SetObstacle(this);
+            }
+            StartBuild(pos);
         }
 
         public virtual void FollowMouseHover(Vector3Int pos)
         {
-            transform.position = pos;
-            TileCustom tile = gridManager.GetTile(pos);
-            model.WarningSprite(tile.IsOccupied);
+            positions.Clear();
+            transform.position = gridManager.GridToWorld(pos);
+            model.WarningSprite(!IsAvailableTile(pos));
         }
 
-        public override void Interact()
+        public override void Interact(Vector3Int pos)
         {
-            
+            if (!positions.Contains(pos)) return;
+            if (inProgressing) StartBuild(pos);
         }
 
-        private void StartBuild()
+        private bool IsAvailableTile(Vector3Int pos)
+        {
+            for(int row = 0; row < stats.Size.Height; row++)
+            {
+                for(int col = 0; col < stats.Size.Width; col++)
+                {
+                    Vector3Int tilePos = new Vector3Int(pos.x + col, pos.y + row, 0);
+                    TileCustom tile = gridManager.GetTile(tilePos);
+                    if(tile.IsOccupied || tile == null)
+                    {
+                        positions.Clear();
+                        return false;
+                    }
+                    positions.Add(tilePos);
+                }
+            }
+            return true;
+        }
+
+        private void StartBuild(Vector3Int pos)
         {
             if (progressingCoroutine != null) StopCoroutine(progressingCoroutine);
             progressingCoroutine = StartCoroutine(StartProgress());
 
             IEnumerator StartProgress()
             {
+                if(!inProgressing) transform.position = gridManager.GridToWorld(pos);
+
                 while(InInteractRange() && currentProgress < 100f)
                 {
                     inProgressing = true;

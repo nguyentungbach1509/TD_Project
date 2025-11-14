@@ -11,6 +11,14 @@ namespace Game.Scripts.BuidlingLogic
         private Queue<Building> queueBuildings;
         
         private bool isInit;
+
+
+        public void Init()
+        {
+            queueBuildings = new Queue<Building>();
+        }
+
+         
     }
 }
 
