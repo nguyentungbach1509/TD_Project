@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eeb02e7507f1b848bbe92b9a2f283b7, type: 3}
+  m_Name: HillDataCollection
+  m_EditorClassIdentifier: 
+  data:
+  - {fileID: 11400000, guid: ef2849b6dc39e19439a52dbabf4807cc, type: 2}
+  - {fileID: 11400000, guid: 025331b996253e34f8b76ccccda1fe27, type: 2}
+  - {fileID: 11400000, guid: fabe4369e4e398a48bf046e63d0f9def, type: 2}
+  - {fileID: 11400000, guid: d1d92eb684e444740941e255b23552ba, type: 2}
+  - {fileID: 11400000, guid: f8c50f6329a85ab4b85794b65ab349d3, type: 2}
+  - {fileID: 11400000, guid: 47835de3e66d66e41a7ecae93daf4d0f, type: 2}
