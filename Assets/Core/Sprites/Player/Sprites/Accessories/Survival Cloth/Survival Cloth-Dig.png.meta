@@ -123,6 +123,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Survival Cloth-Dig_0: 1071847637635972799
+      Survival Cloth-Dig_1: 4250765106748052018
+      Survival Cloth-Dig_2: -3213706852556130695
+      Survival Cloth-Dig_3: -4966311180484784839
+      Survival Cloth-Dig_4: 7620032180214247987
+      Survival Cloth-Dig_5: -7614262576571030192
+      Survival Cloth-Dig_6: 6830195005260715912
+      Survival Cloth-Dig_7: -1940364352500893379
+      Survival Cloth-Dig_8: 497069973108160219
+      Survival Cloth-Dig_9: -67333937874836777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -123,6 +123,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sunglasses-Dig_0: 8602774914303702793
+      Sunglasses-Dig_1: 6476577967220187808
+      Sunglasses-Dig_2: -8099310213023596715
+      Sunglasses-Dig_3: 5297048575699587510
+      Sunglasses-Dig_4: -5370024979115109295
+      Sunglasses-Dig_5: -7675387045057552897
+      Sunglasses-Dig_6: -2888797959072613608
+      Sunglasses-Dig_7: -4514255604364442094
+      Sunglasses-Dig_8: -4372202484628838560
+      Sunglasses-Dig_9: -4904877863879507764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

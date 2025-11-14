@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "PlayerInputActions",
     "maps": [
         {
@@ -15,13 +16,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Action",
+                    "name": "Left Click",
                     "type": "Button",
                     "id": "7d47d498-8cd4-49eb-8bf5-655a9b11548d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Hover",
+                    "type": "Value",
+                    "id": "5c4d30e4-79cc-48c0-853d-0ce5e7ed4f85",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -142,7 +152,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Action",
+                    "action": "Left Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f62ea24-2a95-4b98-b033-8be8f4107637",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse Hover",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

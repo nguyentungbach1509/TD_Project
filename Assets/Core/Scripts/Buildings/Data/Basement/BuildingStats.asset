@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6595acb70722eb147899379b7385ec79, type: 3}
+  m_Name: BuildingStats
+  m_EditorClassIdentifier: 
+  key: base_ment
+  type: 0
+  health: 0
+  armor: 0
+  damage: 0
+  buildingIcon: {fileID: 0}
+  buildingModel: {fileID: 0}
+  golds: 0
+  lumbers: 0
+  foods: 0
+  requirements:
+  - TargetLevel: 0
+    UpdateIcon: {fileID: 0}
+    UpdateModel: {fileID: 0}
+    RequiredBuildings:
+    - RequiredBuildings: 0
+      LevelBuilding: 0
+    - RequiredBuildings: 0
+      LevelBuilding: 0
+    - RequiredBuildings: 0
+      LevelBuilding: 0
+    MultiHp: 0
+    MultiArmor: 0
+    MultiDmg: 0
+    RequiredGolds: 0
+    RequiredLumbers: 0
+    RequiredFoods: 0
+  prefab: {fileID: 0}

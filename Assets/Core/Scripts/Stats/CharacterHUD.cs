@@ -1,18 +1,18 @@
 using UnityEngine;
 
-namespace Game.Scripts.StatsCharacter.Canvas
+namespace Game.Scripts.StatsCharacter.WorldUI
 {
     public class CharacterHUD : MonoBehaviour
     {
         [SerializeField] Healthbar healthbar;
+        [SerializeField] Canvas canvas;
 
         private Character stats;
         public Healthbar HpBar => healthbar;
 
-        public void Init(Character character)
+        public void Init()
         {
-            stats = character;
-            character.OnTakeDamage += healthbar.UpdateHpBar;
+            canvas.worldCamera = Camera.main;
         }
     }
 }

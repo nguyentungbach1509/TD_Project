@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scripts.StatsCharacter.Canvas
+namespace Game.Scripts.StatsCharacter.WorldUI
 {
     public class Healthbar : MonoBehaviour
     {

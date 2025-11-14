@@ -123,6 +123,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Top Hat-Dig_0: 444183662170466410
+      Top Hat-Dig_1: -6682658788813609991
+      Top Hat-Dig_2: -5290750721902846167
+      Top Hat-Dig_3: 3009872181331038406
+      Top Hat-Dig_4: -7515134377815638979
+      Top Hat-Dig_5: -3945189801847010660
+      Top Hat-Dig_6: 7649311117288583033
+      Top Hat-Dig_7: 30014253429378394
+      Top Hat-Dig_8: 6267143612333353016
+      Top Hat-Dig_9: 2407516248291409770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

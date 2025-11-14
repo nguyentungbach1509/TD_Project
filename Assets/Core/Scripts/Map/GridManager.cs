@@ -1,5 +1,5 @@
 using Game.Scripts.TileController.Mechanic;
-using SubScript.Singleton;
+using SubScripts.Singleton;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;

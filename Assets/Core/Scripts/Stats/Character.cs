@@ -1,4 +1,5 @@
-using Game.Scripts.StatsCharacter.Canvas;
+using Game.Scripts.StatsCharacter.WorldUI;
+using SubScripts;
 using System;
 using UnityEngine;
 
@@ -29,7 +30,8 @@ namespace Game.Scripts.StatsCharacter
             moveSpeed = stats.MoveSpeed;
             damage = stats.Damage;
             armor = stats.Armor;
-            hud.Init(this);
+            OnTakeDamage -= hud.HpBar.UpdateHpBar;
+            OnTakeDamage += hud.HpBar.UpdateHpBar;
         }
 
         public void TakeDamage(float damage)
@@ -49,24 +51,6 @@ namespace Game.Scripts.StatsCharacter
         public void ChangeHp(float amount)
         {
             hp = Mathf.Clamp(hp+amount, 0, maxHp);
-        }
-    }
-
-
-    public class DamageInfor
-    {
-        private string id;
-        private float damage;
-        private Character source;
-
-        public float Damage => damage;
-        public Character Source => source;
-
-        public DamageInfor(Character character, float dmg)
-        {
-            id = Guid.NewGuid().ToString();
-            source = character;
-            damage = dmg;
         }
     }
 

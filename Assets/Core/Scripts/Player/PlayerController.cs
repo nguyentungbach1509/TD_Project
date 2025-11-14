@@ -17,7 +17,7 @@ namespace Game.Scripts.Player.Controller
             isInit = true;
         }
 
-        public void UpdateController()
+        public override void UpdateCharacter()
         {
             if (!isInit) return;
             stateController.UpdateState();

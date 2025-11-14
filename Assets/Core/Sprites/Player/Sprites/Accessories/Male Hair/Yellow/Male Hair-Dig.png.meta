@@ -123,6 +123,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -359,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Male Hair-Dig_0: 3303568155500971971
+      Male Hair-Dig_1: 3250062207425986580
+      Male Hair-Dig_2: -1519491444652026823
+      Male Hair-Dig_3: 7533895258866068731
+      Male Hair-Dig_4: 3835097467537026731
+      Male Hair-Dig_5: 40262040883028238
+      Male Hair-Dig_6: 350542959230508507
+      Male Hair-Dig_7: 8793640301279050104
+      Male Hair-Dig_8: 4990900103103757364
+      Male Hair-Dig_9: 3324081530677977207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

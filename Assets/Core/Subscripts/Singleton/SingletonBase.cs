@@ -1,7 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
-namespace SubScript.Singleton
+namespace SubScripts.Singleton
 {
+    #region Basic Singleton
+    /// <summary>
+    /// Singleton cơ bản
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class SingletonBase<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T instance;
@@ -62,8 +69,14 @@ namespace SubScript.Singleton
             isQuitting = true;
         }
     }
+    #endregion
 
+    #region Singleton Through Scene
 
+    /// <summary>
+    /// Singleton dùng cho trường hợp không muốn destroy khi load scene 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class SingletonThroughScene<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T instance;
@@ -148,4 +161,58 @@ namespace SubScript.Singleton
             }
         }
     }
+    #endregion
+
+    #region Singleton for Subclass 
+
+    /// <summary>
+    /// Singleton cho phép các subclass kế thừa từ parent singleton class 
+    /// </summary>
+    public abstract class SingletonSubclass : MonoBehaviour
+    {
+        private static Dictionary<Type, SingletonSubclass> instances = new();
+        private static bool isQuitting = false;
+
+        protected static T GetInstance<T>() where T : SingletonSubclass
+        {
+            Type type = typeof(T);
+
+            if (isQuitting)
+                return null;
+
+            // Nếu đã có
+            if (instances.TryGetValue(type, out SingletonSubclass exist))
+                return (T)exist;
+
+            // Tìm trong scene
+            var found = FindObjectOfType(type) as SingletonSubclass;
+            if (found != null)
+            {
+                instances[type] = found;
+                return (T)found;
+            }
+
+            // Tạo mới
+            GameObject go = new GameObject($"[Singleton] {type.Name}");
+            var inst = go.AddComponent(type) as SingletonSubclass;
+            instances[type] = inst;
+
+            return (T)inst;
+        }
+
+        protected virtual void OnDestroy()
+        {
+            instances.Remove(GetType());
+        }
+
+        protected virtual void OnApplicationQuit()
+        {
+            isQuitting = true;
+        }
+    }
+
+    #endregion
 }
+
+
+

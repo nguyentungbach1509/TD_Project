@@ -1,5 +1,5 @@
 using Game.Scripts.Player.Controller;
-using SubScript.Singleton;
+using SubScripts.Singleton;
 using UnityEngine;
 
 namespace Game.Scripts.Manager

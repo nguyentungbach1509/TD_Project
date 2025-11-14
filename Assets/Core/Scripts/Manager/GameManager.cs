@@ -1,35 +1,37 @@
-using Game.Scripts.Map.Mechanic;
+using Game.Scripts.GamePlay;
 using Game.Scripts.Player.Controller;
-using SubScript.Singleton;
-using UnityEngine;
+using SubScripts.Singleton;
 
 namespace Game.Scripts.Manager
 {
     public class GameManager : SingletonBase<GameManager>
     {
-        [SerializeField] MapGenerator mapGenerator;
-        [SerializeField] PlayerController player;
-        private GridManager gridManager => GridManager.Instance;
-        private CameraController cameraController => CameraController.Instance;
         private PlayerInputController playerInput => PlayerInputController.Instance;
+        private GameMode currentMode;
+        private bool isInit;
 
         private void Start()
         {
             playerInput.Init();
-            gridManager.Init();
-            mapGenerator.Init();
-            player.Init();
-            cameraController.Init(player);
+            isInit = true;
         }
 
         private void Update()
         {
-            player.UpdateController();
+            if (!isInit) return;
+            currentMode.UpdateGame();
         }
 
         private void LateUpdate()
         {
-            cameraController.FollowPlayer();
+            if (!isInit) return;
+            currentMode.LateUpdateGame();
+        }
+
+        private void SelectedMode(GameMode mode)
+        {
+            currentMode = mode;
+            currentMode.Init();
         }
     }
 }

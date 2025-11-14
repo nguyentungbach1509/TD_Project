@@ -1,10 +1,11 @@
-using Game.Scripts.Player.StateMachine;
-using Game.Scripts.StatsCharacter.Canvas;
+using Game.Scripts.StatsCharacter.WorldUI;
 using SubScripts;
+using SubScripts.Pooling;
 using UnityEngine;
+
 namespace Game.Scripts.StatsCharacter
 {
-    public class CharacterBase : MonoBehaviour
+    public abstract class CharacterBase : PoolableComponent
     {
         [SerializeField] protected Rigidbody2D rb;
         [SerializeField] protected StatsData stats;
@@ -22,7 +23,9 @@ namespace Game.Scripts.StatsCharacter
 
         public virtual void Init()
         {
+            hud.Init();
             character = new Character(stats, hud);
+            isInit = true;
         }
 
         public void ChangeSide(Vector2 moveVector)
@@ -48,6 +51,9 @@ namespace Game.Scripts.StatsCharacter
             anim.transform.localScale = new Vector3(x * saveSide, y, 1);
 
         }
+
+        public abstract void UpdateCharacter();
+        
     }
 }
 
