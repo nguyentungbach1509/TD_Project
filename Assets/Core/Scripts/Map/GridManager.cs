@@ -19,7 +19,6 @@ namespace Game.Scripts.Map.Mechanic
         [SerializeField] RuleTile ruleTile;
         [SerializeField] Tilemap groundTile;
         [SerializeField] Tilemap hoverTile;
-        [SerializeField] Tilemap buildHoverTile;
 
         [Header("Respawn Tile Settings")]
         [SerializeField] Tilemap respawnTileMap;
@@ -35,9 +34,10 @@ namespace Game.Scripts.Map.Mechanic
             respawnTileDict = new Dictionary<Vector3Int, TileCustom>();
         }
 
-        public void SetHover(Vector3Int position, Tile tile)
+        public void SetHover(Vector3Int position)
         {
-            hoverTile.SetTile(position, tile);
+            ClearHoverTile();
+            hoverTile.SetTile(position, hover);
         }
 
         public void ClearHoverTile() => hoverTile.ClearAllTiles();
@@ -53,11 +53,11 @@ namespace Game.Scripts.Map.Mechanic
             groundTileDict.Add(position, new TileCustom(position, ETile.Ground));
         }
 
-        public void SetRespawnArea(Vector3Int position, bool isBorder=false)
+        public void SetRespawnArea(Vector3Int position, bool isBorder = false)
         {
             if (isBorder) respawnTileMap.SetTile(position, null);
             else respawnTileMap.SetTile(position, spawnRuleTile);
-            if(groundTileDict.TryGetValue(position, out var value))
+            if (groundTileDict.TryGetValue(position, out var value))
             {
                 value.IsOccupied = true;
                 respawnTileDict[position] = value;
@@ -69,7 +69,7 @@ namespace Game.Scripts.Map.Mechanic
 
         public TileCustom GetTile(Vector3Int position)
         {
-            if(groundTileDict.TryGetValue(position, out TileCustom tile)) return tile;
+            if (groundTileDict.TryGetValue(position, out TileCustom tile)) return tile;
             return null;
         }
 
@@ -77,23 +77,7 @@ namespace Game.Scripts.Map.Mechanic
         public Vector3 GridToWorld(Vector3Int position) => grid.CellToWorld(position);
         public Vector3Int WorldToGrid(Vector3 position) => grid.WorldToCell(position);
 
-        public void SetBuildHoverTile(Vector3Int pos)
-        {
-            buildHoverTile.SetTile(pos, hover);
-        }
 
-        public void ClearBuildHoverTile(Vector3Int pos) 
-        {
-            buildHoverTile.SetTile(pos, null);
-        }
-
-
-        public void ClearMouseHoverTile() => hoverTile.ClearAllTiles();
-        public void SetMouseHover(Vector3Int pos)
-        {
-            ClearHoverTile();
-            hoverTile.SetTile(pos, hover);
-        }
     }
 
 }

@@ -3,7 +3,6 @@ using Subscripts;
 using SubScripts.Singleton;
 using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -107,21 +106,10 @@ namespace Game.Scripts.Player.Controller
             Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
             Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
             worldPos.z = 0;
-            Vector3Int mouseIntPos = gridManager.WorldToGrid(worldPos);
-            gridManager.SetMouseHover(mouseIntPos);
-            return mouseIntPos;
+            return gridManager.WorldToGrid(worldPos);
         }
 
-        public Vector3 GridMouseWorldPos()
-        {
-            Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, -10));
-            worldPos.z = 0;
-            Debug.LogError($"MOUSE WORLD HOVER: {worldPos}");
-            Debug.Log($"MOUSE HOVER POS: {gridManager.WorldToGrid(worldPos)}");
-            return worldPos;
-        }
-
+        
         #endregion
     }
 }

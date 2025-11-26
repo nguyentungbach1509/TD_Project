@@ -53,7 +53,7 @@ namespace Game.Scripts.BuildingLogic
         public override void SetPlace(Vector3Int pos)
         {
             if (!IsAvailableTile(pos)) return;
-            gridManager.SetBuildHoverTile(pos);
+            gridManager.SetHover(pos);
             for(int i = 0; i < positions.Count; i++)
             {
                 TileCustom tile = gridManager.GetTile(positions[i]);
@@ -67,6 +67,7 @@ namespace Game.Scripts.BuildingLogic
             positions.Clear();
             transform.position = gridManager.GridToWorld(pos);
             model.WarningSprite(!IsAvailableTile(pos));
+            gridManager.SetHover(pos);
         }
 
         public override void Interact(Vector3Int pos)
@@ -114,7 +115,7 @@ namespace Game.Scripts.BuildingLogic
                 inProgressing = false;
                 isDone = true;
                 model.FixedModel();
-                gridManager.ClearBuildHoverTile(pos);
+                gridManager.ClearHoverTile();
                 hud.HideProgressBar();
                 yield return null;
             }

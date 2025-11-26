@@ -79,6 +79,7 @@ namespace Game.Scripts.BuildingLogic
             currentBuild.SetPlace(pos);
             listBuildings.Add(currentBuild);
             currentBuild = null;
+            gridManager.ClearHoverTile();
         }
         
         private void InteractBuild(Vector3Int pos)
