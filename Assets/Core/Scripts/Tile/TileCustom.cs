@@ -20,6 +20,8 @@ namespace Game.Scripts.TileController.Mechanic
             set => isOccupied = value;
         }
 
+        public bool IsWalkable => isWalkable;
+
         public TileCustom(Vector3Int position, ETile type, bool occupied=false)
         {
             this.position = position;
@@ -35,6 +37,7 @@ namespace Game.Scripts.TileController.Mechanic
             isWalkable = false;
         }
 
+        public Obstacle GetObstacle() => obstacle;
     }
 }
 

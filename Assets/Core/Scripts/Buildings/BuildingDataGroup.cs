@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Game.Scripts.BuidlingLogic.Data
+namespace Game.Scripts.BuildingLogic.Data
 {
     [CreateAssetMenu(fileName = "BuildingDataGroup", menuName = "Data/Buildings/Group")]
     public class BuildingDataGroup : ScriptableObject

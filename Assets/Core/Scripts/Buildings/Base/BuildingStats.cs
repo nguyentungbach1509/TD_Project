@@ -1,9 +1,9 @@
-using Game.Scripts.BuidlingLogic.Data;
-using Game.Scripts.BuidlingLogic.WorldUI;
+using Game.Scripts.BuildingLogic.Data;
+using Game.Scripts.BuildingLogic.WorldUI;
 using System;
 using UnityEngine;
 
-namespace Game.Scripts.BuidlingLogic
+namespace Game.Scripts.BuildingLogic
 {
     public class BuildingStats
     {

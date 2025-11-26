@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6595acb70722eb147899379b7385ec79, type: 3}
+  m_Name: Wall Up Stats Data
+  m_EditorClassIdentifier: 
+  key: Wall Up
+  buildingName: Wall
+  description: 
+  type: 6
+  size:
+    Width: 1
+    Height: 1
+  maxHp: 10
+  armor: 5
+  damage: 0
+  buildingIcon: {fileID: 0}
+  buildingModel: {fileID: 8570250280718565898, guid: dc7c04bba77503b40abf8ac21a100896, type: 3}
+  golds: 0
+  lumbers: 0
+  foods: 0
+  requirements: []
+  prefab: {fileID: 5703195933383184496, guid: 96688bd718a08924e9b42b525ab347e8, type: 3}

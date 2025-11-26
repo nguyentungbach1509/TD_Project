@@ -1,6 +1,7 @@
 using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Player.Controller;
+using Subscripts.Spawn;
 using SubScripts.Singleton;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -21,13 +22,14 @@ namespace Game.Scripts.GamePlay
         
         protected GridManager gridManager => GridManager.Instance;
         protected CameraController cameraController => CameraController.Instance;
-
+        protected SpawnManager spawnManager => SpawnManager.Instance;
 
         public PlayerController Player => player;
 
         public virtual void Init()
         {
-            
+
+
         }
 
         public abstract void UpdateGame();

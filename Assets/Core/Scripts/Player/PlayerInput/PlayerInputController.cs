@@ -82,10 +82,8 @@ namespace Game.Scripts.Player.Controller
         #region Mouse Input
         private void MouseLeftInput_OnClick(InputAction.CallbackContext ctx)
         {
-            Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-            worldPos.z = 0;
-            OnMouseLeftClick?.Invoke(gridManager.WorldToGrid(worldPos));
+            Vector3Int mousePos = GridMousePos();
+            OnMouseLeftClick?.Invoke(mousePos);
         }
 
         private void MouseLeftInput_OnUp(InputAction.CallbackContext ctx)
@@ -95,10 +93,8 @@ namespace Game.Scripts.Player.Controller
 
         private void MouseRightInput_OnClick(InputAction.CallbackContext ctx)
         {
-            Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
-            worldPos.z = 0;
-            OnMouseRightClick?.Invoke(gridManager.WorldToGrid(worldPos));
+            Vector3Int mousePos = GridMousePos();
+            OnMouseRightClick?.Invoke(mousePos);
         }
 
         private void MouseRightInput_OnUp(InputAction.CallbackContext ctx)
@@ -109,9 +105,21 @@ namespace Game.Scripts.Player.Controller
         public Vector3Int GridMousePos()
         {
             Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(mousePos);
+            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10));
             worldPos.z = 0;
-            return gridManager.WorldToGrid(worldPos);
+            Vector3Int mouseIntPos = gridManager.WorldToGrid(worldPos);
+            gridManager.SetMouseHover(mouseIntPos);
+            return mouseIntPos;
+        }
+
+        public Vector3 GridMouseWorldPos()
+        {
+            Vector2 mousePos = actions[Constants.Mouse_Hover].ReadValue<Vector2>();
+            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, -10));
+            worldPos.z = 0;
+            Debug.LogError($"MOUSE WORLD HOVER: {worldPos}");
+            Debug.Log($"MOUSE HOVER POS: {gridManager.WorldToGrid(worldPos)}");
+            return worldPos;
         }
 
         #endregion

@@ -1,5 +1,4 @@
 using Game.Scripts.Map.Hills;
-using Subscripts.Extensions;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;

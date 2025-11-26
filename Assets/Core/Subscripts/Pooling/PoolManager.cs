@@ -43,7 +43,7 @@ namespace SubScripts.Pooling
             customPools = new();
         }
 
-        public static ObjectPool<T> CreateOrGetPool<T>(T prefab, int defaultCapacity = 10, bool autoExpand = true, int maxSize = 50) where T : Component, IPoolable
+        public static ObjectPool<T> CreateOrGetPool<T>(T prefab, int defaultCapacity = 10, bool autoExpand = true, int maxSize = 50) where T : PoolableComponent
         {
             var type = typeof(T);
             if (pools.ContainsKey(type))
@@ -57,20 +57,20 @@ namespace SubScripts.Pooling
             return pool;
         }
 
-        public static ObjectPool<PoolableComponent> CreateOrGetPool<T>(PoolableComponent prefab, string key, int defaultCapacity = 10, bool autoExpand = true, int maxSize = 50) where T: Component, IPoolable  
+        public static ObjectPool<T> CreateOrGetPool<T>(T prefab, string key, int defaultCapacity = 10, bool autoExpand = true, int maxSize = 50) where T: PoolableComponent  
         {
             if (customPools.ContainsKey(key))
             {
                 Debug.LogWarning($"Pool for key {key} already exists!");
-                return customPools[key];
+                return customPools[key] as ObjectPool<T>;
             }
 
-            var pool = new ObjectPool<PoolableComponent>(prefab, defaultCapacity, autoExpand, maxSize);
-            customPools.Add(key, pool);
+            var pool = new ObjectPool<T>(prefab, defaultCapacity, autoExpand, maxSize);
+            customPools.Add(key, pool as ObjectPool<PoolableComponent>);
             return pool;
         }
 
-        private static ObjectPool<T> GetPool<T>() where T : Component, IPoolable
+        private static ObjectPool<T> GetPool<T>() where T : PoolableComponent
         {
             var type = typeof(T);
             if (pools.TryGetValue(type, out object pool))
@@ -81,7 +81,7 @@ namespace SubScripts.Pooling
             return null;
         }
 
-        public static void ClearPool<T>() where T : Component, IPoolable
+        public static void ClearPool<T>() where T : PoolableComponent
         {
             var type = typeof(T);
             if (pools.TryGetValue(@type, out object pool))

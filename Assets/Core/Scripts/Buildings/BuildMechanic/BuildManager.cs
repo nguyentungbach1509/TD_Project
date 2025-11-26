@@ -1,0 +1,95 @@
+using Game.Scripts.BuildingLogic.Data;
+using Game.Scripts.Map.Mechanic;
+using Game.Scripts.Map.Obstacles;
+using Game.Scripts.Player.Controller;
+using Game.Scripts.TileController.Mechanic;
+using Subscripts;
+using Subscripts.Spawn;
+using SubScripts.Singleton;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Game.Scripts.BuildingLogic
+{
+    public class BuildManager : SingletonBase<BuildManager>
+    {
+        private GridManager gridManager => GridManager.Instance;
+        private SpawnManager spawner => SpawnManager.Instance;
+        private PlayerInputController inputCtrl => PlayerInputController.Instance;
+        
+        private Building currentBuild;
+        private List<Building> listBuildings;
+        
+        private bool isInit;
+
+
+        public void Init()
+        {
+            inputCtrl.OnMouseLeftClick -= PlaceBuilding;
+            inputCtrl.OnMouseLeftClick += PlaceBuilding;
+
+            inputCtrl.OnMouseRightClick -= InteractBuild;
+            inputCtrl.OnMouseRightClick += InteractBuild;
+
+            listBuildings = new();
+            isInit = true;
+        }
+
+        public void UpdateBuilder()
+        {
+            if (!isInit) return;
+            SelectBuilding();
+            if (currentBuild == null) return;
+            currentBuild.FollowMouseHover(inputCtrl.GridMousePos());
+        }
+
+        #region Simple To Test
+        private void SelectBuilding()
+        {
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                if (currentBuild != null)
+                {
+                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
+                    currentBuild = null;
+                }
+                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuidlingType.Wall, BuildingKey.Wall_Up,
+                    inputCtrl.GridMousePos(), Quaternion.identity);
+
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                if (currentBuild != null)
+                {
+                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
+                    currentBuild = null;
+                }
+                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuidlingType.Farm, BuildingKey.Farm,
+                    inputCtrl.GridMousePos(), Quaternion.identity);
+            }
+
+        }
+        #endregion
+
+        private void PlaceBuilding(Vector3Int pos)
+        {
+            if(currentBuild == null) return;
+            if (!currentBuild.InInteractRange()) return;
+            currentBuild.SetPlace(pos);
+            listBuildings.Add(currentBuild);
+            currentBuild = null;
+        }
+        
+        private void InteractBuild(Vector3Int pos)
+        {
+            TileCustom tile = gridManager.GetTile(pos);
+            Obstacle obstacle = tile.GetObstacle();
+            if (obstacle == null || obstacle is not Building) return;
+            if (!currentBuild.InInteractRange()) return;
+            currentBuild = obstacle as Building;
+            currentBuild.Interact(pos);
+        }
+    }
+}
+

@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Scripts.BuidlingLogic.WorldUI
+namespace Game.Scripts.BuildingLogic.WorldUI
 {
     public class BuildingProgressBar : MonoBehaviour
     {
         [SerializeField] Image fillImg;
+
 
         public void UpdateProgressBar(float percent)
         {

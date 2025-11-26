@@ -19,11 +19,12 @@ namespace Game.Scripts.Map.Mechanic
         [SerializeField] RuleTile ruleTile;
         [SerializeField] Tilemap groundTile;
         [SerializeField] Tilemap hoverTile;
+        [SerializeField] Tilemap buildHoverTile;
 
         [Header("Respawn Tile Settings")]
         [SerializeField] Tilemap respawnTileMap;
         [SerializeField] RuleTile spawnRuleTile;
-        
+        [SerializeField] Tile hover;
 
         private Dictionary<Vector3Int, TileCustom> groundTileDict;
         private Dictionary<Vector3Int, TileCustom> respawnTileDict;
@@ -76,6 +77,23 @@ namespace Game.Scripts.Map.Mechanic
         public Vector3 GridToWorld(Vector3Int position) => grid.CellToWorld(position);
         public Vector3Int WorldToGrid(Vector3 position) => grid.WorldToCell(position);
 
+        public void SetBuildHoverTile(Vector3Int pos)
+        {
+            buildHoverTile.SetTile(pos, hover);
+        }
+
+        public void ClearBuildHoverTile(Vector3Int pos) 
+        {
+            buildHoverTile.SetTile(pos, null);
+        }
+
+
+        public void ClearMouseHoverTile() => hoverTile.ClearAllTiles();
+        public void SetMouseHover(Vector3Int pos)
+        {
+            ClearHoverTile();
+            hoverTile.SetTile(pos, hover);
+        }
     }
 
 }

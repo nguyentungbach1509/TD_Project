@@ -1,5 +1,5 @@
-using Game.Scripts.BuidlingLogic.Data;
-using Game.Scripts.BuidlingLogic.WorldUI;
+using Game.Scripts.BuildingLogic.Data;
+using Game.Scripts.BuildingLogic.WorldUI;
 using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
@@ -9,7 +9,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace Game.Scripts.BuidlingLogic
+namespace Game.Scripts.BuildingLogic
 {
     public class Building : Obstacle
     {
@@ -32,7 +32,9 @@ namespace Game.Scripts.BuidlingLogic
 
         public BuildingHUD Hud => hud;
 
-        private Action<float> OnProgressChange;
+        public Action<float> OnProgressChange;
+
+        public BuildingStats Stats => stats;
 
         public override void Init()
         {
@@ -40,16 +42,18 @@ namespace Game.Scripts.BuidlingLogic
             
             OnProgressChange -= hud.ProgressBar.UpdateProgressBar;
             OnProgressChange += hud.ProgressBar.UpdateProgressBar;
-
+            currentProgress = 0;
             positions = new();
             stats = new BuildingStats(data, hud);
-            inProgressing = true;
+            model.BlurSprite();
+            inProgressing = false;
             isInit = true;
         }
 
         public override void SetPlace(Vector3Int pos)
         {
             if (!IsAvailableTile(pos)) return;
+            gridManager.SetBuildHoverTile(pos);
             for(int i = 0; i < positions.Count; i++)
             {
                 TileCustom tile = gridManager.GetTile(positions[i]);
@@ -87,7 +91,7 @@ namespace Game.Scripts.BuidlingLogic
                     positions.Add(tilePos);
                 }
             }
-            return true;
+            return InInteractRange();
         }
 
         private void StartBuild(Vector3Int pos)
@@ -99,7 +103,7 @@ namespace Game.Scripts.BuidlingLogic
             {
                 if(!inProgressing) transform.position = gridManager.GridToWorld(pos);
 
-                while(InInteractRange() && currentProgress < 100f)
+                while(currentProgress < 100f)
                 {
                     inProgressing = true;
                     yield return new WaitForSeconds(.15f);
@@ -109,14 +113,18 @@ namespace Game.Scripts.BuidlingLogic
                 
                 inProgressing = false;
                 isDone = true;
+                model.FixedModel();
+                gridManager.ClearBuildHoverTile(pos);
+                hud.HideProgressBar();
                 yield return null;
             }
         }
 
-        protected override bool InInteractRange()
+        public override bool InInteractRange()
         {
             PlayerController player = survivalMode.Player;
             float distance = Vector3.Distance(player.transform.position, transform.position);
+            Debug.Log($"DISTANCE: {distance}");
             return distance <= interactRange;
         }
     }

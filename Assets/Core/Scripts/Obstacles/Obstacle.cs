@@ -22,7 +22,7 @@ namespace Game.Scripts.Map.Obstacles
         public abstract void SetPlace(Vector3Int pos);
 
         public abstract void Interact(Vector3Int pos);
-        protected abstract bool InInteractRange();
+        public abstract bool InInteractRange();
         
     }
 }

@@ -1,9 +1,9 @@
 using Game.Scripts.StatsCharacter.WorldUI;
 using UnityEngine;
 
-namespace Game.Scripts.BuidlingLogic.WorldUI
+namespace Game.Scripts.BuildingLogic.WorldUI
 {
-    public class BuildingHUD
+    public class BuildingHUD : MonoBehaviour
     {
         [Header("References")]
         [SerializeField] Canvas canvas;
@@ -16,7 +16,11 @@ namespace Game.Scripts.BuidlingLogic.WorldUI
         public void Init()
         {
             canvas.worldCamera = Camera.main;
+            if (!progressBar.gameObject.activeSelf) progressBar.gameObject.SetActive(true);
         }
+
+        public void HideProgressBar() => progressBar.gameObject.SetActive(false);
+
     }
 }
 

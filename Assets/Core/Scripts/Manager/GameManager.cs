@@ -13,6 +13,7 @@ namespace Game.Scripts.Manager
         private void Start()
         {
             playerInput.Init();
+            SelectedMode(SurvivalMode.Instance);
             isInit = true;
         }
 

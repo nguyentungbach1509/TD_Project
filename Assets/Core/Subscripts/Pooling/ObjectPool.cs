@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace SubScripts.Pooling
 {
-    public class ObjectPool<T> where T : Component, IPoolable
+    public class ObjectPool<T> where T : PoolableComponent
     {
         private T prefab;
         private Queue<T> pool;

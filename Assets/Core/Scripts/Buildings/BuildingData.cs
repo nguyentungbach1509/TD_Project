@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Game.Scripts.BuidlingLogic.Data
+namespace Game.Scripts.BuildingLogic.Data
 {
     public enum EBuidlingType
     {
