@@ -6,7 +6,7 @@ namespace Subscripts
         #region Input Key
         public static readonly string Move = "Move";
         public static readonly string Left_Click = "Left Click";
-        public static readonly string Right_Click = "Left Click";
+        public static readonly string Right_Click = "Right Click";
         public static readonly string Mouse_Hover = "Mouse Hover";
         #endregion
     }
@@ -21,6 +21,7 @@ namespace Subscripts
         #endregion
 
         public static readonly string Farm = "Farm";
+        public static readonly string Basement = "Basement";
     }
 }
 

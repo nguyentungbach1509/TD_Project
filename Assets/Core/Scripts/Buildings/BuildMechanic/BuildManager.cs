@@ -19,6 +19,8 @@ namespace Game.Scripts.BuildingLogic
         
         private Building currentBuild;
         private List<Building> listBuildings;
+
+        public List<Building> Buildings => listBuildings;
         
         private bool isInit;
 
@@ -54,7 +56,7 @@ namespace Game.Scripts.BuildingLogic
                     spawner.BuildingSpawner.DespawnBuilding(currentBuild);
                     currentBuild = null;
                 }
-                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuidlingType.Wall, BuildingKey.Wall_Up,
+                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Wall, BuildingKey.Wall_Up,
                     inputCtrl.GridMousePos(), Quaternion.identity);
 
             }
@@ -65,7 +67,17 @@ namespace Game.Scripts.BuildingLogic
                     spawner.BuildingSpawner.DespawnBuilding(currentBuild);
                     currentBuild = null;
                 }
-                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuidlingType.Farm, BuildingKey.Farm,
+                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Farm, BuildingKey.Farm,
+                    inputCtrl.GridMousePos(), Quaternion.identity);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                if (currentBuild != null)
+                {
+                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
+                    currentBuild = null;
+                }
+                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Basement, BuildingKey.Basement,
                     inputCtrl.GridMousePos(), Quaternion.identity);
             }
 
@@ -76,6 +88,7 @@ namespace Game.Scripts.BuildingLogic
         {
             if(currentBuild == null) return;
             if (!currentBuild.InInteractRange()) return;
+            if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
             listBuildings.Add(currentBuild);
             currentBuild = null;
@@ -87,8 +100,8 @@ namespace Game.Scripts.BuildingLogic
             TileCustom tile = gridManager.GetTile(pos);
             Obstacle obstacle = tile.GetObstacle();
             if (obstacle == null || obstacle is not Building) return;
-            if (!currentBuild.InInteractRange()) return;
             currentBuild = obstacle as Building;
+            if (!currentBuild.InInteractRange()) return;
             currentBuild.Interact(pos);
         }
     }

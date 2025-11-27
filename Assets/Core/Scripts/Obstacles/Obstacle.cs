@@ -1,3 +1,4 @@
+using Game.Scripts.BuildingLogic.Data;
 using SubScripts.Pooling;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace Game.Scripts.Map.Obstacles
         public List<Vector3Int> Positions => positions;
         public float InteractRange => interactRange;    
 
-        public virtual void Init()
+        public virtual void Init(BuildingData data)
         {
 
         }

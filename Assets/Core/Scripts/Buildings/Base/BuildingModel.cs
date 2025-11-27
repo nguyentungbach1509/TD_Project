@@ -1,14 +1,18 @@
+using Game.Scripts.BuildingLogic.WorldUI;
 using SubScripts;
+using SubScripts.Pooling;
 using UnityEngine;
 namespace Game.Scripts.BuildingLogic
 {
-    public class BuildingModel : MonoBehaviour
+    public class BuildingModel : PoolableComponent
     {
         [Header("Reference")]
         [SerializeField] private AnimationController anim;
         [SerializeField] private SpriteRenderer modelSprite;
+        [SerializeField] private BuildingHUD hud;
 
         private Color save_color_to_test;
+        public BuildingHUD HUD => hud;
 
         public void BlurSprite()
         {

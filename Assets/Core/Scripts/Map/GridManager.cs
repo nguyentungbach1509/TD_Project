@@ -35,8 +35,7 @@ namespace Game.Scripts.Map.Mechanic
         }
 
         public void SetHover(Vector3Int position)
-        {
-            ClearHoverTile();
+        { 
             hoverTile.SetTile(position, hover);
         }
 

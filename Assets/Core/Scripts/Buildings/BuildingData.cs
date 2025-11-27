@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Game.Scripts.BuildingLogic.Data
 {
-    public enum EBuidlingType
+    public enum EBuildingType
     {
         Basement,
 
@@ -27,7 +27,7 @@ namespace Game.Scripts.BuildingLogic.Data
         [SerializeField] protected string key;
         [SerializeField] protected string buildingName;
         [SerializeField] protected string description;
-        [SerializeField] protected EBuidlingType type;
+        [SerializeField] protected EBuildingType type;
         [SerializeField] protected BuildingTileSize size;
 
         [Header("Stats Data")]
@@ -37,7 +37,7 @@ namespace Game.Scripts.BuildingLogic.Data
 
         [Header("Appearance Data")]
         [SerializeField] protected Sprite buildingIcon;
-        [SerializeField] protected Sprite buildingModel;
+        
 
         [Header("Cost Data")]
         [SerializeField] protected int golds;
@@ -55,18 +55,17 @@ namespace Game.Scripts.BuildingLogic.Data
         public string Description => description;
         public BuildingTileSize Size => size;
 
-        public EBuidlingType Type => type;
+        public EBuildingType Type => type;
         public float MaxHp => maxHp;
         public float Armor => armor;
         public float Damage => damage;  
         public Sprite Icon => buildingIcon;
-        public Sprite Model => buildingModel;
         
         public int Golds => golds;
         public int Lumbers => lumbers;
         public int Foods => foods;
         public UpdateRequirement[] Requirements => requirements;
-        public Building Prefab => prefab;
+        public Building Prefab => prefab;    
     }
 
     [Serializable]
@@ -74,7 +73,7 @@ namespace Game.Scripts.BuildingLogic.Data
     {
         public int TargetLevel;
         public Sprite UpdateIcon;
-        public Sprite UpdateModel;
+        public BuildingModelData UpdateModel;
         public RequiredBuilding[] RequiredBuildings;
 
         public float MultiHp;
@@ -89,7 +88,7 @@ namespace Game.Scripts.BuildingLogic.Data
     [Serializable]
     public class RequiredBuilding
     {
-        public EBuidlingType RequiredBuildings;
+        public EBuildingType RequiredBuildings;
         public int LevelBuilding;
     }
 

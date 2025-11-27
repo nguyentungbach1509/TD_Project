@@ -1,4 +1,4 @@
-using Game.Scripts.BuildingLogic.Data;
+﻿using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
 using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Mechanic;
@@ -13,9 +13,9 @@ namespace Game.Scripts.BuildingLogic
 {
     public class Building : Obstacle
     {
-        [SerializeField] private BuildingData data;
         [SerializeField] private BuildingModel model;
         [SerializeField] private BuildingHUD hud;
+        [SerializeField] private float buildTime;
 
         private BuildingStats stats;
         private float currentProgress;
@@ -29,19 +29,17 @@ namespace Game.Scripts.BuildingLogic
 
         private GridManager gridManager => GridManager.Instance;
         private SurvivalMode survivalMode => SurvivalMode.Instance;
+        private BuildManager buildManager => BuildManager.Instance;
 
         public BuildingHUD Hud => hud;
 
         public Action<float> OnProgressChange;
 
         public BuildingStats Stats => stats;
+        public BuildingModel Model => model;
 
-        public override void Init()
+        public override void Init(BuildingData data)
         {
-            hud.Init();
-            
-            OnProgressChange -= hud.ProgressBar.UpdateProgressBar;
-            OnProgressChange += hud.ProgressBar.UpdateProgressBar;
             currentProgress = 0;
             positions = new();
             stats = new BuildingStats(data, hud);
@@ -50,14 +48,22 @@ namespace Game.Scripts.BuildingLogic
             isInit = true;
         }
 
+        public void SetupModel(BuildingModel buildModel)
+        {
+            model = buildModel;
+            hud = buildModel.HUD;
+            hud.Init();
+            OnProgressChange -= hud.ProgressBar.UpdateProgressBar;
+            OnProgressChange += hud.ProgressBar.UpdateProgressBar;
+        }
+
         public override void SetPlace(Vector3Int pos)
         {
-            if (!IsAvailableTile(pos)) return;
-            gridManager.SetHover(pos);
             for(int i = 0; i < positions.Count; i++)
             {
                 TileCustom tile = gridManager.GetTile(positions[i]);
                 tile.SetObstacle(this);
+                gridManager.SetHover(pos);
             }
             StartBuild(pos);
         }
@@ -67,7 +73,6 @@ namespace Game.Scripts.BuildingLogic
             positions.Clear();
             transform.position = gridManager.GridToWorld(pos);
             model.WarningSprite(!IsAvailableTile(pos));
-            gridManager.SetHover(pos);
         }
 
         public override void Interact(Vector3Int pos)
@@ -76,20 +81,22 @@ namespace Game.Scripts.BuildingLogic
             if (inProgressing) StartBuild(pos);
         }
 
-        private bool IsAvailableTile(Vector3Int pos)
+        public bool IsAvailableTile(Vector3Int pos)
         {
+            gridManager.ClearHoverTile();
             for(int row = 0; row < stats.Size.Height; row++)
             {
                 for(int col = 0; col < stats.Size.Width; col++)
                 {
                     Vector3Int tilePos = new Vector3Int(pos.x + col, pos.y + row, 0);
                     TileCustom tile = gridManager.GetTile(tilePos);
-                    if(tile.IsOccupied || tile == null)
+                    if((tile.IsOccupied && !tile.IsWalkable) || tile == null)
                     {
                         positions.Clear();
                         return false;
                     }
                     positions.Add(tilePos);
+                    gridManager.SetHover(tilePos);
                 }
             }
             return InInteractRange();
@@ -104,14 +111,20 @@ namespace Game.Scripts.BuildingLogic
             {
                 if(!inProgressing) transform.position = gridManager.GridToWorld(pos);
 
-                while(currentProgress < 100f)
+                float timer = 0f;
+
+                while (timer < buildTime)
                 {
-                    inProgressing = true;
-                    yield return new WaitForSeconds(.15f);
-                    currentProgress = Mathf.Clamp(currentProgress + 1, 0, 100f);
-                    OnProgressChange?.Invoke(currentProgress / 100f);
+                    timer += Time.deltaTime;
+                    currentProgress = Mathf.Clamp01(timer / buildTime);
+                    OnProgressChange?.Invoke(currentProgress);
+                    yield return null;
                 }
-                
+
+                // đảm bảo = 100%
+                currentProgress = 1f;
+                OnProgressChange?.Invoke(currentProgress);
+
                 inProgressing = false;
                 isDone = true;
                 model.FixedModel();
@@ -128,6 +141,25 @@ namespace Game.Scripts.BuildingLogic
             Debug.Log($"DISTANCE: {distance}");
             return distance <= interactRange;
         }
+
+        #region Upgrade Building
+        private void Upgrade()
+        {
+            //check dieu kien du update chua
+            bool isAvailable = false;
+            for(int i = 0; i < stats.Requirements.Length; i++)
+            {
+                //if (!buildManager.Buildings.Contains(stats.Requirements[i])) {
+            }
+
+            //if(player.Storage.Gold < requirements[level].RequiredGolds && 
+            //player.Storage.Lumbers < requirements[Level].RequiredLumbers &&
+            //player.Storage.Foods < requirements[level].RequiredFoods) return;
+
+            //Update neu du dk
+            stats.Upgrade(stats.Requirements[stats.Level]);
+        }
+        #endregion
     }
 
 }

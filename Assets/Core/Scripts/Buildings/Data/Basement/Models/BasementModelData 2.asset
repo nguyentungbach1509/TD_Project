@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0df0aaf660bb354eae695e7d0b5bd68, type: 3}
-  m_Name: BasementGroup
+  m_Script: {fileID: 11500000, guid: 3ab1711c0cea8fa429bb4997d93e1fdb, type: 3}
+  m_Name: BasementModelData 2
   m_EditorClassIdentifier: 
-  group: 0
-  buildingData:
-  - {fileID: 11400000, guid: bd0b6bdfabd1e5a4189fdb551aec3a18, type: 2}
+  id: 3
+  type: 0
+  prefab: {fileID: 4606060995675315903, guid: a6f3c74c79e1aa44db8be4446e9a10c1, type: 3}

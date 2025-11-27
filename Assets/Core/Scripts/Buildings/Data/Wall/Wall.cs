@@ -1,7 +1,5 @@
-using Game.Scripts.BuildingLogic;
 
-
-namespace Game.Scripts.BuidlingLogic
+namespace Game.Scripts.BuildingLogic
 {
     public class Wall : Building 
     { 

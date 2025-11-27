@@ -8,13 +8,13 @@ namespace Game.Scripts.BuildingLogic.Data
     {
         [SerializeField] List<BuildingDataGroup> dataGroups;
 
-        public BuildingData GetData(EBuidlingType group, string key)
+        public BuildingData GetData(EBuildingType group, string key)
         {
             BuildingDataGroup groupData = dataGroups.Find(x => x.Group == group);
             return groupData.GetBuildingData(key);
         }
 
-        public Building GetBuilding(EBuidlingType group, string key)
+        public Building GetBuilding(EBuildingType group, string key)
         {
             BuildingDataGroup groupData = dataGroups.Find(x => x.Group == group);
             return groupData.GetBuilding(key);

@@ -2,6 +2,7 @@ using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Game.Scripts.BuildingLogic
 {
@@ -13,7 +14,7 @@ namespace Game.Scripts.BuildingLogic
         private BuildingTileSize tileSize;
         private int level;
 
-        private EBuidlingType type;
+        private EBuildingType type;
         private float maxHp;
         private float health;
         private float armor;
@@ -33,7 +34,7 @@ namespace Game.Scripts.BuildingLogic
         public BuildingTileSize Size => tileSize;
         public int Level => level;  
 
-        public EBuidlingType Type => type;
+        public EBuildingType Type => type;
         public float MaxHp => maxHp;
         public float Health => health;
         public float Armor => armor;
@@ -59,10 +60,21 @@ namespace Game.Scripts.BuildingLogic
             health = data.MaxHp;
             armor = data.Armor;
             damage = data.Damage;
+            requirements = data.Requirements;
+            level = 1;
             OnHpChange -= canvas.HpBar.UpdateHpBar;
             OnHpChange += canvas.HpBar.UpdateHpBar;
         }
 
+        public void Upgrade(UpdateRequirement req)
+        {
+            maxHp += req.MultiHp;
+            health = maxHp;
+            OnHpChange?.Invoke(1);
+            damage += req.MultiDmg;
+            armor += req.MultiArmor;
+            level++;
+        }
 
     }
 }
