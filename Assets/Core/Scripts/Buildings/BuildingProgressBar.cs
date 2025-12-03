@@ -12,6 +12,8 @@ namespace Game.Scripts.BuildingLogic.WorldUI
         {
             fillImg.fillAmount = percent;
         }
+
+        public void ResetAmount() => fillImg.fillAmount = 0;
     }
 }
 

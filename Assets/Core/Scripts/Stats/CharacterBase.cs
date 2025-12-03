@@ -1,3 +1,4 @@
+using Game.Scripts.Map.Obstacles;
 using Game.Scripts.StatsCharacter.WorldUI;
 using SubScripts;
 using SubScripts.Pooling;
@@ -14,6 +15,7 @@ namespace Game.Scripts.StatsCharacter
 
         protected bool isInit;
         protected Character character;
+        protected Obstacle targetObstacle;
         protected float saveSide;
 
         public AnimationController Anim => anim;
@@ -54,6 +56,17 @@ namespace Game.Scripts.StatsCharacter
 
         public abstract void UpdateCharacter();
         
+        public Obstacle CurrentObstacle
+        {
+            get => targetObstacle;
+            set => targetObstacle = value;
+        }
+
+        public Character TargetCharacter
+        {
+            get => character;
+            set => character = value;
+        }
     }
 }
 

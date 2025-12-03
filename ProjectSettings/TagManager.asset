@@ -56,5 +56,8 @@ TagManager:
   - name: Acessories
     uniqueID: 3369649301
     locked: 0
+  - name: UIWorld
+    uniqueID: 2879874229
+    locked: 0
   m_RenderingLayers:
   - Default

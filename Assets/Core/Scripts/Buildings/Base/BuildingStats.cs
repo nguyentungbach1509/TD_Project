@@ -24,6 +24,7 @@ namespace Game.Scripts.BuildingLogic
         private int golds;
         private int lumbers;
         private int foods;
+        private float buildTime;
 
         private UpdateRequirement[] requirements;
 
@@ -45,6 +46,8 @@ namespace Game.Scripts.BuildingLogic
         public int Golds => golds;
         public int Lumbers => lumbers;
         public int Foods => foods;
+        public float BuildTime => buildTime;
+
         public UpdateRequirement[] Requirements => requirements;
 
         public Action<float> OnHpChange;
@@ -60,6 +63,7 @@ namespace Game.Scripts.BuildingLogic
             health = data.MaxHp;
             armor = data.Armor;
             damage = data.Damage;
+            buildTime = data.BuildTime;
             requirements = data.Requirements;
             level = 1;
             OnHpChange -= canvas.HpBar.UpdateHpBar;
@@ -73,6 +77,7 @@ namespace Game.Scripts.BuildingLogic
             OnHpChange?.Invoke(1);
             damage += req.MultiDmg;
             armor += req.MultiArmor;
+            buildTime = req.RequiredBuildTime;
             level++;
         }
 

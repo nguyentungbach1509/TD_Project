@@ -32,7 +32,7 @@ namespace Game.Scripts.Player.StateMachine
         }
 
         protected abstract State DetectState(AnimationKey key);
-       
+
     }
 }
 

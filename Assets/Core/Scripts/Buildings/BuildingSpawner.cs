@@ -18,6 +18,7 @@ namespace Game.Scripts.BuildingLogic
             this.gamePrefabs = gamePrefabs;
             gridManager = GridManager.Instance;
             poolBuilding = new();
+            poolModel = new();
         }
 
         #region Building
@@ -76,11 +77,14 @@ namespace Game.Scripts.BuildingLogic
                 pools = new List<ObjectPool<BuildingModel>>();
                 poolModel[group] = pools;
                 UpdateRequirement[] requirements = gamePrefabs.BuildingPrefabs.GetData(group, key).Requirements;
-                BuildingModel model = requirements[level - 1].UpdateModel.Prefab;
-                string modelKey = $"{key}_{level}";
-                ObjectPool<BuildingModel> pool = PoolManager.CreateOrGetPool(model, modelKey);
-                pools.Add(pool);
-                return pool;
+                for (int i = 0; i < requirements.Length; i++)
+                {
+                    string modelKey = $"{key}_{i+1}";
+                    BuildingModel model = requirements[i].UpdateModel.Prefab;
+                    ObjectPool<BuildingModel> pool = PoolManager.CreateOrGetPool(model, modelKey);
+                    pools.Add(pool);
+                }
+                return pools[level-1];
             }
 
             return pools[level - 1];
@@ -88,7 +92,7 @@ namespace Game.Scripts.BuildingLogic
 
         public BuildingModel SpawnModel(EBuildingType group, string key, int level)
         {
-            ObjectPool<BuildingModel> modelPool = GetModelPool(group, key, level-1);
+            ObjectPool<BuildingModel> modelPool = GetModelPool(group, key, level);
             BuildingModel model = modelPool.Spawn();
             return model;
         }

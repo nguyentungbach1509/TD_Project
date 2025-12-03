@@ -16,15 +16,17 @@ namespace Game.Scripts.BuildingLogic.WorldUI
         public void Init()
         {
             canvas.worldCamera = Camera.main;
-            if (!progressBar.gameObject.activeSelf) progressBar.gameObject.SetActive(true);
-            if (hpBar.gameObject.activeSelf) hpBar.gameObject.SetActive(false);
         }
 
-        public void HideProgressBar()
+        public void HideProgressBar() => progressBar.gameObject.SetActive(false);
+        public void ShowProgressBar()
         {
-            progressBar.gameObject.SetActive(false);
-            hpBar.gameObject.SetActive(true);
+            progressBar.gameObject.SetActive(true);
+            progressBar.ResetAmount();
         }
+
+        public void HideHealthBar() => hpBar.gameObject.SetActive(false);
+        public void ShowHealthBar() => hpBar.gameObject.SetActive(true);
     }
 }
 

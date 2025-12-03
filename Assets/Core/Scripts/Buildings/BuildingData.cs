@@ -43,6 +43,7 @@ namespace Game.Scripts.BuildingLogic.Data
         [SerializeField] protected int golds;
         [SerializeField] protected int lumbers;
         [SerializeField] protected int foods;
+        [SerializeField] protected float buildTime;
 
         [Header("Update Requirements Data")]
         [SerializeField] protected UpdateRequirement[] requirements;
@@ -59,6 +60,7 @@ namespace Game.Scripts.BuildingLogic.Data
         public float MaxHp => maxHp;
         public float Armor => armor;
         public float Damage => damage;  
+        public float BuildTime => buildTime;
         public Sprite Icon => buildingIcon;
         
         public int Golds => golds;
@@ -83,6 +85,7 @@ namespace Game.Scripts.BuildingLogic.Data
         public int RequiredGolds;
         public int RequiredLumbers;
         public int RequiredFoods;
+        public float RequiredBuildTime;
     }
 
     [Serializable]
@@ -90,6 +93,12 @@ namespace Game.Scripts.BuildingLogic.Data
     {
         public EBuildingType RequiredBuildings;
         public int LevelBuilding;
+
+        public RequiredBuilding(EBuildingType type, int level)
+        {
+            RequiredBuildings = type;
+            LevelBuilding = level;
+        }
     }
 
     [Serializable] 

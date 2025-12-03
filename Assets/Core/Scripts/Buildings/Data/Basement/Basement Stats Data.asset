@@ -30,13 +30,7 @@ MonoBehaviour:
   - TargetLevel: 1
     UpdateIcon: {fileID: 0}
     UpdateModel: {fileID: 11400000, guid: 1ed67b422363915418f707b248176a39, type: 2}
-    RequiredBuildings:
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
+    RequiredBuildings: []
     MultiHp: 0
     MultiArmor: 0
     MultiDmg: 0
@@ -46,13 +40,7 @@ MonoBehaviour:
   - TargetLevel: 2
     UpdateIcon: {fileID: 0}
     UpdateModel: {fileID: 11400000, guid: 1fc9f9115d17aaf4283e33800ab73167, type: 2}
-    RequiredBuildings:
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
+    RequiredBuildings: []
     MultiHp: 0
     MultiArmor: 0
     MultiDmg: 0
@@ -62,13 +50,7 @@ MonoBehaviour:
   - TargetLevel: 3
     UpdateIcon: {fileID: 0}
     UpdateModel: {fileID: 11400000, guid: aa6fcc2ea457c9c48b32a36bffc58193, type: 2}
-    RequiredBuildings:
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
-    - RequiredBuildings: 0
-      LevelBuilding: 0
+    RequiredBuildings: []
     MultiHp: 0
     MultiArmor: 0
     MultiDmg: 0
@@ -76,4 +58,3 @@ MonoBehaviour:
     RequiredLumbers: 0
     RequiredFoods: 0
   prefab: {fileID: 3737771554494052079, guid: 9f23481aecdb2034a807df4a1074e6e9, type: 3}
-  modelData: {fileID: 0}

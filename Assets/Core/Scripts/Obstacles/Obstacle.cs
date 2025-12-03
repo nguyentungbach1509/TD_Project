@@ -15,11 +15,6 @@ namespace Game.Scripts.Map.Obstacles
         public List<Vector3Int> Positions => positions;
         public float InteractRange => interactRange;    
 
-        public virtual void Init(BuildingData data)
-        {
-
-        }
-
         public abstract void SetPlace(Vector3Int pos);
 
         public abstract void Interact(Vector3Int pos);

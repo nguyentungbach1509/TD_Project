@@ -19,9 +19,11 @@ namespace Game.Scripts.BuildingLogic
         
         private Building currentBuild;
         private List<Building> listBuildings;
+        private HashSet<RequiredBuilding> currentRequirements;
 
         public List<Building> Buildings => listBuildings;
-        
+        public HashSet<RequiredBuilding> CurrentBuildings => currentRequirements;
+
         private bool isInit;
 
 
@@ -34,6 +36,7 @@ namespace Game.Scripts.BuildingLogic
             inputCtrl.OnMouseRightClick += InteractBuild;
 
             listBuildings = new();
+            currentRequirements = new();
             isInit = true;
         }
 
@@ -91,6 +94,8 @@ namespace Game.Scripts.BuildingLogic
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
             listBuildings.Add(currentBuild);
+            currentRequirements.Add(
+                new RequiredBuilding(currentBuild.Stats.Type, currentBuild.Stats.Level));
             currentBuild = null;
             gridManager.ClearHoverTile();
         }
@@ -103,6 +108,7 @@ namespace Game.Scripts.BuildingLogic
             currentBuild = obstacle as Building;
             if (!currentBuild.InInteractRange()) return;
             currentBuild.Interact(pos);
+            currentBuild = null;
         }
     }
 }

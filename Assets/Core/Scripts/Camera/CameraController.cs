@@ -18,8 +18,6 @@ namespace Game.Scripts.Manager
 
         public void FollowPlayer()
         {
-            /*Vector3 target = new Vector3(player.transform.position.x, player.transform.position.y, positionZ);
-            transform.position = Vector3.Lerp(transform.position, target, 5 * Time.deltaTime);*/
             if (player == null) return;
 
             Vector3 target = new Vector3(player.transform.position.x, player.transform.position.y, positionZ);

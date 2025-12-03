@@ -5,6 +5,7 @@ using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.TileController.Mechanic;
+using Subscripts.Spawn;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -21,15 +22,17 @@ namespace Game.Scripts.BuildingLogic
         private float currentProgress;
 
         private bool inProgressing;
-        private bool isDone;
+        private bool inUpgradeProcessing;
 
         private Coroutine progressingCoroutine;
+        private Coroutine upgradeCoroutine;
         
         private bool isInit;
 
         private GridManager gridManager => GridManager.Instance;
         private SurvivalMode survivalMode => SurvivalMode.Instance;
         private BuildManager buildManager => BuildManager.Instance;
+        private SpawnManager spawner => SpawnManager.Instance;
 
         public BuildingHUD Hud => hud;
 
@@ -38,10 +41,12 @@ namespace Game.Scripts.BuildingLogic
         public BuildingStats Stats => stats;
         public BuildingModel Model => model;
 
-        public override void Init(BuildingData data)
+        public void Init(BuildingData data)
         {
             currentProgress = 0;
             positions = new();
+            hud.ShowProgressBar();
+            hud.HideHealthBar();
             stats = new BuildingStats(data, hud);
             model.BlurSprite();
             inProgressing = false;
@@ -70,6 +75,7 @@ namespace Game.Scripts.BuildingLogic
 
         public virtual void FollowMouseHover(Vector3Int pos)
         {
+            if (inUpgradeProcessing) return;
             positions.Clear();
             transform.position = gridManager.GridToWorld(pos);
             model.WarningSprite(!IsAvailableTile(pos));
@@ -77,30 +83,40 @@ namespace Game.Scripts.BuildingLogic
 
         public override void Interact(Vector3Int pos)
         {
-            if (!positions.Contains(pos)) return;
-            if (inProgressing) StartBuild(pos);
+            if (!positions.Contains(pos) || inProgressing) return;
+            Upgrade();
         }
 
         public bool IsAvailableTile(Vector3Int pos)
         {
             gridManager.ClearHoverTile();
-            for(int row = 0; row < stats.Size.Height; row++)
+            positions.Clear();
+
+            int offsetX = (stats.Size.Width - 1) / 2;
+            int offsetY = (stats.Size.Height - 1) / 2;
+            Vector3Int origin = new Vector3Int(pos.x - offsetX, pos.y - offsetY, 0);
+
+            for (int row = 0; row < stats.Size.Height; row++)
             {
-                for(int col = 0; col < stats.Size.Width; col++)
+                for (int col = 0; col < stats.Size.Width; col++)
                 {
-                    Vector3Int tilePos = new Vector3Int(pos.x + col, pos.y + row, 0);
+                    Vector3Int tilePos = new Vector3Int(origin.x + col, origin.y + row, 0);
                     TileCustom tile = gridManager.GetTile(tilePos);
-                    if((tile.IsOccupied && !tile.IsWalkable) || tile == null)
+
+                    if (tile == null || (tile.IsOccupied && !tile.IsWalkable))
                     {
                         positions.Clear();
                         return false;
                     }
+
                     positions.Add(tilePos);
                     gridManager.SetHover(tilePos);
                 }
             }
+
             return InInteractRange();
         }
+
 
         private void StartBuild(Vector3Int pos)
         {
@@ -126,10 +142,10 @@ namespace Game.Scripts.BuildingLogic
                 OnProgressChange?.Invoke(currentProgress);
 
                 inProgressing = false;
-                isDone = true;
                 model.FixedModel();
                 gridManager.ClearHoverTile();
                 hud.HideProgressBar();
+                hud.ShowHealthBar();
                 yield return null;
             }
         }
@@ -146,18 +162,53 @@ namespace Game.Scripts.BuildingLogic
         private void Upgrade()
         {
             //check dieu kien du update chua
-            bool isAvailable = false;
-            for(int i = 0; i < stats.Requirements.Length; i++)
-            {
-                //if (!buildManager.Buildings.Contains(stats.Requirements[i])) {
-            }
+            RequiredBuilding[] req = stats.Requirements[stats.Level].RequiredBuildings;
 
+            for (int i = 0; i < req.Length; i++)
+            {
+                if (!buildManager.CurrentBuildings.Contains(req[i]))
+                {
+                    return;
+                }
+            }
             //if(player.Storage.Gold < requirements[level].RequiredGolds && 
             //player.Storage.Lumbers < requirements[Level].RequiredLumbers &&
             //player.Storage.Foods < requirements[level].RequiredFoods) return;
 
-            //Update neu du dk
-            stats.Upgrade(stats.Requirements[stats.Level]);
+            if (upgradeCoroutine != null) StopCoroutine(upgradeCoroutine);
+            upgradeCoroutine = StartCoroutine(UpgradeCoroutine());
+
+            IEnumerator UpgradeCoroutine()
+            {
+                float timer = 0f;
+                inUpgradeProcessing = true;
+                hud.ShowProgressBar();
+
+                while (timer < buildTime)
+                {
+                    timer += Time.deltaTime;
+                    currentProgress = Mathf.Clamp01(timer / buildTime);
+                    OnProgressChange?.Invoke(currentProgress);
+                    yield return null;
+                }
+
+                // đảm bảo = 100%
+                currentProgress = 1f;
+                OnProgressChange?.Invoke(currentProgress);
+
+
+                //Update neu du dk
+                inUpgradeProcessing = false;
+                spawner.BuildingSpawner.DespawnModel(this);
+                stats.Upgrade(stats.Requirements[stats.Level]);
+                model = spawner.BuildingSpawner.SpawnModel(stats.Type, stats.Key, Stats.Level);
+                model.transform.SetParent(transform, false);
+                model.transform.localPosition = Vector3.zero;
+                SetupModel(model);
+                hud.HideProgressBar();
+                hud.ShowHealthBar();
+            }
+            
         }
         #endregion
     }

@@ -30,6 +30,9 @@ namespace Game.Scripts.Player.StateMachine
                 case AnimationKey.Hit:
                     state = new HitState(player);
                     break;
+                case AnimationKey.Chop:
+
+                    break;
                 case AnimationKey.Die:
                     state = new DieState(player);
                     break;
