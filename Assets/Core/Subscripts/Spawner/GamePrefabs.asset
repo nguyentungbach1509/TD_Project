@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GamePrefabs
   m_EditorClassIdentifier: 
   BuildingPrefabs: {fileID: 11400000, guid: 8cee69ff5e02eb348bfafad0a2154e76, type: 2}
+  TreePrefabs: {fileID: 11400000, guid: 6fe601783b194014080fd658c50ce947, type: 2}

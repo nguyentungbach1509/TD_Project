@@ -2,6 +2,7 @@
 using Game.Scripts.Map.Mechanic;
 using SubScripts.Pooling;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Scripts.ObstacleResource
@@ -10,7 +11,8 @@ namespace Game.Scripts.ObstacleResource
     {
         private GamePrefabs gamePrefabs;
         private GridManager gridManager;
-        private Dictionary<string, ObjectPool<Tree>> poolTree;
+        private Dictionary<string, ObjectPool<TreeSource>> poolTree;
+        private Dictionary<string, float> weights;
         private bool isInitialized = false;
 
         public bool IsInitialized() => isInitialized;
@@ -21,6 +23,7 @@ namespace Game.Scripts.ObstacleResource
 
             this.gamePrefabs = gamePrefabs;
             gridManager = GridManager.Instance;
+            weights = new Dictionary<string, float>();
             poolTree = new();
 
             InitTreePool();
@@ -38,26 +41,54 @@ namespace Game.Scripts.ObstacleResource
             foreach (var data in gamePrefabs.TreePrefabs.Prefabs)
             {
                 poolTree[data.Key] = PoolManager.CreateOrGetPool(data.Prefab, data.Key);
+                weights.Add(data.Key, data.RandomPercent);
             }
         }
 
-        public Tree SpawnTree(string key, Vector3Int position, Quaternion rotation)
+        private string GetRandomTreeKey()
         {
+            float totalPercent = 0;
+            
+            foreach(var weight in weights)
+            {
+                totalPercent += weight.Value;
+            }
+
+            float random = Random.Range(0, totalPercent);
+
+            // Tìm item tương ứng
+            float cumulative = 0f;
+            string key = string.Empty;
+            foreach (var element in weights)
+            {
+                cumulative += element.Value;
+                key = element.Key;
+                if (random <= cumulative)
+                    return element.Key;
+            }
+
+            return key;
+        }
+
+        public TreeSource SpawnTree(Vector3Int position, Quaternion rotation)
+        {
+            string key = GetRandomTreeKey();
+
             if (!poolTree.ContainsKey(key))
             {
                 Debug.LogError($"Tree với key {key} không tồn tại trong pool!");
                 return null;
             }
 
-            ObjectPool<Tree> pool = poolTree[key];
-            Tree tree = pool.Spawn(position, rotation);
+            ObjectPool<TreeSource> pool = poolTree[key];
+            TreeSource tree = pool.Spawn(position, rotation);
             tree.Init(key);
             return tree;
         }
 
-        public void DespawnTree(Tree tree)
+        public void DespawnTree(TreeSource tree)
         {
-            ObjectPool<Tree> pool = poolTree[tree.Key];
+            ObjectPool<TreeSource> pool = poolTree[tree.Key];
             pool.Despawn(tree);
         } 
     }

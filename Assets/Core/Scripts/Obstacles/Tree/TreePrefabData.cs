@@ -6,10 +6,13 @@ namespace Game.Scripts.ObstacleResource
     public class TreePrefabData : ScriptableObject
     {
         [SerializeField] string key;
-        [SerializeField] Tree prefab;
+        [SerializeField] TreeSource prefab;
+        [Range(0, .5f)]
+        [SerializeField] float randomPercent;
 
         public string Key => key;
-        public Tree Prefab => prefab;
+        public TreeSource Prefab => prefab;
+        public float RandomPercent => randomPercent;    
     } 
 }
 

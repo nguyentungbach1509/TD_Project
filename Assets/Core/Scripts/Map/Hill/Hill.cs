@@ -1,4 +1,7 @@
 using Game.Scripts.Map.Mechanic;
+using Game.Scripts.ObstacleResource;
+using Game.Scripts.TileController.Mechanic;
+using Subscripts.Spawn;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -7,13 +10,14 @@ namespace Game.Scripts.Map.Hills
 {
     public class Hill
     {
-
         private List<Vector3Int> positions;
         private int width;
         private int height;
         private RuleTile ruleHillTile;
         private GridManager grid;
         private Tilemap hillTileMap;
+
+        private SpawnManager spawner => SpawnManager.Instance;
 
         public int Width => width;
         public int Height => height;
@@ -71,13 +75,15 @@ namespace Game.Scripts.Map.Hills
                 {
                     Vector3Int position = new Vector3Int(x, y, 0);
                     hillTileMap.SetTile(position, ruleHillTile);
-                    grid.GetTile(position).IsOccupied = true;
+                    TileCustom tileCs = grid.GetTile(position);
+                    tileCs.IsOccupied = true;
                     positions.Add(position);
                     y++;
                 }
                 x++;
             }
         }
+
 
     }
 }

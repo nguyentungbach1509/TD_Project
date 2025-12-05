@@ -63,9 +63,7 @@ namespace Game.Scripts.Map.Mechanic
                     Hill hill = new Hill(data, hillTileMap);
                     hill.BuildHill(pos, spawnBorderList);
                     if (hill.Positions.Count > 0) hills.Add(hill);
-
                 }
-
             }
 
         }
@@ -105,6 +103,13 @@ namespace Game.Scripts.Map.Mechanic
             return true;
         }
 
+        private void SetTreePlace()
+        {
+            for(int i = 0; i < gridManager.GroundDict.Count; i++)
+            {
+
+            }
+        }
     }
 
 }

@@ -171,6 +171,8 @@ namespace Game.Scripts.BuildingLogic
                     return;
                 }
             }
+
+            //Check dieu kien
             //if(player.Storage.Gold < requirements[level].RequiredGolds && 
             //player.Storage.Lumbers < requirements[Level].RequiredLumbers &&
             //player.Storage.Foods < requirements[level].RequiredFoods) return;
