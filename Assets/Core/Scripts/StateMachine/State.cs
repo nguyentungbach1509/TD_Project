@@ -1,3 +1,4 @@
+using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
 using SubScripts;
@@ -12,6 +13,7 @@ namespace Game.Scripts.Player.StateMachine
         protected CharacterBase character;
         protected Character stats;
         protected AnimationController anim;
+        protected PathFinding pathFinder => PathFinding.Instance;
 
         public State(CharacterBase character)
         {

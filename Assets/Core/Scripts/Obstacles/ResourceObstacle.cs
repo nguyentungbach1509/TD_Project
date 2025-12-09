@@ -1,4 +1,5 @@
 using Game.Scripts.GamePlay;
+using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using System;
@@ -12,7 +13,7 @@ namespace Game.Scripts.ObstacleResource
         [SerializeField] protected int eachHarvest;
         protected SurvivalMode survivalMode => SurvivalMode.Instance;
         protected PlayerInputController inputCtrl => PlayerInputController.Instance;
-        
+        protected GridManager grid => GridManager.Instance;
         protected string key;
         
         public string Key => key;
@@ -33,13 +34,16 @@ namespace Game.Scripts.ObstacleResource
         public override bool InInteractRange()
         {
             PlayerController player = survivalMode.Player;
-            float distance = Vector3.Distance(player.transform.position, transform.position);
-            Debug.Log($"DISTANCE: {distance}");
+            float distance = Vector2.Distance(player.transform.position, transform.position);
+            Debug.Log($"DISTANCE: {distance} - " +
+                $"TREE: {grid.WorldToGrid(transform.position)} - " +
+                $"PLAYER: {grid.WorldToGrid(player.transform.position)}");
             return distance <= interactRange;
         }
 
         public override void Interact(Vector3Int pos)
         {
+            if (pos != GridPos) return;
             PlayerController player = survivalMode.Player;
             player.CurrentObstacle = this;
         }

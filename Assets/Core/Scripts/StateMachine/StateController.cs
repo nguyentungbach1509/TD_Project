@@ -1,3 +1,4 @@
+using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
 using SubScripts.Constants;

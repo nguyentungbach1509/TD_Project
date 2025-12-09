@@ -1,6 +1,8 @@
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
+using NUnit.Framework;
 using SubScripts.Constants;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
@@ -8,12 +10,24 @@ namespace Game.Scripts.Player.StateMachine
     public class PlayerStateController : StateController
     {
         private PlayerController player;
+        private PlayerInputController input => PlayerInputController.Instance;
+        private Vector3Int target;
+
+        public Vector3Int Target => target;
 
         public PlayerStateController(CharacterBase character) : base(character)
         {
+            input.OnMouseRightClick -= SetTarget;
+            input.OnMouseRightClick += SetTarget;
             player = character as PlayerController;
             currentState = new IdleState(player);
             currentState.Enter();
+        }
+
+        private void SetTarget(Vector3Int target)
+        {
+            this.target = target;
+            ChangeState(AnimationKey.Move);
         }
 
         protected override State DetectState(AnimationKey key)
@@ -31,7 +45,7 @@ namespace Game.Scripts.Player.StateMachine
                     state = new HitState(player);
                     break;
                 case AnimationKey.Chop:
-
+                    state = new ChopState(player);      
                     break;
                 case AnimationKey.Die:
                     state = new DieState(player);

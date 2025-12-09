@@ -65,7 +65,6 @@ namespace Game.Scripts.Map.Mechanic
                     if (hill.Positions.Count > 0) hills.Add(hill);
                 }
             }
-
         }
 
         private void BuildRespawnArea(Vector3Int position)

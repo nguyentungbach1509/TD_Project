@@ -1,3 +1,4 @@
+using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.StatsCharacter.WorldUI;
 using SubScripts;
@@ -13,10 +14,13 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] protected CharacterHUD hud;
         [SerializeField] protected AnimationController anim;
 
+        private GridManager grid => GridManager.Instance;
+        
         protected bool isInit;
         protected Character character;
         protected Obstacle targetObstacle;
         protected float saveSide;
+        
 
         public AnimationController Anim => anim;
         public Character Stats => character;
@@ -56,6 +60,8 @@ namespace Game.Scripts.StatsCharacter
 
         public abstract void UpdateCharacter();
         
+        public Vector3Int GridPos => grid.WorldToGrid(transform.position);
+
         public Obstacle CurrentObstacle
         {
             get => targetObstacle;

@@ -70,7 +70,7 @@ namespace Game.Scripts.ObstacleResource
             return key;
         }
 
-        public TreeSource SpawnTree(Vector3Int position, Quaternion rotation)
+        public TreeSource SpawnTree(Vector3 position, Quaternion rotation)
         {
             string key = GetRandomTreeKey();
 
