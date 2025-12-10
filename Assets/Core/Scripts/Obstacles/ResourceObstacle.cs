@@ -11,9 +11,7 @@ namespace Game.Scripts.ObstacleResource
     {
         [SerializeField] protected ResourceObstacleHUD hud;
         [SerializeField] protected int eachHarvest;
-        protected SurvivalMode survivalMode => SurvivalMode.Instance;
-        protected PlayerInputController inputCtrl => PlayerInputController.Instance;
-        protected GridManager grid => GridManager.Instance;
+        
         protected string key;
         
         public string Key => key;
@@ -27,6 +25,7 @@ namespace Game.Scripts.ObstacleResource
             OnHarvestTextChange -= hud.EffectResourceText;
             OnHarvestTextChange += hud.EffectResourceText;
 
+            positions = new();
             this.key = key;
             hud.Init();
         }
@@ -43,14 +42,14 @@ namespace Game.Scripts.ObstacleResource
 
         public override void Interact(Vector3Int pos)
         {
-            if (pos != GridPos) return;
+            if (!positions.Contains(pos)) return;
             PlayerController player = survivalMode.Player;
             player.CurrentObstacle = this;
         }
 
         public override void SetPlace(Vector3Int pos)
         {
-            
+            positions.Add(pos);
         }
     }
 

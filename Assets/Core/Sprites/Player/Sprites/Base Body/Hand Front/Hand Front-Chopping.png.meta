@@ -144,10 +144,10 @@ TextureImporter:
       name: Hand Front-Chopping_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 18
-        width: 13
-        height: 16
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: Hand Front-Chopping_1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 18
-        width: 13
-        height: 16
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: Hand Front-Chopping_2
       rect:
         serializedVersion: 2
-        x: 114
-        y: 23
-        width: 12
-        height: 19
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: Hand Front-Chopping_3
       rect:
         serializedVersion: 2
-        x: 166
-        y: 11
-        width: 20
-        height: 12
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: Hand Front-Chopping_4
       rect:
         serializedVersion: 2
-        x: 213
-        y: 12
-        width: 22
-        height: 12
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Hand Front-Chopping_5
       rect:
         serializedVersion: 2
-        x: 260
-        y: 12
-        width: 22
-        height: 12
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e77ab66fdb6c81f4aba520676d867bb8
     internalID: 0
     vertices: []
     indices: 

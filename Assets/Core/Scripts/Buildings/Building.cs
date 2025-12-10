@@ -92,15 +92,18 @@ namespace Game.Scripts.BuildingLogic
             gridManager.ClearHoverTile();
             positions.Clear();
 
+            //Dua ve vi tri trung tam cua obstacle,
+            //thay vi luon bat dau tu tile goc duoi ben trai
             int offsetX = (stats.Size.Width - 1) / 2;
             int offsetY = (stats.Size.Height - 1) / 2;
-            Vector3Int origin = new Vector3Int(pos.x - offsetX, pos.y - offsetY, 0);
+            centerGridPos = new Vector3Int(pos.x - offsetX, pos.y - offsetY, 0);
+
 
             for (int row = 0; row < stats.Size.Height; row++)
             {
                 for (int col = 0; col < stats.Size.Width; col++)
                 {
-                    Vector3Int tilePos = new Vector3Int(origin.x + col, origin.y + row, 0);
+                    Vector3Int tilePos = new Vector3Int(centerGridPos.x + col, centerGridPos.y + row, 0);
                     TileCustom tile = gridManager.GetTile(tilePos);
 
                     if (tile == null || (tile.IsOccupied && !tile.IsWalkable))
@@ -114,7 +117,7 @@ namespace Game.Scripts.BuildingLogic
                 }
             }
 
-            return InInteractRange();
+            return true;
         }
 
 

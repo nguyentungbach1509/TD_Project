@@ -13,7 +13,7 @@ namespace Game.Scripts.Player.StateMachine
         public override void Enter()
         {
             Debug.Log("Chop State");
-            //anim.PlayAnimation(AnimationKey.Chop);
+            anim.PlayAnimation(AnimationKey.Chop);
         }
 
         public override void Execute()

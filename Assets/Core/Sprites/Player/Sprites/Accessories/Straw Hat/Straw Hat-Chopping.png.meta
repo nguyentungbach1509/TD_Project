@@ -144,10 +144,10 @@ TextureImporter:
       name: Straw Hat-Chopping_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 27
-        width: 20
-        height: 11
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: Straw Hat-Chopping_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 26
-        width: 20
-        height: 11
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: Straw Hat-Chopping_2
       rect:
         serializedVersion: 2
-        x: 110
-        y: 27
-        width: 20
-        height: 11
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: Straw Hat-Chopping_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 25
-        width: 20
-        height: 11
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: Straw Hat-Chopping_4
       rect:
         serializedVersion: 2
-        x: 206
-        y: 25
-        width: 20
-        height: 11
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Straw Hat-Chopping_5
       rect:
         serializedVersion: 2
-        x: 254
-        y: 25
-        width: 20
-        height: 11
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 216377951ccb3a54ea149e3a4a1941ed
     internalID: 0
     vertices: []
     indices: 

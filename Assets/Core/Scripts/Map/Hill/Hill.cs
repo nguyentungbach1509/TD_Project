@@ -3,10 +3,9 @@ using Game.Scripts.ObstacleResource;
 using Game.Scripts.TileController.Mechanic;
 using Subscripts.Spawn;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using UnityEngine.Timeline;
-using UnityEngine.UIElements;
 
 namespace Game.Scripts.Map.Hills
 {
@@ -98,8 +97,8 @@ namespace Game.Scripts.Map.Hills
                 x++;
             }
 
-            hillTileMap.CompressBounds();
-            Physics2D.SyncTransforms();
+            //hillTileMap.CompressBounds();
+            //Physics2D.SyncTransforms();
 
             PlaceTrees();
         }
@@ -107,16 +106,31 @@ namespace Game.Scripts.Map.Hills
         private void StoreColliderTile()
         {
             borders.Clear();
-
-            for(int i = 0; i < positions.Count; i++)
+            HashSet<Vector3Int> set = new HashSet<Vector3Int>(positions);
+            HashSet<Vector3Int> borderSet = new HashSet<Vector3Int>();
+            
+            for (int i = 0; i < positions.Count; i++)
             {
-                var collider = hillTileMap.GetColliderType(positions[i]);
+                /*var collider = hillTileMap.GetColliderType(positions[i]);
                 if(collider != Tile.ColliderType.None)
                 {
                     TileCustom tc = grid.GetTile(positions[i]);
                     tc.IsWalkable = false;
                     if (Random.value <= 0.5f) borders.Add(positions[i]);
+                }*/
+
+                for(int dir = 0; dir < directions.Length; dir++)
+                {
+                    Vector3Int outPos = positions[i] + directions[dir];
+
+                    if (!set.Contains(outPos))
+                    {
+                        borderSet.Add(positions[i]);
+                        break;
+                    }
                 }
+
+                borders = borderSet.ToList();
             }
         }
 
@@ -159,6 +173,7 @@ namespace Game.Scripts.Map.Hills
                 TreeSource tree = spawner.TreeSpawner.SpawnTree(spawnPos, Quaternion.identity);
                 TileCustom tileCs = grid.GetTile(treePos);
                 tileCs.SetObstacle(tree);
+                tree.SetPlace(treePos);
             }
         }
 

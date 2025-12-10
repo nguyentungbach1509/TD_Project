@@ -36,6 +36,12 @@ namespace Game.Scripts.Path
                      + Mathf.Abs(a.Position.y - b.Position.y);
         }
 
+        public bool CanReach(Vector3Int start, Vector3Int end)
+        {
+            var path = GetPath(start, end);
+            return path.Count > 0;
+        }
+
         public List<Vector3Int> GetPath(Vector3Int start, Vector3Int end)
         {
             TileCustom startTile = grid.GetTile(start);
@@ -53,7 +59,7 @@ namespace Game.Scripts.Path
             List<TileCustom> openList = new(); //Tile dang cho` xet
             HashSet<TileCustom> closedList = new(); //Cac tile da set xong
 
-            startTile.Node.G = int.MaxValue;
+            startTile.Node.G = 0;
             startTile.Node.H = DistanceMahattan(startTile, endTile);
             startTile.Parent = null;
             openList.Add(startTile);

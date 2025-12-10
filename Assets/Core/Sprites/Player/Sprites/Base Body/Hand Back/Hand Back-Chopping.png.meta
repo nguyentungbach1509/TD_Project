@@ -131,7 +131,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 288
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -147,11 +147,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hand Back-Chopping_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034105a020fcc92488230cfc11a0535a
+      internalID: -1522261173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hand Back-Chopping_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017747b0dce72784b921f4b5f9646dea
+      internalID: 1729160293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 055a18a2382d3c8488966bd542deb6bc
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +206,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Hand Back-Chopping_0: -1249435760473938748
+      Hand Back-Chopping_1: -1522261173
+      Hand Back-Chopping_2: 1729160293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

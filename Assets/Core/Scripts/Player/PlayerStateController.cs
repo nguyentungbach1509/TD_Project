@@ -1,5 +1,7 @@
+using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
+using Game.Scripts.TileController.Mechanic;
 using NUnit.Framework;
 using SubScripts.Constants;
 using System.Collections.Generic;
@@ -19,6 +21,9 @@ namespace Game.Scripts.Player.StateMachine
         {
             input.OnMouseRightClick -= SetTarget;
             input.OnMouseRightClick += SetTarget;
+            input.OnMouseLeftClick -= SetTarget;
+            input.OnMouseLeftClick += SetTarget;
+            
             player = character as PlayerController;
             currentState = new IdleState(player);
             currentState.Enter();
@@ -26,7 +31,13 @@ namespace Game.Scripts.Player.StateMachine
 
         private void SetTarget(Vector3Int target)
         {
-            this.target = target;
+            TileCustom tileCustom = grid.GetTile(target);
+            Obstacle obstacle = tileCustom.GetObstacle();
+            if (obstacle != null)
+            {
+                this.target = obstacle.FindBestInteractionTile();
+            }
+            else this.target = target;
             ChangeState(AnimationKey.Move);
         }
 

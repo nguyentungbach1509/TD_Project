@@ -1,3 +1,4 @@
+using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
@@ -12,6 +13,7 @@ namespace Game.Scripts.Player.StateMachine
         protected CharacterBase character;
         protected State currentState;
         protected Dictionary<AnimationKey, State> cachedState;
+        protected GridManager grid => GridManager.Instance;
 
         public StateController(CharacterBase character)
         {

@@ -42,7 +42,7 @@ namespace Game.Scripts.Map.Mechanic
                 {
                     Vector3Int position = new Vector3Int(x, y, 0);
                     gridManager.SetGround(position);
-                    if(i == 0 || j == 0 || i == width-1 ||  j == height-1) spawnBorderList.Add(position);
+                    if (i == 0 || j == 0 || i == width - 1 || j == height - 1) spawnBorderList.Add(position);
                     else BuildRespawnArea(new Vector3Int(x, y, 0));
                     y++;
                 }
@@ -52,13 +52,13 @@ namespace Game.Scripts.Map.Mechanic
 
 
             HashSet<Hill> hills = new();
-			List<Vector3Int> candidatePositions = new List<Vector3Int>(gridManager.GroundDict.Keys);
+            List<Vector3Int> candidatePositions = new List<Vector3Int>(gridManager.GroundDict.Keys);
 
             foreach (Vector3Int pos in candidatePositions)
             {
                 if (spawnBorderList.Contains(pos)) continue;
                 if (!ValidateHillPosition(hills, pos)) continue;
-                if(Random.value < percentHill)
+                if (Random.value < percentHill)
                 {
                     Hill hill = new Hill(data, hillTileMap);
                     hill.BuildHill(pos, spawnBorderList);
@@ -70,11 +70,11 @@ namespace Game.Scripts.Map.Mechanic
         private void BuildRespawnArea(Vector3Int position)
         {
             if (position != Vector3Int.zero) return;
-            int x = -(areaWidth+1) / 2;
-            for(int i = 0; i <= areaWidth; i++)
+            int x = -(areaWidth + 1) / 2;
+            for (int i = 0; i <= areaWidth; i++)
             {
-                int y = -(areaHeight+1) / 2;
-                for(int j = 0; j <= areaHeight; j++)
+                int y = -(areaHeight + 1) / 2;
+                for (int j = 0; j <= areaHeight; j++)
                 {
                     Vector3Int pos = new Vector3Int(x, y, 0);
                     if (i == 0 || j == 0 || i == areaWidth || j == areaHeight)
@@ -87,27 +87,19 @@ namespace Game.Scripts.Map.Mechanic
                 x++;
             }
         }
-		
+
 
         private bool ValidateHillPosition(HashSet<Hill> hills, Vector3Int pos)
         {
             if (hills.Count == 0) return true;
-            foreach(var hill in hills)
+            foreach (var hill in hills)
             {
 
                 if (Mathf.Abs(pos.x - hill.Positions[0].x) <= hill.Width &&
                            Mathf.Abs(pos.y - hill.Positions[0].y) <= hill.Height) return false;
             }
-            
+
             return true;
-        }
-
-        private void SetTreePlace()
-        {
-            for(int i = 0; i < gridManager.GroundDict.Count; i++)
-            {
-
-            }
         }
     }
 
