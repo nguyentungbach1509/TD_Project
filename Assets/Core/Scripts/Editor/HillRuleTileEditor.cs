@@ -1,26 +1,61 @@
-using Game.Scripts.Map.Hills;
+﻿#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
+using Game.Scripts.Map.Hills;
 
-namespace Game.Scripts.EditorCustomize.HillEditor
+[CustomEditor(typeof(HillRuleTile))]
+public class HillRuleTileEditor : Editor
 {
-    [CustomEditor(typeof(HillRuleTile))]
-    public class HillRuleTileEditor : Editor
+    private HillRuleTile hillSO;
+
+    private void OnEnable()
     {
-        public override void OnInspectorGUI()
+        hillSO = (HillRuleTile)target;
+    }
+
+    public override void OnInspectorGUI()
+    {
+        serializedObject.Update();
+
+        // Field RuleTile
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("ruleTile"));
+
+        GUILayout.Space(10);
+
+        // Button Generate
+        if (GUILayout.Button("Generate Rules From RuleTile"))
         {
-            base.OnInspectorGUI();
+            hillSO.GenerateRuleTile();
+            EditorUtility.SetDirty(hillSO);
+        }
 
-            HillRuleTile main = (HillRuleTile)target;
+        GUILayout.Space(10);
 
-            GUILayout.Space(10);
-
-            if (GUILayout.Button("Generate From SourceA"))
+        // Draw each rule UI (call SO's method)
+        var list = hillSO.TilingRules;
+        if (list != null)
+        {
+            for (int i = 0; i < list.Count; i++)
             {
-                main.GenerateRuleTile();
-                EditorUtility.SetDirty(main);
+                hillSO.DrawRuleGUI(list[i], i);
+                // draw TilingRule inspector UI
+                DrawTilingRuleInspector(list[i].Tiling);
             }
         }
+
+        serializedObject.ApplyModifiedProperties();
+    }
+
+    private void DrawTilingRuleInspector(RuleTile.TilingRule rule)
+    {
+        if (rule == null) return;
+
+        EditorGUILayout.BeginVertical("box");
+
+        EditorGUILayout.LabelField("Tiling Rule", EditorStyles.boldLabel);
+
+
+        EditorGUILayout.EndVertical();
     }
 }
-
+#endif
