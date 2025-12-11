@@ -20,7 +20,7 @@ namespace Game.Scripts.Map.Hills
         };
         private int width;
         private int height;
-        private RuleTile ruleHillTile;
+        private HillRuleTile ruleHillTile;
         private GridManager grid;
         private Tilemap hillTileMap;
 
@@ -89,6 +89,7 @@ namespace Game.Scripts.Map.Hills
                 {
                     Vector3Int position = new Vector3Int(x, y, 0);
                     hillTileMap.SetTile(position, ruleHillTile);
+                    hillTileMap.RefreshTile(position);
                     TileCustom tileCs = grid.GetTile(position);
                     tileCs.IsOccupied = true;
                     positions.Add(position);
@@ -106,31 +107,15 @@ namespace Game.Scripts.Map.Hills
         private void StoreColliderTile()
         {
             borders.Clear();
-            HashSet<Vector3Int> set = new HashSet<Vector3Int>(positions);
-            HashSet<Vector3Int> borderSet = new HashSet<Vector3Int>();
             
             for (int i = 0; i < positions.Count; i++)
             {
-                /*var collider = hillTileMap.GetColliderType(positions[i]);
-                if(collider != Tile.ColliderType.None)
+                if (HillRuleTile.borderList.Contains(positions[i]))
                 {
                     TileCustom tc = grid.GetTile(positions[i]);
                     tc.IsWalkable = false;
                     if (Random.value <= 0.5f) borders.Add(positions[i]);
-                }*/
-
-                for(int dir = 0; dir < directions.Length; dir++)
-                {
-                    Vector3Int outPos = positions[i] + directions[dir];
-
-                    if (!set.Contains(outPos))
-                    {
-                        borderSet.Add(positions[i]);
-                        break;
-                    }
                 }
-
-                borders = borderSet.ToList();
             }
         }
 
@@ -160,10 +145,10 @@ namespace Game.Scripts.Map.Hills
                 Vector3Int treePos = GetInnerTreePosition(pos);
 
                 // chỉ spawn nếu treePos là "đất bên trong" (không collider)
-                if (hillTileMap.GetColliderType(treePos) == Tile.ColliderType.None)
-                {
+                //if (HillRuleTile.borderList.Contains(treePos))
+                //{
                     treePositions.Add(treePos);
-                }
+                //}
             }
 
             // spawn 1 lần duy nhất

@@ -7,11 +7,11 @@ namespace Game.Scripts.Map.Hills
     {
         [SerializeField] int width;
         [SerializeField] int height;
-        [SerializeField] RuleTile ruleTile;
+        [SerializeField] HillRuleTile ruleTile;
 
         public int Width => width;
         public int Height => height;
-        public RuleTile RuleTile => ruleTile;
+        public HillRuleTile RuleTile => ruleTile;
     }
 }
 

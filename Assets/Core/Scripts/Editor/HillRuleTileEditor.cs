@@ -3,59 +3,51 @@ using UnityEditor;
 using UnityEngine;
 using Game.Scripts.Map.Hills;
 
-[CustomEditor(typeof(HillRuleTile))]
-public class HillRuleTileEditor : Editor
+namespace Game.Scripts.EditorCustomize.HillEditor
 {
-    private HillRuleTile hillSO;
-
-    private void OnEnable()
+    [CustomEditor(typeof(HillRuleTile))]
+    public class HillRuleTileEditor : Editor
     {
-        hillSO = (HillRuleTile)target;
-    }
+        private HillRuleTile hillSO;
 
-    public override void OnInspectorGUI()
-    {
-        serializedObject.Update();
-
-        // Field RuleTile
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("ruleTile"));
-
-        GUILayout.Space(10);
-
-        // Button Generate
-        if (GUILayout.Button("Generate Rules From RuleTile"))
+        private void OnEnable()
         {
-            hillSO.GenerateRuleTile();
-            EditorUtility.SetDirty(hillSO);
+            hillSO = (HillRuleTile)target;
         }
 
-        GUILayout.Space(10);
-
-        // Draw each rule UI (call SO's method)
-        var list = hillSO.TilingRules;
-        if (list != null)
+        public override void OnInspectorGUI()
         {
-            for (int i = 0; i < list.Count; i++)
+            serializedObject.Update();
+
+            // Field RuleTile
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("ruleTile"));
+
+            GUILayout.Space(10);
+
+            // Button Generate
+            if (GUILayout.Button("Generate Rules From RuleTile"))
             {
-                hillSO.DrawRuleGUI(list[i], i);
-                // draw TilingRule inspector UI
-                DrawTilingRuleInspector(list[i].Tiling);
+                hillSO.GenerateRuleTile();
+                EditorUtility.SetDirty(hillSO);
             }
+
+            GUILayout.Space(10);
+
+            // Draw each rule UI (call SO's method)
+            var list = hillSO.TilingRules;
+            if (list != null)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    list[i].DrawRuleGUI();
+                }
+            }
+
+            serializedObject.ApplyModifiedProperties();
         }
 
-        serializedObject.ApplyModifiedProperties();
-    }
-
-    private void DrawTilingRuleInspector(RuleTile.TilingRule rule)
-    {
-        if (rule == null) return;
-
-        EditorGUILayout.BeginVertical("box");
-
-        EditorGUILayout.LabelField("Tiling Rule", EditorStyles.boldLabel);
-
-
-        EditorGUILayout.EndVertical();
     }
 }
+
+
 #endif

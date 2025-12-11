@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 10
   height: 5
-  ruleTile: {fileID: 11400000, guid: 6c924c5e5ea65d8408542093a170ecb1, type: 2}
+  ruleTile: {fileID: 11400000, guid: c4106513a9ca8514589433aae2325bd9, type: 2}
