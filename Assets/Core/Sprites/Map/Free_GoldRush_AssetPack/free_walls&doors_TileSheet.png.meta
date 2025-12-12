@@ -1,0 +1,1859 @@
+fileFormatVersion: 2
+guid: d7dc2fc272cba63429062c0b8935935c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2557461643873857632
+    second: free_walls&doors_TileSheet_0
+  - first:
+      213: -5696854389953165589
+    second: free_walls&doors_TileSheet_1
+  - first:
+      213: 4174910693067586518
+    second: free_walls&doors_TileSheet_2
+  - first:
+      213: -4789313338005128630
+    second: free_walls&doors_TileSheet_3
+  - first:
+      213: -2880620348075911487
+    second: free_walls&doors_TileSheet_4
+  - first:
+      213: -2996218277197803971
+    second: free_walls&doors_TileSheet_5
+  - first:
+      213: 7469840591672168786
+    second: free_walls&doors_TileSheet_6
+  - first:
+      213: -4371574456127442118
+    second: free_walls&doors_TileSheet_7
+  - first:
+      213: 3224261487476409247
+    second: free_walls&doors_TileSheet_8
+  - first:
+      213: -4142028647476491059
+    second: free_walls&doors_TileSheet_9
+  - first:
+      213: 5727018568547362735
+    second: free_walls&doors_TileSheet_10
+  - first:
+      213: -2585003881217663155
+    second: free_walls&doors_TileSheet_11
+  - first:
+      213: -5557182863379519616
+    second: free_walls&doors_TileSheet_12
+  - first:
+      213: 6777733966909253797
+    second: free_walls&doors_TileSheet_13
+  - first:
+      213: 4970500282551386376
+    second: free_walls&doors_TileSheet_14
+  - first:
+      213: -1125023583410364002
+    second: free_walls&doors_TileSheet_15
+  - first:
+      213: 1231060710960946335
+    second: free_walls&doors_TileSheet_16
+  - first:
+      213: -1277040052990571975
+    second: free_walls&doors_TileSheet_17
+  - first:
+      213: 8327460994735996687
+    second: free_walls&doors_TileSheet_18
+  - first:
+      213: 5941296191973612605
+    second: free_walls&doors_TileSheet_19
+  - first:
+      213: 8442204120146447566
+    second: free_walls&doors_TileSheet_20
+  - first:
+      213: -362082937112158116
+    second: free_walls&doors_TileSheet_21
+  - first:
+      213: -8771063353018531582
+    second: free_walls&doors_TileSheet_22
+  - first:
+      213: -7833250502634175322
+    second: free_walls&doors_TileSheet_23
+  - first:
+      213: 4018771830521360473
+    second: free_walls&doors_TileSheet_24
+  - first:
+      213: -7198240161502215043
+    second: free_walls&doors_TileSheet_25
+  - first:
+      213: 6357285556077512365
+    second: free_walls&doors_TileSheet_26
+  - first:
+      213: -5112568429605896098
+    second: free_walls&doors_TileSheet_27
+  - first:
+      213: 3533374809380486830
+    second: free_walls&doors_TileSheet_28
+  - first:
+      213: -5755345633155060267
+    second: free_walls&doors_TileSheet_29
+  - first:
+      213: 601557600639089073
+    second: free_walls&doors_TileSheet_30
+  - first:
+      213: 4005050904700565577
+    second: free_walls&doors_TileSheet_31
+  - first:
+      213: -5730573944462590681
+    second: free_walls&doors_TileSheet_32
+  - first:
+      213: -2038993420202362713
+    second: free_walls&doors_TileSheet_33
+  - first:
+      213: -6813440998032764227
+    second: free_walls&doors_TileSheet_34
+  - first:
+      213: -9081629975821887936
+    second: free_walls&doors_TileSheet_35
+  - first:
+      213: -6846708656270514861
+    second: free_walls&doors_TileSheet_36
+  - first:
+      213: 4491227817505310998
+    second: free_walls&doors_TileSheet_37
+  - first:
+      213: -7039716150144871795
+    second: free_walls&doors_TileSheet_38
+  - first:
+      213: 4458297115516218973
+    second: free_walls&doors_TileSheet_39
+  - first:
+      213: -6231367015309250955
+    second: free_walls&doors_TileSheet_40
+  - first:
+      213: -6309307071652845510
+    second: free_walls&doors_TileSheet_41
+  - first:
+      213: 285000589085060617
+    second: free_walls&doors_TileSheet_42
+  - first:
+      213: -1778040132441126034
+    second: free_walls&doors_TileSheet_43
+  - first:
+      213: 4780369225063676797
+    second: free_walls&doors_TileSheet_44
+  - first:
+      213: -5033046985224521018
+    second: free_walls&doors_TileSheet_45
+  - first:
+      213: 5501134038162446192
+    second: free_walls&doors_TileSheet_46
+  - first:
+      213: 3192350081973814207
+    second: free_walls&doors_TileSheet_47
+  - first:
+      213: 7586821388730292633
+    second: free_walls&doors_TileSheet_48
+  - first:
+      213: -264718851906476964
+    second: free_walls&doors_TileSheet_49
+  - first:
+      213: 3820825854175498645
+    second: free_walls&doors_TileSheet_50
+  - first:
+      213: -1460916172657812221
+    second: free_walls&doors_TileSheet_51
+  - first:
+      213: -1021629488556093051
+    second: free_walls&doors_TileSheet_52
+  - first:
+      213: 1908023718847855333
+    second: free_walls&doors_TileSheet_53
+  - first:
+      213: 6680349332901203335
+    second: free_walls&doors_TileSheet_54
+  - first:
+      213: 1193020255847999430
+    second: free_walls&doors_TileSheet_55
+  - first:
+      213: 1069238188871616316
+    second: free_walls&doors_TileSheet_56
+  - first:
+      213: 729360874520193289
+    second: free_walls&doors_TileSheet_57
+  - first:
+      213: 1791485668827495179
+    second: free_walls&doors_TileSheet_58
+  - first:
+      213: -5307062386838195247
+    second: free_walls&doors_TileSheet_59
+  - first:
+      213: -4114110642438885427
+    second: free_walls&doors_TileSheet_60
+  - first:
+      213: 5378177177872098457
+    second: free_walls&doors_TileSheet_61
+  - first:
+      213: 9133075571254162909
+    second: free_walls&doors_TileSheet_62
+  - first:
+      213: -963042439655058999
+    second: free_walls&doors_TileSheet_63
+  - first:
+      213: 5293462249868265382
+    second: free_walls&doors_TileSheet_64
+  - first:
+      213: -2435980361713337789
+    second: free_walls&doors_TileSheet_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 357
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060b9c9a0dded7320800000000000000
+      internalID: 2557461643873857632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 357
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be687b59d15b0f0b0800000000000000
+      internalID: -5696854389953165589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 357
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbf54dd72340f930800000000000000
+      internalID: 4174910693067586518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 357
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4af92ad4e0f88db0800000000000000
+      internalID: -4789313338005128630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 357
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c65c2c3e0bf508d0800000000000000
+      internalID: -2880620348075911487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 357
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e871ef95b4b66d0800000000000000
+      internalID: -2996218277197803971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 357
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251d963f0743aa760800000000000000
+      internalID: 7469840591672168786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 357
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a333a59913c0553c0800000000000000
+      internalID: -4371574456127442118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 357
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9301007db0eebc20800000000000000
+      internalID: 3224261487476409247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 357
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc0ca9f3ee8486c0800000000000000
+      internalID: -4142028647476491059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 357
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7e4588b057a7f40800000000000000
+      internalID: 5727018568547362735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 373
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fd30d7aa8302cd0800000000000000
+      internalID: -2585003881217663155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 357
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087206401abe0e2b0800000000000000
+      internalID: -5557182863379519616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 357
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8a9b702295f0e50800000000000000
+      internalID: 6777733966909253797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_14
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 357
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80144711ca3caf440800000000000000
+      internalID: 4970500282551386376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 272
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9163e2f20d1360f0800000000000000
+      internalID: -1125023583410364002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 304
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c54c5b13b951110800000000000000
+      internalID: 1231060710960946335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 304
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a0d8d76da074ee0800000000000000
+      internalID: -1277040052990571975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 304
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ff82867a5119370800000000000000
+      internalID: 8327460994735996687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 304
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cd7f38869b37250800000000000000
+      internalID: 5941296191973612605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 246
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc0ba62bebb82570800000000000000
+      internalID: 8442204120146447566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 246
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c502332bc7f99faf0800000000000000
+      internalID: -362082937112158116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 246
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20142ecf95ce64680800000000000000
+      internalID: -8771063353018531582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 241
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a407d19b24ba4390800000000000000
+      internalID: -7833250502634175322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 246
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950729fffab85c730800000000000000
+      internalID: 4018771830521360473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 246
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74c5b506b6ba1c90800000000000000
+      internalID: -7198240161502215043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 246
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6c8b9e78d993850800000000000000
+      internalID: 6357285556077512365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 246
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50c67fc9128c09b0800000000000000
+      internalID: -5112568429605896098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_28
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 246
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaeff632ba1190130800000000000000
+      internalID: 3533374809380486830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 246
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd6238c3a7e020b0800000000000000
+      internalID: -5755345633155060267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_30
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 262
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9770a5379295800800000000000000
+      internalID: 601557600639089073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_31
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 246
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948b802049cc49730800000000000000
+      internalID: 4005050904700565577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_32
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 246
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72db2310c59e870b0800000000000000
+      internalID: -5730573944462590681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_33
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 246
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8ba71994a04b3e0800000000000000
+      internalID: -2038993420202362713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_34
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 144
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db29c2ee28bc171a0800000000000000
+      internalID: -6813440998032764227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_35
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 176
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046d89d47a197f180800000000000000
+      internalID: -9081629975821887936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_36
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 176
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3556766a0ca9bf0a0800000000000000
+      internalID: -6846708656270514861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_37
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 176
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619c1cb87eb045e30800000000000000
+      internalID: 4491227817505310998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_38
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 176
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82d80f9577ed4e90800000000000000
+      internalID: -7039716150144871795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_39
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 117
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e2e710b9d0fdd30800000000000000
+      internalID: 4458297115516218973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 117
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ee76bf6bcb589a0800000000000000
+      internalID: -6231367015309250955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 117
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38a54f75a6d078a0800000000000000
+      internalID: -6309307071652845510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_42
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 117
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e2139968684f300800000000000000
+      internalID: 285000589085060617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 117
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b45758be12357e0800000000000000
+      internalID: -1778040132441126034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_44
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 117
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b31239b78475240800000000000000
+      internalID: 4780369225063676797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_45
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 133
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca77d3ee66072ab0800000000000000
+      internalID: -5033046985224521018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_46
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 117
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0779b7ee244f75c40800000000000000
+      internalID: 5501134038162446192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_47
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 117
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb30dba5c718d4c20800000000000000
+      internalID: 3192350081973814207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_48
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 117
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999da993bddc94960800000000000000
+      internalID: 7586821388730292633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_49
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 48
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54e3c25b97835cf0800000000000000
+      internalID: -264718851906476964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 48
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59152caeedc460530800000000000000
+      internalID: 3820825854175498645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_51
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 48
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d9b123b78c9bbe0800000000000000
+      internalID: -1460916172657812221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_52
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 48
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581dc8a946172d1f0800000000000000
+      internalID: -1021629488556093051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_53
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 9
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea32f09679aa7a10800000000000000
+      internalID: 1908023718847855333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_54
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 9
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d0813035e55bc50800000000000000
+      internalID: 6680349332901203335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_55
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 25
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c76aaf0a957e8010800000000000000
+      internalID: 1193020255847999430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_56
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 25
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3789fbb772b6de00800000000000000
+      internalID: 1069238188871616316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_57
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 64
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90928ded9d53f1a00800000000000000
+      internalID: 729360874520193289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_58
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 7
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b7aae59b2acd810800000000000000
+      internalID: 1791485668827495179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_59
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 7
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d33caf80e68956b0800000000000000
+      internalID: -5307062386838195247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_60
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 7
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcfa6ce0b2eb7e6c0800000000000000
+      internalID: -4114110642438885427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_61
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 10
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994ed2206af13aa40800000000000000
+      internalID: 5378177177872098457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_62
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5f66bc7d33fbe70800000000000000
+      internalID: 9133075571254162909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_63
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c11cb8e00692a2f0800000000000000
+      internalID: -963042439655058999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_64
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a7865bced7267940800000000000000
+      internalID: 5293462249868265382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_walls&doors_TileSheet_65
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 16
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34abf3474c8a13ed0800000000000000
+      internalID: -2435980361713337789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      free_walls&doors_TileSheet_0: 2557461643873857632
+      free_walls&doors_TileSheet_1: -5696854389953165589
+      free_walls&doors_TileSheet_10: 5727018568547362735
+      free_walls&doors_TileSheet_11: -2585003881217663155
+      free_walls&doors_TileSheet_12: -5557182863379519616
+      free_walls&doors_TileSheet_13: 6777733966909253797
+      free_walls&doors_TileSheet_14: 4970500282551386376
+      free_walls&doors_TileSheet_15: -1125023583410364002
+      free_walls&doors_TileSheet_16: 1231060710960946335
+      free_walls&doors_TileSheet_17: -1277040052990571975
+      free_walls&doors_TileSheet_18: 8327460994735996687
+      free_walls&doors_TileSheet_19: 5941296191973612605
+      free_walls&doors_TileSheet_2: 4174910693067586518
+      free_walls&doors_TileSheet_20: 8442204120146447566
+      free_walls&doors_TileSheet_21: -362082937112158116
+      free_walls&doors_TileSheet_22: -8771063353018531582
+      free_walls&doors_TileSheet_23: -7833250502634175322
+      free_walls&doors_TileSheet_24: 4018771830521360473
+      free_walls&doors_TileSheet_25: -7198240161502215043
+      free_walls&doors_TileSheet_26: 6357285556077512365
+      free_walls&doors_TileSheet_27: -5112568429605896098
+      free_walls&doors_TileSheet_28: 3533374809380486830
+      free_walls&doors_TileSheet_29: -5755345633155060267
+      free_walls&doors_TileSheet_3: -4789313338005128630
+      free_walls&doors_TileSheet_30: 601557600639089073
+      free_walls&doors_TileSheet_31: 4005050904700565577
+      free_walls&doors_TileSheet_32: -5730573944462590681
+      free_walls&doors_TileSheet_33: -2038993420202362713
+      free_walls&doors_TileSheet_34: -6813440998032764227
+      free_walls&doors_TileSheet_35: -9081629975821887936
+      free_walls&doors_TileSheet_36: -6846708656270514861
+      free_walls&doors_TileSheet_37: 4491227817505310998
+      free_walls&doors_TileSheet_38: -7039716150144871795
+      free_walls&doors_TileSheet_39: 4458297115516218973
+      free_walls&doors_TileSheet_4: -2880620348075911487
+      free_walls&doors_TileSheet_40: -6231367015309250955
+      free_walls&doors_TileSheet_41: -6309307071652845510
+      free_walls&doors_TileSheet_42: 285000589085060617
+      free_walls&doors_TileSheet_43: -1778040132441126034
+      free_walls&doors_TileSheet_44: 4780369225063676797
+      free_walls&doors_TileSheet_45: -5033046985224521018
+      free_walls&doors_TileSheet_46: 5501134038162446192
+      free_walls&doors_TileSheet_47: 3192350081973814207
+      free_walls&doors_TileSheet_48: 7586821388730292633
+      free_walls&doors_TileSheet_49: -264718851906476964
+      free_walls&doors_TileSheet_5: -2996218277197803971
+      free_walls&doors_TileSheet_50: 3820825854175498645
+      free_walls&doors_TileSheet_51: -1460916172657812221
+      free_walls&doors_TileSheet_52: -1021629488556093051
+      free_walls&doors_TileSheet_53: 1908023718847855333
+      free_walls&doors_TileSheet_54: 6680349332901203335
+      free_walls&doors_TileSheet_55: 1193020255847999430
+      free_walls&doors_TileSheet_56: 1069238188871616316
+      free_walls&doors_TileSheet_57: 729360874520193289
+      free_walls&doors_TileSheet_58: 1791485668827495179
+      free_walls&doors_TileSheet_59: -5307062386838195247
+      free_walls&doors_TileSheet_6: 7469840591672168786
+      free_walls&doors_TileSheet_60: -4114110642438885427
+      free_walls&doors_TileSheet_61: 5378177177872098457
+      free_walls&doors_TileSheet_62: 9133075571254162909
+      free_walls&doors_TileSheet_63: -963042439655058999
+      free_walls&doors_TileSheet_64: 5293462249868265382
+      free_walls&doors_TileSheet_65: -2435980361713337789
+      free_walls&doors_TileSheet_7: -4371574456127442118
+      free_walls&doors_TileSheet_8: 3224261487476409247
+      free_walls&doors_TileSheet_9: -4142028647476491059
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

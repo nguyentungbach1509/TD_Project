@@ -30,13 +30,13 @@ namespace Game.Scripts.BuildingLogic
         private bool isInit;
 
         private GridManager gridManager => GridManager.Instance;
-        private SurvivalMode survivalMode => SurvivalMode.Instance;
         private BuildManager buildManager => BuildManager.Instance;
         private SpawnManager spawner => SpawnManager.Instance;
 
         public BuildingHUD Hud => hud;
 
         public Action<float> OnProgressChange;
+        
 
         public BuildingStats Stats => stats;
         public BuildingModel Model => model;
@@ -83,8 +83,8 @@ namespace Game.Scripts.BuildingLogic
 
         public override void Interact(Vector3Int pos)
         {
-            if (!positions.Contains(pos) || inProgressing) return;
-            Upgrade();
+            if (!positions.Contains(pos)) return;
+            
         }
 
         public bool IsAvailableTile(Vector3Int pos)
@@ -216,6 +216,11 @@ namespace Game.Scripts.BuildingLogic
             
         }
         #endregion
+
+        public void OnFixBuilding(float addHp)
+        {
+            stats.BuffHealth(addHp);
+        }
     }
 
 }

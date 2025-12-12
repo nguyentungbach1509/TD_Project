@@ -15,6 +15,9 @@ namespace SubScripts.Constants
         Spell,
         Build,
         Chop,
+        Mining,
+        Dig,
+
     }
 
     public static class AnimationConstants

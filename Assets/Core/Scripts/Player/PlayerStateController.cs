@@ -2,9 +2,7 @@ using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
 using Game.Scripts.TileController.Mechanic;
-using NUnit.Framework;
 using SubScripts.Constants;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
@@ -21,8 +19,6 @@ namespace Game.Scripts.Player.StateMachine
         {
             input.OnMouseRightClick -= SetTarget;
             input.OnMouseRightClick += SetTarget;
-            input.OnMouseLeftClick -= SetTarget;
-            input.OnMouseLeftClick += SetTarget;
             
             player = character as PlayerController;
             currentState = new IdleState(player);
@@ -65,6 +61,12 @@ namespace Game.Scripts.Player.StateMachine
                     break;
                 case AnimationKey.Chop:
                     state = new ChopState(player);      
+                    break;
+                case AnimationKey.Mining:
+                    state = new MiningState(player);
+                    break;
+                case AnimationKey.Dig:
+                    state = new DigState(player);
                     break;
                 case AnimationKey.Die:
                     state = new DieState(player);

@@ -9,11 +9,13 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] float moveSpeed;
         [SerializeField] float damage;
         [SerializeField] float armor;
+        [SerializeField] float fixingDamage;
 
         public float MaxHp => maxHp;    
         public float MoveSpeed => moveSpeed;
         public float Damage => damage;
         public float Armor => armor;
+        public float FixingDamage => fixingDamage;
     }
 }
 

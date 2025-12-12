@@ -1,0 +1,5915 @@
+fileFormatVersion: 2
+guid: e54d79f9a5e80504ab5d0d0c527615c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6928950319076758279
+    second: free_full_TileSheet_0
+  - first:
+      213: 5771132717601715080
+    second: free_full_TileSheet_1
+  - first:
+      213: 3884060497990999774
+    second: free_full_TileSheet_2
+  - first:
+      213: -6881205482267000571
+    second: free_full_TileSheet_3
+  - first:
+      213: 363427101489984736
+    second: free_full_TileSheet_4
+  - first:
+      213: -7550198636503285300
+    second: free_full_TileSheet_5
+  - first:
+      213: 8524063172507931778
+    second: free_full_TileSheet_6
+  - first:
+      213: 6527148272559538063
+    second: free_full_TileSheet_7
+  - first:
+      213: -6801746057692791566
+    second: free_full_TileSheet_8
+  - first:
+      213: 5425983755397862520
+    second: free_full_TileSheet_9
+  - first:
+      213: 5003400313119730026
+    second: free_full_TileSheet_10
+  - first:
+      213: -6902298650619313773
+    second: free_full_TileSheet_11
+  - first:
+      213: -1057056194883910403
+    second: free_full_TileSheet_12
+  - first:
+      213: -6429891216438688216
+    second: free_full_TileSheet_13
+  - first:
+      213: 2959405466580530666
+    second: free_full_TileSheet_14
+  - first:
+      213: -8709640448469240606
+    second: free_full_TileSheet_15
+  - first:
+      213: -8194354591360265925
+    second: free_full_TileSheet_16
+  - first:
+      213: 263802756287677282
+    second: free_full_TileSheet_17
+  - first:
+      213: -9137044645645864891
+    second: free_full_TileSheet_18
+  - first:
+      213: -7256771561795858940
+    second: free_full_TileSheet_19
+  - first:
+      213: 8541014939386642816
+    second: free_full_TileSheet_20
+  - first:
+      213: -4852962700587074502
+    second: free_full_TileSheet_21
+  - first:
+      213: 1055874708527629156
+    second: free_full_TileSheet_22
+  - first:
+      213: 7417459802884103304
+    second: free_full_TileSheet_23
+  - first:
+      213: -7084497467523267634
+    second: free_full_TileSheet_24
+  - first:
+      213: 1189199373004093891
+    second: free_full_TileSheet_25
+  - first:
+      213: 5692962582433809332
+    second: free_full_TileSheet_26
+  - first:
+      213: 405061870001952505
+    second: free_full_TileSheet_27
+  - first:
+      213: -1286107767297102916
+    second: free_full_TileSheet_28
+  - first:
+      213: 4593602664214244610
+    second: free_full_TileSheet_29
+  - first:
+      213: 1567391328829033638
+    second: free_full_TileSheet_30
+  - first:
+      213: 1472280531294756818
+    second: free_full_TileSheet_31
+  - first:
+      213: 2164949787112089275
+    second: free_full_TileSheet_32
+  - first:
+      213: 3486634868377051835
+    second: free_full_TileSheet_33
+  - first:
+      213: -7588667361293400386
+    second: free_full_TileSheet_34
+  - first:
+      213: -6384193955709777663
+    second: free_full_TileSheet_35
+  - first:
+      213: -8318094131685666022
+    second: free_full_TileSheet_36
+  - first:
+      213: -8719276398262115880
+    second: free_full_TileSheet_37
+  - first:
+      213: 2620376550765261211
+    second: free_full_TileSheet_38
+  - first:
+      213: -2256064277505883222
+    second: free_full_TileSheet_39
+  - first:
+      213: -7550811213063523561
+    second: free_full_TileSheet_40
+  - first:
+      213: 4631712246294542832
+    second: free_full_TileSheet_41
+  - first:
+      213: -7510334058913039831
+    second: free_full_TileSheet_42
+  - first:
+      213: 1872491550627253108
+    second: free_full_TileSheet_43
+  - first:
+      213: -8507902083143203171
+    second: free_full_TileSheet_44
+  - first:
+      213: 9197172490426810162
+    second: free_full_TileSheet_45
+  - first:
+      213: 4819520649800426673
+    second: free_full_TileSheet_46
+  - first:
+      213: -8271605360299832202
+    second: free_full_TileSheet_47
+  - first:
+      213: -973747370153155151
+    second: free_full_TileSheet_48
+  - first:
+      213: 6339393964639061746
+    second: free_full_TileSheet_49
+  - first:
+      213: -4885925615543367044
+    second: free_full_TileSheet_50
+  - first:
+      213: -7995891281344562181
+    second: free_full_TileSheet_51
+  - first:
+      213: 3872285562089181498
+    second: free_full_TileSheet_52
+  - first:
+      213: -1302017954869788761
+    second: free_full_TileSheet_53
+  - first:
+      213: 2227150964672304041
+    second: free_full_TileSheet_54
+  - first:
+      213: -8562166852454415566
+    second: free_full_TileSheet_55
+  - first:
+      213: 3441103632510215721
+    second: free_full_TileSheet_56
+  - first:
+      213: -2553271191429299688
+    second: free_full_TileSheet_57
+  - first:
+      213: 3485886832717858690
+    second: free_full_TileSheet_58
+  - first:
+      213: -8480831224643115353
+    second: free_full_TileSheet_59
+  - first:
+      213: -2891092156962535179
+    second: free_full_TileSheet_60
+  - first:
+      213: 117966186299159600
+    second: free_full_TileSheet_61
+  - first:
+      213: 8200834475604931403
+    second: free_full_TileSheet_62
+  - first:
+      213: 114974582970509970
+    second: free_full_TileSheet_63
+  - first:
+      213: -8227525506090425699
+    second: free_full_TileSheet_64
+  - first:
+      213: -6227081925222979707
+    second: free_full_TileSheet_65
+  - first:
+      213: -2483669607508999796
+    second: free_full_TileSheet_66
+  - first:
+      213: -3865654181301972929
+    second: free_full_TileSheet_67
+  - first:
+      213: -8958461334563096445
+    second: free_full_TileSheet_68
+  - first:
+      213: -8511152234202537040
+    second: free_full_TileSheet_69
+  - first:
+      213: 7021558820545396358
+    second: free_full_TileSheet_70
+  - first:
+      213: -2602040093169097350
+    second: free_full_TileSheet_71
+  - first:
+      213: -1488241744464111004
+    second: free_full_TileSheet_72
+  - first:
+      213: 1839187922323656430
+    second: free_full_TileSheet_73
+  - first:
+      213: 5997558657151632082
+    second: free_full_TileSheet_74
+  - first:
+      213: -4665388351674685715
+    second: free_full_TileSheet_75
+  - first:
+      213: 7879024961001076277
+    second: free_full_TileSheet_76
+  - first:
+      213: -5028481636693784540
+    second: free_full_TileSheet_77
+  - first:
+      213: -801526857484800614
+    second: free_full_TileSheet_78
+  - first:
+      213: -2787561778623502586
+    second: free_full_TileSheet_79
+  - first:
+      213: 803563925662911932
+    second: free_full_TileSheet_80
+  - first:
+      213: 650050607383645196
+    second: free_full_TileSheet_81
+  - first:
+      213: 9018166225701835822
+    second: free_full_TileSheet_82
+  - first:
+      213: 433989568457275244
+    second: free_full_TileSheet_83
+  - first:
+      213: -8047081960219607576
+    second: free_full_TileSheet_84
+  - first:
+      213: 4492201592426212561
+    second: free_full_TileSheet_85
+  - first:
+      213: 865138184904296006
+    second: free_full_TileSheet_86
+  - first:
+      213: -4738924512675632450
+    second: free_full_TileSheet_87
+  - first:
+      213: -7680002999733370836
+    second: free_full_TileSheet_88
+  - first:
+      213: 4313986939021679526
+    second: free_full_TileSheet_89
+  - first:
+      213: 3967896752769851396
+    second: free_full_TileSheet_90
+  - first:
+      213: -647605068887680470
+    second: free_full_TileSheet_91
+  - first:
+      213: 7701374054140554905
+    second: free_full_TileSheet_92
+  - first:
+      213: -7989243272753121129
+    second: free_full_TileSheet_93
+  - first:
+      213: 4661745201958410785
+    second: free_full_TileSheet_94
+  - first:
+      213: -3369055326558098335
+    second: free_full_TileSheet_95
+  - first:
+      213: -9017773710496228164
+    second: free_full_TileSheet_96
+  - first:
+      213: -2169145387074379829
+    second: free_full_TileSheet_97
+  - first:
+      213: -3038834274529219610
+    second: free_full_TileSheet_98
+  - first:
+      213: 9200531295699647282
+    second: free_full_TileSheet_99
+  - first:
+      213: 362473673347236083
+    second: free_full_TileSheet_100
+  - first:
+      213: -2523113371731769318
+    second: free_full_TileSheet_101
+  - first:
+      213: -7496815085874905726
+    second: free_full_TileSheet_102
+  - first:
+      213: 1279325754031797231
+    second: free_full_TileSheet_103
+  - first:
+      213: -5347105096792534428
+    second: free_full_TileSheet_104
+  - first:
+      213: -8335331577438193315
+    second: free_full_TileSheet_105
+  - first:
+      213: 7901018824399616608
+    second: free_full_TileSheet_106
+  - first:
+      213: -7726022063054143268
+    second: free_full_TileSheet_107
+  - first:
+      213: 8678700245617937475
+    second: free_full_TileSheet_108
+  - first:
+      213: 4112883234355217349
+    second: free_full_TileSheet_109
+  - first:
+      213: 1976965475898838116
+    second: free_full_TileSheet_110
+  - first:
+      213: 5526835389116781022
+    second: free_full_TileSheet_111
+  - first:
+      213: 2719588604702647795
+    second: free_full_TileSheet_112
+  - first:
+      213: 2295036609266874183
+    second: free_full_TileSheet_113
+  - first:
+      213: -7160136202153873475
+    second: free_full_TileSheet_114
+  - first:
+      213: -6410808457333653251
+    second: free_full_TileSheet_115
+  - first:
+      213: -2104866008059468904
+    second: free_full_TileSheet_116
+  - first:
+      213: 1398847321552483790
+    second: free_full_TileSheet_117
+  - first:
+      213: -4924199919659385380
+    second: free_full_TileSheet_118
+  - first:
+      213: -2383727088985671482
+    second: free_full_TileSheet_119
+  - first:
+      213: 6163056713891286159
+    second: free_full_TileSheet_120
+  - first:
+      213: -4165605842334557749
+    second: free_full_TileSheet_121
+  - first:
+      213: 3308927701190797427
+    second: free_full_TileSheet_122
+  - first:
+      213: -7130733057193840948
+    second: free_full_TileSheet_123
+  - first:
+      213: -2251209054770711181
+    second: free_full_TileSheet_124
+  - first:
+      213: 6112655215324067748
+    second: free_full_TileSheet_125
+  - first:
+      213: 3059095606814080075
+    second: free_full_TileSheet_126
+  - first:
+      213: -2943451406959737216
+    second: free_full_TileSheet_127
+  - first:
+      213: -8900661161515935560
+    second: free_full_TileSheet_128
+  - first:
+      213: 7848560350913387031
+    second: free_full_TileSheet_129
+  - first:
+      213: 5436699976511087314
+    second: free_full_TileSheet_130
+  - first:
+      213: -1526545144248906340
+    second: free_full_TileSheet_131
+  - first:
+      213: 850364961294558977
+    second: free_full_TileSheet_132
+  - first:
+      213: -3285985063643324907
+    second: free_full_TileSheet_133
+  - first:
+      213: -6509909821222071715
+    second: free_full_TileSheet_134
+  - first:
+      213: 6336392515174954836
+    second: free_full_TileSheet_135
+  - first:
+      213: 4426011226054911951
+    second: free_full_TileSheet_136
+  - first:
+      213: -1020479555953509782
+    second: free_full_TileSheet_137
+  - first:
+      213: 8402600164021202093
+    second: free_full_TileSheet_138
+  - first:
+      213: -26761590895110084
+    second: free_full_TileSheet_139
+  - first:
+      213: -7460485988725254255
+    second: free_full_TileSheet_140
+  - first:
+      213: -4624900921297751494
+    second: free_full_TileSheet_141
+  - first:
+      213: -6032093081234461610
+    second: free_full_TileSheet_142
+  - first:
+      213: 4651817386978695287
+    second: free_full_TileSheet_143
+  - first:
+      213: -6718475192595458798
+    second: free_full_TileSheet_144
+  - first:
+      213: 1487642811656096160
+    second: free_full_TileSheet_145
+  - first:
+      213: 1628211218685501430
+    second: free_full_TileSheet_146
+  - first:
+      213: -3319418259735014933
+    second: free_full_TileSheet_147
+  - first:
+      213: 1407067884386597004
+    second: free_full_TileSheet_148
+  - first:
+      213: 2185102611083035501
+    second: free_full_TileSheet_149
+  - first:
+      213: -2695868054395440552
+    second: free_full_TileSheet_150
+  - first:
+      213: 6700503202955920371
+    second: free_full_TileSheet_151
+  - first:
+      213: -8128512527698823371
+    second: free_full_TileSheet_152
+  - first:
+      213: 6159218402815459009
+    second: free_full_TileSheet_153
+  - first:
+      213: 3472845112218857434
+    second: free_full_TileSheet_154
+  - first:
+      213: 3735556590120997256
+    second: free_full_TileSheet_155
+  - first:
+      213: 4890125193712521915
+    second: free_full_TileSheet_156
+  - first:
+      213: -7490997017314044583
+    second: free_full_TileSheet_157
+  - first:
+      213: 829725358913912817
+    second: free_full_TileSheet_158
+  - first:
+      213: 2730732684989135949
+    second: free_full_TileSheet_159
+  - first:
+      213: -1246228122528288860
+    second: free_full_TileSheet_160
+  - first:
+      213: 2447081998923348842
+    second: free_full_TileSheet_161
+  - first:
+      213: -5046148081985997953
+    second: free_full_TileSheet_162
+  - first:
+      213: 7801779450357779773
+    second: free_full_TileSheet_163
+  - first:
+      213: 3086935414045912778
+    second: free_full_TileSheet_164
+  - first:
+      213: 1513508511335007786
+    second: free_full_TileSheet_165
+  - first:
+      213: 8126808241122429183
+    second: free_full_TileSheet_166
+  - first:
+      213: -3939048089556765293
+    second: free_full_TileSheet_167
+  - first:
+      213: 4132961722568002438
+    second: free_full_TileSheet_168
+  - first:
+      213: -4671087585973394634
+    second: free_full_TileSheet_169
+  - first:
+      213: -6026470268774023360
+    second: free_full_TileSheet_170
+  - first:
+      213: -3394107114929123001
+    second: free_full_TileSheet_171
+  - first:
+      213: 1622052245118037816
+    second: free_full_TileSheet_172
+  - first:
+      213: 9191387826690396634
+    second: free_full_TileSheet_173
+  - first:
+      213: -6091624017647176808
+    second: free_full_TileSheet_174
+  - first:
+      213: 8959682624145857107
+    second: free_full_TileSheet_175
+  - first:
+      213: 5015427683989068260
+    second: free_full_TileSheet_176
+  - first:
+      213: -4833292246686455853
+    second: free_full_TileSheet_177
+  - first:
+      213: 1024862098273184818
+    second: free_full_TileSheet_178
+  - first:
+      213: -8166850821210458032
+    second: free_full_TileSheet_179
+  - first:
+      213: 7211055259683099465
+    second: free_full_TileSheet_180
+  - first:
+      213: -4983114465671261200
+    second: free_full_TileSheet_181
+  - first:
+      213: -110766199935775122
+    second: free_full_TileSheet_182
+  - first:
+      213: -4490009055658188859
+    second: free_full_TileSheet_183
+  - first:
+      213: -9191531631207053282
+    second: free_full_TileSheet_184
+  - first:
+      213: -3792949628151027830
+    second: free_full_TileSheet_185
+  - first:
+      213: 2332507825506713557
+    second: free_full_TileSheet_186
+  - first:
+      213: 6184232682091480833
+    second: free_full_TileSheet_187
+  - first:
+      213: 5628193726457831875
+    second: free_full_TileSheet_188
+  - first:
+      213: 5791413661213859131
+    second: free_full_TileSheet_189
+  - first:
+      213: 7339172366804855845
+    second: free_full_TileSheet_190
+  - first:
+      213: -7988185542554416189
+    second: free_full_TileSheet_191
+  - first:
+      213: 1530082702844612473
+    second: free_full_TileSheet_192
+  - first:
+      213: 5731465502882621493
+    second: free_full_TileSheet_193
+  - first:
+      213: 2271664327009569075
+    second: free_full_TileSheet_194
+  - first:
+      213: -9132377054619839009
+    second: free_full_TileSheet_195
+  - first:
+      213: -4228143840678109054
+    second: free_full_TileSheet_196
+  - first:
+      213: -2603858503018520456
+    second: free_full_TileSheet_197
+  - first:
+      213: -6665964439561004660
+    second: free_full_TileSheet_198
+  - first:
+      213: -6645113817818852125
+    second: free_full_TileSheet_199
+  - first:
+      213: -7774605236107704933
+    second: free_full_TileSheet_200
+  - first:
+      213: 4413624794510818209
+    second: free_full_TileSheet_201
+  - first:
+      213: -8057883618763042954
+    second: free_full_TileSheet_202
+  - first:
+      213: 3937459234846243317
+    second: free_full_TileSheet_203
+  - first:
+      213: 102218875442558793
+    second: free_full_TileSheet_204
+  - first:
+      213: -8957728280175400711
+    second: free_full_TileSheet_205
+  - first:
+      213: 4196984335953190485
+    second: free_full_TileSheet_206
+  - first:
+      213: 9049806251085834335
+    second: free_full_TileSheet_207
+  - first:
+      213: 8980038384028998163
+    second: free_full_TileSheet_208
+  - first:
+      213: -3823428806254808219
+    second: free_full_TileSheet_209
+  - first:
+      213: 2087931888946583489
+    second: free_full_TileSheet_210
+  - first:
+      213: 5807006374763743645
+    second: free_full_TileSheet_211
+  - first:
+      213: 2790711858879902128
+    second: free_full_TileSheet_212
+  - first:
+      213: 6653815690619597917
+    second: free_full_TileSheet_213
+  - first:
+      213: -5638461233341147076
+    second: free_full_TileSheet_214
+  - first:
+      213: 3011931831381051249
+    second: free_full_TileSheet_215
+  - first:
+      213: -5832700765533392629
+    second: free_full_TileSheet_216
+  - first:
+      213: -9099562874811621662
+    second: free_full_TileSheet_217
+  - first:
+      213: -8721605166074115568
+    second: free_full_TileSheet_218
+  - first:
+      213: 8763126687302085432
+    second: free_full_TileSheet_219
+  - first:
+      213: 7749549184722303738
+    second: free_full_TileSheet_220
+  - first:
+      213: -5270715495798743060
+    second: free_full_TileSheet_221
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: free_full_TileSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 852
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fca91d556c67df90800000000000000
+      internalID: -6928950319076758279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 852
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883f84041ae271050800000000000000
+      internalID: 5771132717601715080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 852
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede51ecb174f6e530800000000000000
+      internalID: 3884060497990999774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 852
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5014103721c0180a0800000000000000
+      internalID: -6881205482267000571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 852
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e47f06f5072b0500800000000000000
+      internalID: 363427101489984736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 852
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1459fb75e483790800000000000000
+      internalID: -7550198636503285300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 852
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28413500b4e8b4670800000000000000
+      internalID: 8524063172507931778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 852
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f373685c6159a50800000000000000
+      internalID: 6527148272559538063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_8
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 852
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcbeca6ff75b91a0800000000000000
+      internalID: -6801746057692791566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 852
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87497893a77fc4b40800000000000000
+      internalID: 5425983755397862520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 852
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69649c5316af6540800000000000000
+      internalID: 5003400313119730026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 868
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3918d2c72fb1630a0800000000000000
+      internalID: -6902298650619313773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_12
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 852
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df48154cdf49451f0800000000000000
+      internalID: -1057056194883910403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 852
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82684c3710074c6a0800000000000000
+      internalID: -6429891216438688216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_14
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 852
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5b1ed979be11920800000000000000
+      internalID: 2959405466580530666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 767
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4fd936824212780800000000000000
+      internalID: -8709640448469240606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_16
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 799
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31516a2aedc74e80800000000000000
+      internalID: -8194354591360265925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_17
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 799
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263cb4b853739a300800000000000000
+      internalID: 263802756287677282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_18
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 799
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540b46f0e42b23180800000000000000
+      internalID: -9137044645645864891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 799
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e400b66b4ca4b90800000000000000
+      internalID: -7256771561795858940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 741
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 081027bc5d7c78670800000000000000
+      internalID: 8541014939386642816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_21
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 741
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c794bc220d6acb0800000000000000
+      internalID: -4852962700587074502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 741
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463cb11047837ae00800000000000000
+      internalID: 1055874708527629156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 736
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c55ae246c10f660800000000000000
+      internalID: 7417459802884103304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_24
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 741
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec30f1ca61fcead90800000000000000
+      internalID: -7084497467523267634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 741
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9b6037782e08010800000000000000
+      internalID: 1189199373004093891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_26
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 741
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3ce8d5e47710f40800000000000000
+      internalID: 5692962582433809332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 741
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f69589ef911f9500800000000000000
+      internalID: 405061870001952505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_28
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 741
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbba26bbcc3d62ee0800000000000000
+      internalID: -1286107767297102916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 741
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d27cff841cfbf30800000000000000
+      internalID: 4593602664214244610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_30
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 757
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6acc1e2fb1e70c510800000000000000
+      internalID: 1567391328829033638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_31
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 741
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df1c8db7579e6410800000000000000
+      internalID: 1472280531294756818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_32
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 741
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6af596c527b0e10800000000000000
+      internalID: 2164949787112089275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_33
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 741
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2ea1790f3036030800000000000000
+      internalID: 3486634868377051835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_34
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 639
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6818bcd33afa690800000000000000
+      internalID: -7588667361293400386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_35
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 671
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10909b41c69c667a0800000000000000
+      internalID: -6384193955709777663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_36
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 671
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a135d985571309c80800000000000000
+      internalID: -8318094131685666022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_37
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 671
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1a32fff48eef680800000000000000
+      internalID: -8719276398262115880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_38
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 671
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91702ee6927d5420800000000000000
+      internalID: 2620376550765261211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_39
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 612
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa340d42e79d0b0e0800000000000000
+      internalID: -2256064277505883222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_40
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 612
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713ff472531263790800000000000000
+      internalID: -7550811213063523561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 612
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f976368fb5274040800000000000000
+      internalID: 4631712246294542832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_42
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 612
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a78f107fee5c790800000000000000
+      internalID: -7510334058913039831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 612
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bce08f42d6cf910800000000000000
+      internalID: 1872491550627253108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_44
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 612
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d968176d12cdde980800000000000000
+      internalID: -8507902083143203171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_45
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 628
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f72edb6abe2af70800000000000000
+      internalID: 9197172490426810162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_46
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 612
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4a30ffe7062e240800000000000000
+      internalID: 4819520649800426673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_47
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 612
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c8c19efba553d80800000000000000
+      internalID: -8271605360299832202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_48
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 612
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5ec0d0ded8c72f0800000000000000
+      internalID: -973747370153155151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_49
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 543
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f60199293d0af750800000000000000
+      internalID: 6339393964639061746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 543
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a4e861a84b13cb0800000000000000
+      internalID: -4885925615543367044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_51
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 543
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfb70d06e33e80190800000000000000
+      internalID: -7995891281344562181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_52
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 495
+        width: 10
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a311335d33f1db530800000000000000
+      internalID: 3872285562089181498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_53
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 543
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af3ec4819d4eede0800000000000000
+      internalID: -1302017954869788761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_54
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 495
+        width: 9
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3167e900e68ee10800000000000000
+      internalID: 2227150964672304041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_55
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 495
+        width: 9
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23384dbac921d2980800000000000000
+      internalID: -8562166852454415566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_56
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 495
+        width: 25
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926e313a58141cf20800000000000000
+      internalID: 3441103632510215721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_57
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 495
+        width: 25
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8124e931165f09cd0800000000000000
+      internalID: -2553271191429299688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_58
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 543
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2870c57fa9b506030800000000000000
+      internalID: 3485886832717858690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_59
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 502
+        width: 50
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a62b1f3fe80e4a80800000000000000
+      internalID: -8480831224643115353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_60
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 502
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8845b3007c0e7d0800000000000000
+      internalID: -2891092156962535179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_61
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 502
+        width: 50
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0347ed51f9913a100800000000000000
+      internalID: 117966186299159600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_62
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 496
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43753471873fc170800000000000000
+      internalID: 8200834475604931403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_63
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 496
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ae72826c8789100800000000000000
+      internalID: 114974582970509970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_64
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 495
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92a30db425f1dd80800000000000000
+      internalID: -8227525506090425699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_65
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 495
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58724d34bf5f499a0800000000000000
+      internalID: -6227081925222979707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_66
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 466
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c810ef8a6ab388dd0800000000000000
+      internalID: -2483669607508999796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_67
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f301ef2d0007a5ac0800000000000000
+      internalID: -3865654181301972929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_68
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3887b4351e62da380800000000000000
+      internalID: -8958461334563096445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_69
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 466
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3e513132052e980800000000000000
+      internalID: -8511152234202537040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_70
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 466
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e7e14ab86917160800000000000000
+      internalID: 7021558820545396358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_71
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 466
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75e45b4252b3ebd0800000000000000
+      internalID: -2602040093169097350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 466
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a1f49b404b85be0800000000000000
+      internalID: -1488241744464111004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_73
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee4a41cbab168910800000000000000
+      internalID: 1839187922323656430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_74
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2871f72db9b3350800000000000000
+      internalID: 5997558657151632082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_75
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de66f2f2306314fb0800000000000000
+      internalID: -4665388351674685715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_76
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 466
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536b7e8057be75d60800000000000000
+      internalID: 7879024961001076277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_77
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 466
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428ca4de79e373ab0800000000000000
+      internalID: -5028481636693784540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_78
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 482
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9deeadd19760e4f0800000000000000
+      internalID: -801526857484800614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_79
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 466
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607a0bbd4579059d0800000000000000
+      internalID: -2787561778623502586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_80
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 466
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdc4770225d62b00800000000000000
+      internalID: 803563925662911932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_81
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 466
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c01235591750900800000000000000
+      internalID: 650050607383645196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_82
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e241268e666f62d70800000000000000
+      internalID: 9018166225701835822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_83
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67fe109637d50600800000000000000
+      internalID: 433989568457275244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_84
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edf7aaa795035090800000000000000
+      internalID: -8047081960219607576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_85
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 399
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc22003c81875e30800000000000000
+      internalID: 4492201592426212561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_86
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 383
+        width: 50
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646c8d07896910c00800000000000000
+      internalID: 865138184904296006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_87
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 383
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebae39c7345fb3eb0800000000000000
+      internalID: -4738924512675632450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_88
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 351
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2045fe46f52b6590800000000000000
+      internalID: -7680002999733370836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_89
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 371
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abdf0ab34c5edb30800000000000000
+      internalID: 4313986939021679526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_90
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e546e21dc01730800000000000000
+      internalID: 3967896752769851396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_91
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a153afe9e3307f0800000000000000
+      internalID: -647605068887680470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_92
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e257b06e6c0ea60800000000000000
+      internalID: 7701374054140554905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_93
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 351
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798fe5f7291802190800000000000000
+      internalID: -7989243272753121129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_94
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 309
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12adc1cef88d1b040800000000000000
+      internalID: 4661745201958410785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_95
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ceddfc706be31d0800000000000000
+      internalID: -3369055326558098335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_96
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc1409a69e6ad280800000000000000
+      internalID: -9017773710496228164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_97
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 303
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf114953c5a5e1e0800000000000000
+      internalID: -2169145387074379829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_98
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 309
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb6767e354e3d5d0800000000000000
+      internalID: -3038834274529219610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_99
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 309
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23bba09877adeaf70800000000000000
+      internalID: 9200531295699647282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_100
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f00b4ca2e3c70500800000000000000
+      internalID: 362473673347236083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_101
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18c3e5a1c91cfcd0800000000000000
+      internalID: -2523113371731769318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_102
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28df2a33666f5f790800000000000000
+      internalID: -7496815085874905726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_103
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 309
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3f211cef311c110800000000000000
+      internalID: 1279325754031797231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_104
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 309
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4621001ae344bc5b0800000000000000
+      internalID: -5347105096792534428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_105
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 325
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5933b1c714f25c80800000000000000
+      internalID: -8335331577438193315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_106
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 309
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a730862ce06ad60800000000000000
+      internalID: 7901018824399616608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_107
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 309
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0c3dc2ed7a7c490800000000000000
+      internalID: -7726022063054143268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_108
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 309
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c072444efe07870800000000000000
+      internalID: 8678700245617937475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_109
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 239
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3076ab285e31930800000000000000
+      internalID: 4112883234355217349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_110
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c492c30a79f6b10800000000000000
+      internalID: 1976965475898838116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_111
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed11d54018343bc40800000000000000
+      internalID: 5526835389116781022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_112
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 239
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5608e4d6bedb520800000000000000
+      internalID: 2719588604702647795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_113
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 223
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7477ed1f2ab99df10800000000000000
+      internalID: 2295036609266874183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_114
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 223
+        width: 18
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf24376f0612ac90800000000000000
+      internalID: -7160136202153873475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_115
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 211
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0ce898cab3807a0800000000000000
+      internalID: -6410808457333653251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_116
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 191
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89322d984830ac2e0800000000000000
+      internalID: -2104866008059468904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_117
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 191
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec574204a34b96310800000000000000
+      internalID: 1398847321552483790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_118
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 191
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddf1b9334ab9abb0800000000000000
+      internalID: -4924199919659385380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_119
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 191
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8788397dc4beed0800000000000000
+      internalID: -2383727088985671482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_120
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 191
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c83129d63978550800000000000000
+      internalID: 6163056713891286159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_121
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 162
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc95b558e8bc036c0800000000000000
+      internalID: -4165605842334557749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_122
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 162
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3786de8763cabed20800000000000000
+      internalID: 3308927701190797427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_123
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 162
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce63d1901c8a0d90800000000000000
+      internalID: -7130733057193840948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_124
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 156
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375bf37ca4912c0e0800000000000000
+      internalID: -2251209054770711181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_125
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 162
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a774d7388384d450800000000000000
+      internalID: 6112655215324067748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c7c122f37147a20800000000000000
+      internalID: 3059095606814080075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_127
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0868a8a5a82c627d0800000000000000
+      internalID: -2943451406959737216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_128
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b81ab1d4df7a7480800000000000000
+      internalID: -8900661161515935560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_129
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a58624e00bbec60800000000000000
+      internalID: 7848560350913387031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_130
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d26152e2d9037b40800000000000000
+      internalID: 5436699976511087314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_131
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d427f774f90dae0800000000000000
+      internalID: -1526545144248906340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107a6674d6a1dcb00800000000000000
+      internalID: 850364961294558977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_133
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51edc489ef5d562d0800000000000000
+      internalID: -3285985063643324907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_134
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d525b32328728a5a0800000000000000
+      internalID: -6509909821222071715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_135
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4577270cb636fe750800000000000000
+      internalID: 6336392515174954836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_136
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7e4e492c95c6d30800000000000000
+      internalID: 4426011226054911951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_137
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ab7d6204786d1f0800000000000000
+      internalID: -1020479555953509782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_138
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 111
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac6f1e84580c9470800000000000000
+      internalID: 8402600164021202093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_139
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 128
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c389211997ce0aff0800000000000000
+      internalID: -26761590895110084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_140
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 127
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19790464587077890800000000000000
+      internalID: -7460485988725254255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_141
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 127
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a32bba8ad1d01dfb0800000000000000
+      internalID: -4624900921297751494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_142
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 129
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65cade05d43b94ca0800000000000000
+      internalID: -6032093081234461610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_143
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 133
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778d9de54439e8040800000000000000
+      internalID: 4651817386978695287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_144
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215d219886e23c2a0800000000000000
+      internalID: -6718475192595458798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9cc6d514b25a410800000000000000
+      internalID: 1487642811656096160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_146
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff1e0d0a71989610800000000000000
+      internalID: 1628211218685501430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be19c870eae0fe1d0800000000000000
+      internalID: -3319418259735014933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_148
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8839bf29c8e68310800000000000000
+      internalID: 1407067884386597004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_149
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6302636f3b035e10800000000000000
+      internalID: 2185102611083035501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_150
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 113
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852bf60b94a569ad0800000000000000
+      internalID: -2695868054395440552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_151
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f30e8c8928fcfc50800000000000000
+      internalID: 6700503202955920371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_152
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537f23a3ce8b13f80800000000000000
+      internalID: -8128512527698823371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_153
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 111
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce3dd12180f97550800000000000000
+      internalID: 6159218402815459009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_154
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 114
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfa1c9ca36023030800000000000000
+      internalID: 3472845112218857434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_155
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 111
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88118884dec57d330800000000000000
+      internalID: 3735556590120997256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_156
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 114
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb25c6664f63dd340800000000000000
+      internalID: 4890125193712521915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_157
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 111
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9555c79d6e1aa0890800000000000000
+      internalID: -7490997017314044583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_158
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 111
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff723f51d6c38b00800000000000000
+      internalID: 829725358913912817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_159
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 111
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c7351b8e285e520800000000000000
+      internalID: 2730732684989135949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_160
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 115
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af6997102284bee0800000000000000
+      internalID: -1246228122528288860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_161
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 111
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b3412ec18c5f120800000000000000
+      internalID: 2447081998923348842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_162
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73b4391e0b78f9b0800000000000000
+      internalID: -5046148081985997953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_163
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d8482131d754c60800000000000000
+      internalID: 7801779450357779773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_164
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acea7ce576ff6da20800000000000000
+      internalID: 3086935414045912778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_165
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2647aed8ff010510800000000000000
+      internalID: 1513508511335007786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_166
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 99
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8c1d1a90938c070800000000000000
+      internalID: 8126808241122429183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395b9cce1a0b559c0800000000000000
+      internalID: -3939048089556765293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_168
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 98
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bc3ff0aca3b5930800000000000000
+      internalID: 4132961722568002438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_169
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633a15bc696fc2fb0800000000000000
+      internalID: -4671087585973394634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_170
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f754c583dad5ca0800000000000000
+      internalID: -6026470268774023360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_171
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 96
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741160dcf85b5e0d0800000000000000
+      internalID: -3394107114929123001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_172
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fa2654cefa28610800000000000000
+      internalID: 1622052245118037816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_173
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 96
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad11bb2c78e5e8f70800000000000000
+      internalID: 9191387826690396634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_174
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 98
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893f6e21b34367ba0800000000000000
+      internalID: -6091624017647176808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_175
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 95
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a147050ef275c70800000000000000
+      internalID: 8959682624145857107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_176
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 79
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e914dcd7e06a9540800000000000000
+      internalID: 5015427683989068260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_177
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 95
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7aa9c3f42bcecb0800000000000000
+      internalID: -4833292246686455853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_178
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 96
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ca55ff5aa093e00800000000000000
+      internalID: 1024862098273184818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_179
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058b42ca27489ae80800000000000000
+      internalID: -8166850821210458032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_180
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9439f198d80d21460800000000000000
+      internalID: 7211055259683099465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_181
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3dd8e8bcb68dab0800000000000000
+      internalID: -4983114465671261200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_182
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e45bf5aba767ef0800000000000000
+      internalID: -110766199935775122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_183
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfd43f8d8840b1c0800000000000000
+      internalID: -4490009055658188859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_184
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 65
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1803242eae117080800000000000000
+      internalID: -9191531631207053282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_185
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 81
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87ab1bb86cbc5bc0800000000000000
+      internalID: -3792949628151027830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_186
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 81
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df7527528bbe5020800000000000000
+      internalID: 2332507825506713557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_187
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 88
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1078c60ebdec2d550800000000000000
+      internalID: 6184232682091480833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_188
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 81
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1e990ff5c5b1e40800000000000000
+      internalID: 5628193726457831875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_189
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 85
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d1ff76a0c3f5050800000000000000
+      internalID: 5791413661213859131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_190
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c24cc026af9d560800000000000000
+      internalID: 7339172366804855845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_191
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb02208293442190800000000000000
+      internalID: -7988185542554416189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_192
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fc50c8c12fb3510800000000000000
+      internalID: 1530082702844612473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_193
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53869bd12814a8f40800000000000000
+      internalID: 5731465502882621493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_194
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339055c6ba2968f10800000000000000
+      internalID: 2271664327009569075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_195
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5d4784477434180800000000000000
+      internalID: -9132377054619839009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_196
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280202d149d9255c0800000000000000
+      internalID: -4228143840678109054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_197
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8706332cc7c3ddbd0800000000000000
+      internalID: -2603858503018520456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_198
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c899496f8acbd73a0800000000000000
+      internalID: -6665964439561004660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_199
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e41ed4a030d7c3a0800000000000000
+      internalID: -6645113817818852125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_200
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9588e8babd0b1490800000000000000
+      internalID: -7774605236107704933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_201
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab7ca0cd58504d30800000000000000
+      internalID: 4413624794510818209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_202
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 67
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f803e8a85ac2090800000000000000
+      internalID: -8057883618763042954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_203
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f97792005aa4a630800000000000000
+      internalID: 3937459234846243317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_204
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 64
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947f71096872b6100800000000000000
+      internalID: 102218875442558793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_205
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 63
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8aca9d691cfa380800000000000000
+      internalID: -8957728280175400711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_206
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 65
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e5e58540fae3a30800000000000000
+      internalID: 4196984335953190485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_207
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 15
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f58a41266de579d70800000000000000
+      internalID: 9049806251085834335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_208
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 63
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31adb6df4518f9c70800000000000000
+      internalID: 8980038384028998163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_209
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 63
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563bf2312c370fac0800000000000000
+      internalID: -3823428806254808219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_210
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 67
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c71fdb9df2d9fc10800000000000000
+      internalID: 2087931888946583489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_211
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 63
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d99c830f781a69050800000000000000
+      internalID: 5807006374763743645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_212
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 33
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1b10b56a99ab620800000000000000
+      internalID: 2790711858879902128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_213
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 33
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d543d400e1a175c50800000000000000
+      internalID: 6653815690619597917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_214
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 33
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38d3e2d16920c1b0800000000000000
+      internalID: -5638461233341147076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_215
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 47
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177c821fa088cc920800000000000000
+      internalID: 3011931831381051249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_216
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 33
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01bb358e851e0fa0800000000000000
+      internalID: -5832700765533392629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_217
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee5583e6cbd7b180800000000000000
+      internalID: -9099562874811621662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_218
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 47
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ac0fc7f42a6f680800000000000000
+      internalID: -8721605166074115568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_219
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 48
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83be2660b41ec9970800000000000000
+      internalID: 8763126687302085432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_220
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 35
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa7ac4bcedeb8b60800000000000000
+      internalID: 7749549184722303738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_full_TileSheet_221
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 16
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefd4c89e28aad6b0800000000000000
+      internalID: -5270715495798743060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      free_full_TileSheet_0: -6928950319076758279
+      free_full_TileSheet_1: 5771132717601715080
+      free_full_TileSheet_10: 5003400313119730026
+      free_full_TileSheet_100: 362473673347236083
+      free_full_TileSheet_101: -2523113371731769318
+      free_full_TileSheet_102: -7496815085874905726
+      free_full_TileSheet_103: 1279325754031797231
+      free_full_TileSheet_104: -5347105096792534428
+      free_full_TileSheet_105: -8335331577438193315
+      free_full_TileSheet_106: 7901018824399616608
+      free_full_TileSheet_107: -7726022063054143268
+      free_full_TileSheet_108: 8678700245617937475
+      free_full_TileSheet_109: 4112883234355217349
+      free_full_TileSheet_11: -6902298650619313773
+      free_full_TileSheet_110: 1976965475898838116
+      free_full_TileSheet_111: 5526835389116781022
+      free_full_TileSheet_112: 2719588604702647795
+      free_full_TileSheet_113: 2295036609266874183
+      free_full_TileSheet_114: -7160136202153873475
+      free_full_TileSheet_115: -6410808457333653251
+      free_full_TileSheet_116: -2104866008059468904
+      free_full_TileSheet_117: 1398847321552483790
+      free_full_TileSheet_118: -4924199919659385380
+      free_full_TileSheet_119: -2383727088985671482
+      free_full_TileSheet_12: -1057056194883910403
+      free_full_TileSheet_120: 6163056713891286159
+      free_full_TileSheet_121: -4165605842334557749
+      free_full_TileSheet_122: 3308927701190797427
+      free_full_TileSheet_123: -7130733057193840948
+      free_full_TileSheet_124: -2251209054770711181
+      free_full_TileSheet_125: 6112655215324067748
+      free_full_TileSheet_126: 3059095606814080075
+      free_full_TileSheet_127: -2943451406959737216
+      free_full_TileSheet_128: -8900661161515935560
+      free_full_TileSheet_129: 7848560350913387031
+      free_full_TileSheet_13: -6429891216438688216
+      free_full_TileSheet_130: 5436699976511087314
+      free_full_TileSheet_131: -1526545144248906340
+      free_full_TileSheet_132: 850364961294558977
+      free_full_TileSheet_133: -3285985063643324907
+      free_full_TileSheet_134: -6509909821222071715
+      free_full_TileSheet_135: 6336392515174954836
+      free_full_TileSheet_136: 4426011226054911951
+      free_full_TileSheet_137: -1020479555953509782
+      free_full_TileSheet_138: 8402600164021202093
+      free_full_TileSheet_139: -26761590895110084
+      free_full_TileSheet_14: 2959405466580530666
+      free_full_TileSheet_140: -7460485988725254255
+      free_full_TileSheet_141: -4624900921297751494
+      free_full_TileSheet_142: -6032093081234461610
+      free_full_TileSheet_143: 4651817386978695287
+      free_full_TileSheet_144: -6718475192595458798
+      free_full_TileSheet_145: 1487642811656096160
+      free_full_TileSheet_146: 1628211218685501430
+      free_full_TileSheet_147: -3319418259735014933
+      free_full_TileSheet_148: 1407067884386597004
+      free_full_TileSheet_149: 2185102611083035501
+      free_full_TileSheet_15: -8709640448469240606
+      free_full_TileSheet_150: -2695868054395440552
+      free_full_TileSheet_151: 6700503202955920371
+      free_full_TileSheet_152: -8128512527698823371
+      free_full_TileSheet_153: 6159218402815459009
+      free_full_TileSheet_154: 3472845112218857434
+      free_full_TileSheet_155: 3735556590120997256
+      free_full_TileSheet_156: 4890125193712521915
+      free_full_TileSheet_157: -7490997017314044583
+      free_full_TileSheet_158: 829725358913912817
+      free_full_TileSheet_159: 2730732684989135949
+      free_full_TileSheet_16: -8194354591360265925
+      free_full_TileSheet_160: -1246228122528288860
+      free_full_TileSheet_161: 2447081998923348842
+      free_full_TileSheet_162: -5046148081985997953
+      free_full_TileSheet_163: 7801779450357779773
+      free_full_TileSheet_164: 3086935414045912778
+      free_full_TileSheet_165: 1513508511335007786
+      free_full_TileSheet_166: 8126808241122429183
+      free_full_TileSheet_167: -3939048089556765293
+      free_full_TileSheet_168: 4132961722568002438
+      free_full_TileSheet_169: -4671087585973394634
+      free_full_TileSheet_17: 263802756287677282
+      free_full_TileSheet_170: -6026470268774023360
+      free_full_TileSheet_171: -3394107114929123001
+      free_full_TileSheet_172: 1622052245118037816
+      free_full_TileSheet_173: 9191387826690396634
+      free_full_TileSheet_174: -6091624017647176808
+      free_full_TileSheet_175: 8959682624145857107
+      free_full_TileSheet_176: 5015427683989068260
+      free_full_TileSheet_177: -4833292246686455853
+      free_full_TileSheet_178: 1024862098273184818
+      free_full_TileSheet_179: -8166850821210458032
+      free_full_TileSheet_18: -9137044645645864891
+      free_full_TileSheet_180: 7211055259683099465
+      free_full_TileSheet_181: -4983114465671261200
+      free_full_TileSheet_182: -110766199935775122
+      free_full_TileSheet_183: -4490009055658188859
+      free_full_TileSheet_184: -9191531631207053282
+      free_full_TileSheet_185: -3792949628151027830
+      free_full_TileSheet_186: 2332507825506713557
+      free_full_TileSheet_187: 6184232682091480833
+      free_full_TileSheet_188: 5628193726457831875
+      free_full_TileSheet_189: 5791413661213859131
+      free_full_TileSheet_19: -7256771561795858940
+      free_full_TileSheet_190: 7339172366804855845
+      free_full_TileSheet_191: -7988185542554416189
+      free_full_TileSheet_192: 1530082702844612473
+      free_full_TileSheet_193: 5731465502882621493
+      free_full_TileSheet_194: 2271664327009569075
+      free_full_TileSheet_195: -9132377054619839009
+      free_full_TileSheet_196: -4228143840678109054
+      free_full_TileSheet_197: -2603858503018520456
+      free_full_TileSheet_198: -6665964439561004660
+      free_full_TileSheet_199: -6645113817818852125
+      free_full_TileSheet_2: 3884060497990999774
+      free_full_TileSheet_20: 8541014939386642816
+      free_full_TileSheet_200: -7774605236107704933
+      free_full_TileSheet_201: 4413624794510818209
+      free_full_TileSheet_202: -8057883618763042954
+      free_full_TileSheet_203: 3937459234846243317
+      free_full_TileSheet_204: 102218875442558793
+      free_full_TileSheet_205: -8957728280175400711
+      free_full_TileSheet_206: 4196984335953190485
+      free_full_TileSheet_207: 9049806251085834335
+      free_full_TileSheet_208: 8980038384028998163
+      free_full_TileSheet_209: -3823428806254808219
+      free_full_TileSheet_21: -4852962700587074502
+      free_full_TileSheet_210: 2087931888946583489
+      free_full_TileSheet_211: 5807006374763743645
+      free_full_TileSheet_212: 2790711858879902128
+      free_full_TileSheet_213: 6653815690619597917
+      free_full_TileSheet_214: -5638461233341147076
+      free_full_TileSheet_215: 3011931831381051249
+      free_full_TileSheet_216: -5832700765533392629
+      free_full_TileSheet_217: -9099562874811621662
+      free_full_TileSheet_218: -8721605166074115568
+      free_full_TileSheet_219: 8763126687302085432
+      free_full_TileSheet_22: 1055874708527629156
+      free_full_TileSheet_220: 7749549184722303738
+      free_full_TileSheet_221: -5270715495798743060
+      free_full_TileSheet_23: 7417459802884103304
+      free_full_TileSheet_24: -7084497467523267634
+      free_full_TileSheet_25: 1189199373004093891
+      free_full_TileSheet_26: 5692962582433809332
+      free_full_TileSheet_27: 405061870001952505
+      free_full_TileSheet_28: -1286107767297102916
+      free_full_TileSheet_29: 4593602664214244610
+      free_full_TileSheet_3: -6881205482267000571
+      free_full_TileSheet_30: 1567391328829033638
+      free_full_TileSheet_31: 1472280531294756818
+      free_full_TileSheet_32: 2164949787112089275
+      free_full_TileSheet_33: 3486634868377051835
+      free_full_TileSheet_34: -7588667361293400386
+      free_full_TileSheet_35: -6384193955709777663
+      free_full_TileSheet_36: -8318094131685666022
+      free_full_TileSheet_37: -8719276398262115880
+      free_full_TileSheet_38: 2620376550765261211
+      free_full_TileSheet_39: -2256064277505883222
+      free_full_TileSheet_4: 363427101489984736
+      free_full_TileSheet_40: -7550811213063523561
+      free_full_TileSheet_41: 4631712246294542832
+      free_full_TileSheet_42: -7510334058913039831
+      free_full_TileSheet_43: 1872491550627253108
+      free_full_TileSheet_44: -8507902083143203171
+      free_full_TileSheet_45: 9197172490426810162
+      free_full_TileSheet_46: 4819520649800426673
+      free_full_TileSheet_47: -8271605360299832202
+      free_full_TileSheet_48: -973747370153155151
+      free_full_TileSheet_49: 6339393964639061746
+      free_full_TileSheet_5: -7550198636503285300
+      free_full_TileSheet_50: -4885925615543367044
+      free_full_TileSheet_51: -7995891281344562181
+      free_full_TileSheet_52: 3872285562089181498
+      free_full_TileSheet_53: -1302017954869788761
+      free_full_TileSheet_54: 2227150964672304041
+      free_full_TileSheet_55: -8562166852454415566
+      free_full_TileSheet_56: 3441103632510215721
+      free_full_TileSheet_57: -2553271191429299688
+      free_full_TileSheet_58: 3485886832717858690
+      free_full_TileSheet_59: -8480831224643115353
+      free_full_TileSheet_6: 8524063172507931778
+      free_full_TileSheet_60: -2891092156962535179
+      free_full_TileSheet_61: 117966186299159600
+      free_full_TileSheet_62: 8200834475604931403
+      free_full_TileSheet_63: 114974582970509970
+      free_full_TileSheet_64: -8227525506090425699
+      free_full_TileSheet_65: -6227081925222979707
+      free_full_TileSheet_66: -2483669607508999796
+      free_full_TileSheet_67: -3865654181301972929
+      free_full_TileSheet_68: -8958461334563096445
+      free_full_TileSheet_69: -8511152234202537040
+      free_full_TileSheet_7: 6527148272559538063
+      free_full_TileSheet_70: 7021558820545396358
+      free_full_TileSheet_71: -2602040093169097350
+      free_full_TileSheet_72: -1488241744464111004
+      free_full_TileSheet_73: 1839187922323656430
+      free_full_TileSheet_74: 5997558657151632082
+      free_full_TileSheet_75: -4665388351674685715
+      free_full_TileSheet_76: 7879024961001076277
+      free_full_TileSheet_77: -5028481636693784540
+      free_full_TileSheet_78: -801526857484800614
+      free_full_TileSheet_79: -2787561778623502586
+      free_full_TileSheet_8: -6801746057692791566
+      free_full_TileSheet_80: 803563925662911932
+      free_full_TileSheet_81: 650050607383645196
+      free_full_TileSheet_82: 9018166225701835822
+      free_full_TileSheet_83: 433989568457275244
+      free_full_TileSheet_84: -8047081960219607576
+      free_full_TileSheet_85: 4492201592426212561
+      free_full_TileSheet_86: 865138184904296006
+      free_full_TileSheet_87: -4738924512675632450
+      free_full_TileSheet_88: -7680002999733370836
+      free_full_TileSheet_89: 4313986939021679526
+      free_full_TileSheet_9: 5425983755397862520
+      free_full_TileSheet_90: 3967896752769851396
+      free_full_TileSheet_91: -647605068887680470
+      free_full_TileSheet_92: 7701374054140554905
+      free_full_TileSheet_93: -7989243272753121129
+      free_full_TileSheet_94: 4661745201958410785
+      free_full_TileSheet_95: -3369055326558098335
+      free_full_TileSheet_96: -9017773710496228164
+      free_full_TileSheet_97: -2169145387074379829
+      free_full_TileSheet_98: -3038834274529219610
+      free_full_TileSheet_99: 9200531295699647282
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,9 +1,9 @@
 ﻿using DG.Tweening;
+using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using SubScripts.Constants;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 namespace Game.Scripts.Player.StateMachine
 {
@@ -47,7 +47,7 @@ namespace Game.Scripts.Player.StateMachine
                 // nếu sau khi đi xong mà gặp obstacle → chặt
                 if (player.CurrentObstacle != null && player.CurrentObstacle.InInteractRange())
                 {
-                    State.ChangeState(AnimationKey.Chop);
+                    StateByObstacle();
                     return;
                 }
 
@@ -55,27 +55,24 @@ namespace Game.Scripts.Player.StateMachine
             });
         }
 
-        private void FreeMoveInput()
+        private void StateByObstacle()
         {
-            if (player.CurrentObstacle != null && player.CurrentObstacle.InInteractRange())
+            EObstacleType type = player.CurrentObstacle.ObstacleType;
+            switch(type)
             {
-                State.ChangeState(AnimationKey.Chop);
-                return;
-            }
-
-            Vector2 moveVector = input["Move"].ReadValue<Vector2>().normalized;
-            Vector2 newPosition = Rb.position + moveVector * stats.MoveSpeed * Time.deltaTime;
-            Rb.MovePosition(newPosition);
-            player.ChangeSide(moveVector);
-
-            if (moveVector.normalized == Vector2.zero)
-            {
-                State.ChangeState(AnimationKey.Idle);
-                return;
+                case EObstacleType.Chopable:
+                    State.ChangeState(AnimationKey.Chop);
+                    break;
+                case EObstacleType.Miningable:
+                    State.ChangeState(AnimationKey.Mining);
+                    break;
+                case EObstacleType.Buildable:
+                    State.ChangeState(AnimationKey.Build);
+                    break;
             }
         }
 
-
+        
         public override void Exit()
         {
             

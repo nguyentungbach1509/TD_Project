@@ -29,8 +29,8 @@ namespace Game.Scripts.BuildingLogic
 
         public void Init()
         {
-            inputCtrl.OnMouseLeftClick -= PlaceBuilding;
-            inputCtrl.OnMouseLeftClick += PlaceBuilding;
+            inputCtrl.OnMouseRightClick -= PlaceBuilding;
+            inputCtrl.OnMouseRightClick += PlaceBuilding;
 
             inputCtrl.OnMouseRightClick -= InteractBuild;
             inputCtrl.OnMouseRightClick += InteractBuild;

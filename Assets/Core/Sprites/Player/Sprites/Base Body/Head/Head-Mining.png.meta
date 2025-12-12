@@ -144,10 +144,10 @@ TextureImporter:
       name: Head-Mining_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 23
-        width: 14
-        height: 13
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: Head-Mining_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 22
-        width: 14
-        height: 13
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: Head-Mining_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 23
-        width: 14
-        height: 13
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: Head-Mining_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 21
-        width: 14
-        height: 13
+        x: 144
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: Head-Mining_4
       rect:
         serializedVersion: 2
-        x: 209
-        y: 21
-        width: 14
-        height: 13
+        x: 192
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: Head-Mining_5
       rect:
         serializedVersion: 2
-        x: 257
-        y: 21
-        width: 14
-        height: 13
+        x: 240
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 91832746c0ff874469c385ebe576fa0c
     internalID: 0
     vertices: []
     indices: 

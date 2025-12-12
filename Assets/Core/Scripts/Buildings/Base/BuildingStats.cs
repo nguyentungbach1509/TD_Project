@@ -1,6 +1,7 @@
 using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
 using System;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -81,6 +82,22 @@ namespace Game.Scripts.BuildingLogic
             level++;
         }
 
+        public void TakeDamage(float damage)
+        {
+            float lostHp = damage - armor;
+            health = Mathf.Clamp(health - lostHp, 0, maxHp);
+            OnHpChange?.Invoke(health/maxHp);
+            if(health == 0)
+            {
+                //Destroy Building
+            }
+        }
+
+        public void BuffHealth(float hp)
+        {
+            health = Mathf.Clamp(health+hp, 0, maxHp);
+            OnHpChange?.Invoke(hp/maxHp);   
+        }
     }
 }
 

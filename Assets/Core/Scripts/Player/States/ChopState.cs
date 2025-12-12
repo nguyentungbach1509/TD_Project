@@ -8,6 +8,8 @@ namespace Game.Scripts.Player.StateMachine
 {
     public class ChopState : PlayerState
     {
+        private ResourceObstacle resource;
+
         public ChopState(CharacterBase character) : base(character)
         {
             anim.RegisterAnimationEvent(AnimationKey.Chop, AnimationEventType.Hit, OnChop);
@@ -16,12 +18,12 @@ namespace Game.Scripts.Player.StateMachine
         public override void Enter()
         {
             Debug.Log("Chop State");
+            resource = player.CurrentObstacle as ResourceObstacle;
             anim.PlayAnimation(AnimationKey.Chop);
         }
 
         private void OnChop()
         {
-            ResourceObstacle resource = player.CurrentObstacle as ResourceObstacle;
             resource.OnHarvestResources();
         }
 

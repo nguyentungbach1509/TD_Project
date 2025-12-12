@@ -10,11 +10,16 @@ using UnityEngine;
 
 namespace Game.Scripts.Map.Obstacles
 {
+    public enum EObstacleType
+    {
+        Chopable, Buildable, Diggable, Miningable
+    }
 
     public abstract class Obstacle : PoolableComponent
     {
         [SerializeField] protected float interactRange;
-
+        [SerializeField] protected EObstacleType obstacleType;
+ 
         protected List<Vector3Int> positions;
         
         protected Vector3Int centerGridPos;
@@ -26,7 +31,7 @@ namespace Game.Scripts.Map.Obstacles
 
         public List<Vector3Int> Positions => positions;
         public float InteractRange => interactRange;   
-        
+        public EObstacleType ObstacleType => obstacleType;
         public Vector3Int CenterPos
         {
             get => centerGridPos;

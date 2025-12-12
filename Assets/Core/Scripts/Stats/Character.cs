@@ -14,11 +14,13 @@ namespace Game.Scripts.StatsCharacter
         protected float moveSpeed;
         protected float damage;
         protected float armor;
+        protected float fixingDmg;
 
         public float MaxHp => maxHp;
         public float MoveSpeed => moveSpeed;
         public float Damage => damage;
         public float Armor => armor;
+        public float FixningDmg => fixingDmg;
 
         public Action<float> OnTakeDamage;
 
@@ -30,6 +32,7 @@ namespace Game.Scripts.StatsCharacter
             moveSpeed = stats.MoveSpeed;
             damage = stats.Damage;
             armor = stats.Armor;
+            fixingDmg = stats.FixingDamage;
             OnTakeDamage -= hud.HpBar.UpdateHpBar;
             OnTakeDamage += hud.HpBar.UpdateHpBar;
         }
