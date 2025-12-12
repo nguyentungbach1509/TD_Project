@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b539f2708f9554a4da9789d0a661995b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 0.75
+  interactRange: 1.1
   hud: {fileID: 1744466218673171852}
   eachHarvest: 5
 --- !u!114 &1744466218673171852

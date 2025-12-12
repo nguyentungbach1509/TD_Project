@@ -45,7 +45,7 @@ namespace Game.Scripts.Player.StateMachine
             moveSequence.OnComplete(() =>
             {
                 // nếu sau khi đi xong mà gặp obstacle → chặt
-                if (player.CurrentObstacle != null)
+                if (player.CurrentObstacle != null && player.CurrentObstacle.InInteractRange())
                 {
                     State.ChangeState(AnimationKey.Chop);
                     return;
