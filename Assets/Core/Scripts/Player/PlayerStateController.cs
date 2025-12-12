@@ -37,7 +37,15 @@ namespace Game.Scripts.Player.StateMachine
             {
                 this.target = obstacle.FindBestInteractionTile();
             }
-            else this.target = target;
+            else
+            {
+                player.CurrentObstacle = null;
+                this.target = target;
+            }
+            
+            Vector3 directionMove = (target - player.GridPos);
+            Vector2 moveVector = new Vector2(directionMove.x, directionMove.y);
+            player.ChangeSide(moveVector.normalized);
             ChangeState(AnimationKey.Move);
         }
 

@@ -61,8 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb18cb0a4181ee24aaa70164aef46556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPrefab: {fileID: 7617214916857661536, guid: 62a8a984c0b76304c82513f2c607eb63, type: 3}
-  offset: {x: 0, y: 5, z: 0}
+  offset: {x: 0.5, y: 0.5, z: 0}
   duration: 1
 --- !u!1 &5002383143634499434
 GameObject:
@@ -90,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 5002383143634499434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0.5, y: 1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

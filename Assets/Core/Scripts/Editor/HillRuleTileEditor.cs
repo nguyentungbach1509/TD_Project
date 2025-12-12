@@ -44,6 +44,11 @@ namespace Game.Scripts.EditorCustomize.HillEditor
             }
 
             serializedObject.ApplyModifiedProperties();
+
+            if (GUI.changed)
+            {
+                EditorUtility.SetDirty(hillSO);
+            }
         }
 
     }

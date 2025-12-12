@@ -9,6 +9,10 @@ namespace Subscripts
         public static readonly string Right_Click = "Right Click";
         public static readonly string Mouse_Hover = "Mouse Hover";
         #endregion
+
+        #region UI Keys
+        public static readonly string ResourceTxt = "ResourceTxt";
+        #endregion
     }
 
     public static class BuildingKey

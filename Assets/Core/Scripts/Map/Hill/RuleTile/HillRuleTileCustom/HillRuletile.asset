@@ -18,7 +18,7 @@ MonoBehaviour:
   m_TilingRules:
   - m_Id: 0
     m_Sprites:
-    - {fileID: 1630175283, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+    - {fileID: 1269117702, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
     - {fileID: 0}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 1
     m_Sprites:
-    - {fileID: 680120911, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+    - {fileID: -1798330572, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
     m_RuleTransform: 0
   - m_Id: 2
     m_Sprites:
-    - {fileID: 1865009702, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+    - {fileID: 86919547, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
     m_GameObject: {fileID: 0}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
@@ -213,7 +213,7 @@ MonoBehaviour:
     tilingRule:
       m_Id: 0
       m_Sprites:
-      - {fileID: 1630175283, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+      - {fileID: 1269117702, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
       - {fileID: 0}
       m_GameObject: {fileID: 0}
       m_MinAnimationSpeed: 1
@@ -233,12 +233,12 @@ MonoBehaviour:
       - {x: 0, y: -1, z: 0}
       - {x: 1, y: 0, z: 0}
       m_RuleTransform: 0
-    tilingType: 0
+    tilingType: 1
   - id: 1
     tilingRule:
       m_Id: 1
       m_Sprites:
-      - {fileID: 680120911, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+      - {fileID: -1798330572, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
       m_GameObject: {fileID: 0}
       m_MinAnimationSpeed: 1
       m_MaxAnimationSpeed: 1
@@ -257,12 +257,12 @@ MonoBehaviour:
       - {x: -1, y: -1, z: 0}
       - {x: 1, y: -1, z: 0}
       m_RuleTransform: 0
-    tilingType: 0
+    tilingType: 1
   - id: 2
     tilingRule:
       m_Id: 2
       m_Sprites:
-      - {fileID: 1865009702, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+      - {fileID: 86919547, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
       m_GameObject: {fileID: 0}
       m_MinAnimationSpeed: 1
       m_MaxAnimationSpeed: 1
@@ -281,7 +281,7 @@ MonoBehaviour:
       - {x: -1, y: -1, z: 0}
       - {x: -1, y: 0, z: 0}
       m_RuleTransform: 0
-    tilingType: 0
+    tilingType: 1
   - id: 3
     tilingRule:
       m_Id: 3

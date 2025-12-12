@@ -18,7 +18,7 @@ namespace Game.Scripts.Map.Hills
         [SerializeField] private List<HillTilingRule> rules = new List<HillTilingRule>();
         [SerializeField] private RuleTile ruleTile;
 
-        public static HashSet<Vector3Int> borderList = new();
+        public HashSet<Vector3Int> borderList = new();
 
         public List<HillTilingRule> TilingRules => rules;
 
@@ -27,7 +27,7 @@ namespace Game.Scripts.Map.Hills
         // -------------------------
         public void GenerateRuleTile()
         {
-            m_TilingRules = new List<TilingRule>(ruleTile.m_TilingRules);
+            //m_TilingRules = new List<TilingRule>(ruleTile.m_TilingRules);
             
             if (ruleTile == null)
             {
@@ -43,7 +43,7 @@ namespace Game.Scripts.Map.Hills
         }
 
         #region Override RuleTile Methods
-        public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject instantiatedGameObject)
+        /*public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject instantiatedGameObject)
         {
             bool baseResult = base.StartUp(position, tilemap, instantiatedGameObject);
 
@@ -63,7 +63,7 @@ namespace Game.Scripts.Map.Hills
             }
 
             return baseResult;
-        }
+        }*/
 
         private TilingRule GetMatchingRule(Vector3Int position, ITilemap tilemap)
         {
@@ -74,6 +74,19 @@ namespace Game.Scripts.Map.Hills
                     return rule;
             }
             return null;
+        }
+
+        public bool IsBorderTile(Vector3Int position, ITilemap tilemap)
+        {
+            Matrix4x4 dummy = Matrix4x4.identity;
+            for (int i = 0; i < m_TilingRules.Count; i++)
+            {
+                if (RuleMatches(m_TilingRules[i], position, tilemap, ref dummy))
+                {
+                    return rules[i].TilingType == EHillRuleType.Border;
+                }
+            }
+            return false;
         }
 
         #endregion

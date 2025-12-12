@@ -2,50 +2,35 @@
 using DG.Tweening;
 using UnityEngine;
 using SubScripts.Pooling;
-using Game.Scripts.UICustome;
-using Game.Scripts.UI;
+using Game.Scripts.UICustom;
+using Subscripts.Spawn;
+using Subscripts;
+
 
 namespace Game.Scripts.ObstacleResource
 {
     public class ResourceObstacleHUD : MonoBehaviour
     {
-        [Header("References")]
-        [SerializeField] TMP_Text_Custom textPrefab;
-
         [Header("Configs")]
         [SerializeField] Vector3 offset;
         [SerializeField] float duration;  
 
-
-        private ObjectPool<TMP_Text_Custom> pool;
-        private UIManager UIManager => UIManager.Instance;
-        private Canvas resourceCanvas;
-
-        public void Init()
-        {
-            pool = PoolManager.CreateOrGetPool(textPrefab);
-            resourceCanvas = UIManager.ResourceCanvas;
-        }
+        private SpawnManager spawner => SpawnManager.Instance;
 
         public void EffectResourceText(int point)
         {
-            Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + offset);
-
-            TMP_Text_Custom customTxt = pool.Spawn();
-            customTxt.transform.SetParent(resourceCanvas.transform, false);
-
-            RectTransform rect = customTxt.transform as RectTransform;
-            rect.position = screenPos;
+            TMP_Text_Custom customTxt = spawner.ResourceTxtSpawner.SpawnCustomText(Constants.ResourceTxt, transform.position + offset);
 
             customTxt.Text.text = $"+{point}";
-            customTxt.CanvasGroup.alpha = 1;
+            Vector3 pos = customTxt.transform.position;
 
-            // Tween bay lên + fade
-            Sequence s = DOTween.Sequence();
-            s.Append(rect.DOAnchorPosY(rect.anchoredPosition.y + offset.y, duration));
-            s.Join(customTxt.CanvasGroup.DOFade(0, duration));
-            s.OnComplete(() => pool.Despawn(customTxt));
+            // fade + move up in world space
+            DOTween.Sequence()
+                .Append(customTxt.transform.DOMoveY(pos.y + 0.75f, 1f)) // bay lên 0.5 tile
+                .Join(customTxt.Text.DOFade(0f, 1f))
+                .OnComplete(() => spawner.ResourceTxtSpawner.DespawnCustomText(Constants.ResourceTxt, customTxt));
         }
+
     }
 }
 

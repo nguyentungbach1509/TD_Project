@@ -15,19 +15,18 @@ namespace Game.Scripts.ObstacleResource
         protected string key;
         
         public string Key => key;
-        public Action<int> OnHarvestTextChange;
+        private Action<int> onHarvestTextChange;
 
         public virtual void Init(string key)
         {
             inputCtrl.OnMouseRightClick -= Interact;
             inputCtrl.OnMouseRightClick += Interact;
 
-            OnHarvestTextChange -= hud.EffectResourceText;
-            OnHarvestTextChange += hud.EffectResourceText;
+            onHarvestTextChange -= hud.EffectResourceText;
+            onHarvestTextChange += hud.EffectResourceText;
 
             positions = new();
             this.key = key;
-            hud.Init();
         }
         
         public override bool InInteractRange()
@@ -50,6 +49,11 @@ namespace Game.Scripts.ObstacleResource
         public override void SetPlace(Vector3Int pos)
         {
             positions.Add(pos);
+        }
+
+        public void OnHarvestResources()
+        {
+            onHarvestTextChange?.Invoke(eachHarvest);
         }
     }
 

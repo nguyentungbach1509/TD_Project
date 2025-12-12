@@ -20,9 +20,7 @@ namespace Game.Scripts.Player.StateMachine
         {
             Debug.Log("Move State");
             path = pathFinder.GetPath(player.GridPos, State.Target);
-            Vector3 directionMove = (State.Target - player.GridPos);
-            Vector2 moveVector = new Vector2(directionMove.x, directionMove.y);
-            player.ChangeSide(moveVector.normalized);
+            
             PathFindingMove();
         }
 
@@ -47,7 +45,7 @@ namespace Game.Scripts.Player.StateMachine
             moveSequence.OnComplete(() =>
             {
                 // nếu sau khi đi xong mà gặp obstacle → chặt
-                if (player.CurrentObstacle != null && player.CurrentObstacle.InInteractRange())
+                if (player.CurrentObstacle != null)
                 {
                     State.ChangeState(AnimationKey.Chop);
                     return;

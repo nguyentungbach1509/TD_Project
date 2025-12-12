@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cca274fac90a794dba83b9e3ea1c702, type: 3}
-  m_Name: HillSO
+  m_Script: {fileID: 11500000, guid: 534a7090e014ca64bbc11a5e75383449, type: 3}
+  m_Name: Text_Custom_World_Prefab
   m_EditorClassIdentifier: 
-  width: 5
-  height: 5
-  ruleTile: {fileID: 11400000, guid: 85ed4b465afe8554e9f663f4991252c6, type: 2}
+  key: ResourceTxt
+  prefab: {fileID: 4843556351773371657, guid: 62a8a984c0b76304c82513f2c607eb63, type: 3}

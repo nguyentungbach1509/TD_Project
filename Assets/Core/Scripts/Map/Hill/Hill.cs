@@ -79,6 +79,7 @@ namespace Game.Scripts.Map.Hills
         {
             if (!IsAvailable(pos, spawnPos)) return;
 
+            ruleHillTile.borderList.Clear();
             int x = pos.x;
 
             for (int i = 0; i < width; i++)
@@ -97,24 +98,21 @@ namespace Game.Scripts.Map.Hills
                 }
                 x++;
             }
-
-            //hillTileMap.CompressBounds();
-            //Physics2D.SyncTransforms();
-
+           
+            hillTileMap.RefreshAllTiles();
             PlaceTrees();
         }
 
         private void StoreColliderTile()
         {
             borders.Clear();
-            
-            for (int i = 0; i < positions.Count; i++)
+            foreach (var pos in positions)
             {
-                if (HillRuleTile.borderList.Contains(positions[i]))
+                if (ruleHillTile.IsBorderTile(pos, hillTileMap))
                 {
-                    TileCustom tc = grid.GetTile(positions[i]);
-                    tc.IsWalkable = false;
-                    if (Random.value <= 0.5f) borders.Add(positions[i]);
+                    TileCustom tc = grid.GetTile(pos);
+                    tc.IsWalkable = false;  // border
+                    borders.Add(pos);
                 }
             }
         }
@@ -143,12 +141,7 @@ namespace Game.Scripts.Map.Hills
             foreach (var pos in borders)
             {
                 Vector3Int treePos = GetInnerTreePosition(pos);
-
-                // chỉ spawn nếu treePos là "đất bên trong" (không collider)
-                //if (HillRuleTile.borderList.Contains(treePos))
-                //{
-                    treePositions.Add(treePos);
-                //}
+                if(Random.value < .45f && !borders.Contains(treePos))treePositions.Add(treePos);
             }
 
             // spawn 1 lần duy nhất

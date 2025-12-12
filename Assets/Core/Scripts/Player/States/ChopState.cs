@@ -1,4 +1,6 @@
+using Game.Scripts.ObstacleResource;
 using Game.Scripts.StatsCharacter;
+using SubScripts;
 using SubScripts.Constants;
 using UnityEngine;
 
@@ -8,6 +10,7 @@ namespace Game.Scripts.Player.StateMachine
     {
         public ChopState(CharacterBase character) : base(character)
         {
+            anim.RegisterAnimationEvent(AnimationKey.Chop, AnimationEventType.Hit, OnChop);
         }
 
         public override void Enter()
@@ -15,6 +18,13 @@ namespace Game.Scripts.Player.StateMachine
             Debug.Log("Chop State");
             anim.PlayAnimation(AnimationKey.Chop);
         }
+
+        private void OnChop()
+        {
+            ResourceObstacle resource = player.CurrentObstacle as ResourceObstacle;
+            resource.OnHarvestResources();
+        }
+
 
         public override void Execute()
         {
