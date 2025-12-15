@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game.Scripts.UI
 {
-    [CreateAssetMenu(fileName = "UIPrefabs", menuName = "Spawner/Prefab/UIPrefabs")]
+    [CreateAssetMenu(fileName = "UIPrefabs", menuName = "Spawner/UI/PrefabCollection")]
     public class UIPrefabs : ScriptableObject
     {
         [Header("Resource Text World")]

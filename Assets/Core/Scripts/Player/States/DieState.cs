@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class DieState : PlayerState
+    public class DieState : BuilderState
     {
-        public DieState(PlayerController player) : base(player)
+        public DieState(BuilderController player) : base(player)
         {
         }
 

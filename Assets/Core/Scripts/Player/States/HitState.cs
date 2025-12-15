@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class HitState : PlayerState
+    public class HitState : BuilderState
     {
-        public HitState(PlayerController player) : base(player)
+        public HitState(BuilderController player) : base(player)
         {
         }
 

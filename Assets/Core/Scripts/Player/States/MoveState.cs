@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using SubScripts.Constants;
@@ -7,12 +8,12 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class MoveState : PlayerState
+    public class MoveState : BuilderState
     {
         private List<Vector3Int> path;
         private Sequence moveSequence;
 
-        public MoveState(PlayerController player) : base(player)
+        public MoveState(BuilderController player) : base(player)
         {
         }
 
@@ -34,7 +35,7 @@ namespace Game.Scripts.Player.StateMachine
 
             moveSequence = DOTween.Sequence();
             player.Anim.PlayAnimation(AnimationKey.Move);
-
+            
             foreach (var step in path)
             {
                 moveSequence.Append(
@@ -44,8 +45,9 @@ namespace Game.Scripts.Player.StateMachine
 
             moveSequence.OnComplete(() =>
             {
-                // nếu sau khi đi xong mà gặp obstacle → chặt
-                if (player.CurrentObstacle != null && player.CurrentObstacle.InInteractRange())
+                UnitController.UpdatePosition(player.GridPos, State.Target);
+                // nếu sau khi đi xong mà gặp obstacle → đổi state  
+                if (player.CurrentObstacle != null && player.InInteractRange())
                 {
                     StateByObstacle();
                     return;

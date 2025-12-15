@@ -13,6 +13,10 @@ namespace Subscripts
         #region UI Keys
         public static readonly string ResourceTxt = "ResourceTxt";
         #endregion
+
+        #region Resource Obstacle Keys
+        public static readonly string GoldOre = "GoldOre";
+        #endregion
     }
 
     public static class BuildingKey
@@ -27,5 +31,13 @@ namespace Subscripts
         public static readonly string Farm = "Farm";
         public static readonly string Basement = "Basement";
     }
+
+    public static class UnitKey
+    {
+        #region Builder Keys
+        public static readonly string Player = "Player";
+        #endregion
+    }
+
 }
 

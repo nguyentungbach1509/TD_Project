@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class DigState : PlayerState
+    public class DigState : BuilderState
     {
         public DigState(CharacterBase character) : base(character)
         {

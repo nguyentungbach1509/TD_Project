@@ -2,11 +2,13 @@
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
+using Game.Scripts.StatsCharacter;
 using SubScripts.Pooling;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 namespace Game.Scripts.Map.Obstacles
 {
@@ -41,8 +43,7 @@ namespace Game.Scripts.Map.Obstacles
         public abstract void SetPlace(Vector3Int pos);
 
         public abstract void Interact(Vector3Int pos);
-        public abstract bool InInteractRange();
-
+        
 
         /// <summary>
         /// Lấy tất cả tile nằm “vòng ngoài” của obstacle
@@ -100,7 +101,7 @@ namespace Game.Scripts.Map.Obstacles
         /// <returns></returns>
         public Vector3Int FindBestInteractionTile()
         {
-            Vector3Int playerPos = survivalMode.Player.GridPos;
+            Vector3Int playerPos = survivalMode.SelectedUnit.GridPos;
             var candidates = GetWalkableInteractionTiles();
 
             // sort theo khoảng cách đến player

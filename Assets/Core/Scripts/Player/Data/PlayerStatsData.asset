@@ -16,3 +16,8 @@ MonoBehaviour:
   moveSpeed: 8
   damage: 0
   armor: 1
+  characterType: 3
+  characterSide: 1
+  fixingDamage: 0
+  harvestAmount: 0
+  harvestInterval: 0

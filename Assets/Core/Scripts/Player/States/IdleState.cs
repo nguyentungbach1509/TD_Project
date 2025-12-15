@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class IdleState : PlayerState
+    public class IdleState : BuilderState
     {
-        public IdleState(PlayerController player) : base(player)
+        public IdleState(BuilderController player) : base(player)
         {
         }
 

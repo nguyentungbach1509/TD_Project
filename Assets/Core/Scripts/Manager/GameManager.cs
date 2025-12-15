@@ -4,11 +4,13 @@ using SubScripts.Singleton;
 
 namespace Game.Scripts.Manager
 {
+    
     public class GameManager : SingletonBase<GameManager>
     {
         private PlayerInputController playerInput => PlayerInputController.Instance;
         private GameMode currentMode;
         private bool isInit;
+
 
         private void Start()
         {
@@ -33,6 +35,7 @@ namespace Game.Scripts.Manager
         {
             currentMode = mode;
             currentMode.Init();
+            currentMode.StartGame();
         }
     }
 }

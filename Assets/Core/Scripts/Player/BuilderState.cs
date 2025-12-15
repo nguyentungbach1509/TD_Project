@@ -6,16 +6,16 @@ using UnityEngine.InputSystem;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class PlayerState : State
+    public class BuilderState : State
     {
-        protected PlayerController player;
+        protected BuilderController player;
         protected Dictionary<string, InputAction> input;
 
-        public PlayerStateController State => player.State;
+        public BuilderStateController State => player.State as BuilderStateController;
 
-        public PlayerState(CharacterBase character) : base(character)
+        public BuilderState(CharacterBase character) : base(character)
         {
-            player = character as PlayerController;
+            player = character as BuilderController;
             input = PlayerInputController.Instance.Input;
         }
 

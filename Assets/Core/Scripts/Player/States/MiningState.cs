@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class MiningState : PlayerState
+    public class MiningState : BuilderState
     {
         private ResourceObstacle resource;
 

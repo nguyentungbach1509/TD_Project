@@ -7,11 +7,11 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class BuildState : PlayerState
+    public class BuildState : BuilderState
     {
         private Building building;
 
-        public BuildState(PlayerController player) : base(player)
+        public BuildState(BuilderController player) : base(player)
         {
             anim.RegisterAnimationEvent(AnimationKey.Build, AnimationEventType.Hit, OnBuild);
         }
@@ -25,7 +25,7 @@ namespace Game.Scripts.Player.StateMachine
 
         private void OnBuild()
         {
-            building.OnFixBuilding(player.Stats.FixningDmg);
+            building.OnFixBuilding(player.Stats.FixingDmg);
         }
     }
 }

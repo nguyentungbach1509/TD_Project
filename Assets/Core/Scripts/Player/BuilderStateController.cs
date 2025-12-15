@@ -7,43 +7,18 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class PlayerStateController : StateController
+    public class BuilderStateController : StateController
     {
-        private PlayerController player;
-        private PlayerInputController input => PlayerInputController.Instance;
-        private Vector3Int target;
+        private BuilderController player;
 
-        public Vector3Int Target => target;
-
-        public PlayerStateController(CharacterBase character) : base(character)
+        public BuilderStateController(CharacterBase character) : base(character)
         {
-            input.OnMouseRightClick -= SetTarget;
-            input.OnMouseRightClick += SetTarget;
-            
-            player = character as PlayerController;
+            player = character as BuilderController;
             currentState = new IdleState(player);
             currentState.Enter();
         }
 
-        private void SetTarget(Vector3Int target)
-        {
-            TileCustom tileCustom = grid.GetTile(target);
-            Obstacle obstacle = tileCustom.GetObstacle();
-            if (obstacle != null)
-            {
-                this.target = obstacle.FindBestInteractionTile();
-            }
-            else
-            {
-                player.CurrentObstacle = null;
-                this.target = target;
-            }
-            
-            Vector3 directionMove = (target - player.GridPos);
-            Vector2 moveVector = new Vector2(directionMove.x, directionMove.y);
-            player.ChangeSide(moveVector.normalized);
-            ChangeState(AnimationKey.Move);
-        }
+        
 
         protected override State DetectState(AnimationKey key)
         {

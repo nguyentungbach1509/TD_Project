@@ -2,7 +2,7 @@ using Game.Scripts.UICustom;
 using UnityEngine;
 namespace Game.Scripts.UI.TextCustom
 {
-    [CreateAssetMenu(fileName = "Text_Custom_World_Prefab", menuName = "Spawner/Text_Custom/Text_Custom_World_Prefab")]
+    [CreateAssetMenu(fileName = "Text_Custom_World_Prefab", menuName = "Spawner/UI/Text_Custom/Text_Custom_World_Prefab")]
     public class Text_Custom_World_Prefab : ScriptableObject
     {
         [SerializeField] string key;

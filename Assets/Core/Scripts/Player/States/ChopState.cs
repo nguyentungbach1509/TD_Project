@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Game.Scripts.Player.StateMachine
 {
-    public class ChopState : PlayerState
+    public class ChopState : BuilderState
     {
         private ResourceObstacle resource;
 

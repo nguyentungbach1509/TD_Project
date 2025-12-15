@@ -14,13 +14,24 @@ namespace Game.Scripts.StatsCharacter
         protected float moveSpeed;
         protected float damage;
         protected float armor;
+        protected ECharacterType characterType;
+        protected ECharacterSide characterSide;
+
         protected float fixingDmg;
+        protected float harvestAmount;
+        protected float harvestInterval;
 
         public float MaxHp => maxHp;
         public float MoveSpeed => moveSpeed;
         public float Damage => damage;
         public float Armor => armor;
-        public float FixningDmg => fixingDmg;
+        public ECharacterSide Side => characterSide;
+        public ECharacterType Type => characterType;
+
+
+        public float FixingDmg => fixingDmg;
+        public float HarvestAmount => harvestAmount;
+        public float HarvestInterval => harvestInterval;
 
         public Action<float> OnTakeDamage;
 
@@ -32,7 +43,12 @@ namespace Game.Scripts.StatsCharacter
             moveSpeed = stats.MoveSpeed;
             damage = stats.Damage;
             armor = stats.Armor;
+            characterSide = stats.CharacterSide;
+            characterType = stats.CharacterType;
+
             fixingDmg = stats.FixingDamage;
+            harvestAmount = stats.HarvestAmount;
+            harvestInterval = stats.HarvestInterval;
             OnTakeDamage -= hud.HpBar.UpdateHpBar;
             OnTakeDamage += hud.HpBar.UpdateHpBar;
         }

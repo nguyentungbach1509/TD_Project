@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d32e15f93dfe548bc21dda6a784969, type: 3}
+  m_Name: OrePrefabCollection
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 11400000, guid: 236b8a103d3b63446be44e12cdce64a7, type: 2}

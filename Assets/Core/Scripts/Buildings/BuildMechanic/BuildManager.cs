@@ -1,4 +1,5 @@
 using Game.Scripts.BuildingLogic.Data;
+using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
@@ -16,10 +17,11 @@ namespace Game.Scripts.BuildingLogic
         private GridManager gridManager => GridManager.Instance;
         private SpawnManager spawner => SpawnManager.Instance;
         private PlayerInputController inputCtrl => PlayerInputController.Instance;
-        
+
         private Building currentBuild;
         private List<Building> listBuildings;
         private HashSet<RequiredBuilding> currentRequirements;
+        private SurvivalMode survivalMode => SurvivalMode.Instance;
 
         public List<Building> Buildings => listBuildings;
         public HashSet<RequiredBuilding> CurrentBuildings => currentRequirements;
@@ -90,7 +92,7 @@ namespace Game.Scripts.BuildingLogic
         private void PlaceBuilding(Vector3Int pos)
         {
             if(currentBuild == null) return;
-            if (!currentBuild.InInteractRange()) return;
+            if (!survivalMode.SelectedUnit.InInteractRange()) return;
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
             listBuildings.Add(currentBuild);
@@ -106,7 +108,7 @@ namespace Game.Scripts.BuildingLogic
             Obstacle obstacle = tile.GetObstacle();
             if (obstacle == null || obstacle is not Building) return;
             currentBuild = obstacle as Building;
-            if (!currentBuild.InInteractRange()) return;
+            if (!survivalMode.SelectedUnit.InInteractRange()) return;
             currentBuild.Interact(pos);
             currentBuild = null;
         }

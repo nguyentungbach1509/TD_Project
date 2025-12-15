@@ -1,19 +1,19 @@
 ﻿using Game.Scripts.Map.Mechanic;
 using Game.Scripts.ObstacleResource;
 using Game.Scripts.TileController.Mechanic;
+using Subscripts;
 using Subscripts.Spawn;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace Game.Scripts.Map.Hills
 {
-    
     public class Hill
     {
         private List<Vector3Int> positions;
         private List<Vector3Int> borders;
+        private Dictionary<Vector3Int, Vector3Int> corners;
         private Vector3Int[] directions = new Vector3Int[4]
         {
             Vector3Int.left, Vector3Int.right, Vector3Int.up, Vector3Int.down,
@@ -42,6 +42,9 @@ namespace Game.Scripts.Map.Hills
             // con khong thi thoi
             borders ??= new();
             borders.Clear();
+
+            corners ??= new();
+            corners.Clear();
 
             var hillData = data.GetData();
             width = hillData.Width;
@@ -101,8 +104,11 @@ namespace Game.Scripts.Map.Hills
            
             hillTileMap.RefreshAllTiles();
             PlaceTrees();
+            PlaceOres();
         }
 
+
+        #region Border/Corner Methods 
         private void StoreColliderTile()
         {
             borders.Clear();
@@ -116,6 +122,36 @@ namespace Game.Scripts.Map.Hills
                 }
             }
         }
+
+        private void StoreCornerTile()
+        {
+            corners.Clear();
+
+            for (int i = 0; i < borders.Count; i++)
+            {
+                int countOutBorders = 0;
+                Vector3Int diagonal = Vector3Int.zero;
+
+                for (int d = 0; d < directions.Length; d++)
+                {
+                    Vector3Int outBorderPos = borders[i] + directions[d];
+                    if (!positions.Contains(outBorderPos)) {
+                        countOutBorders++;
+                        diagonal += directions[d];
+                    } 
+                }
+
+                if (countOutBorders == 2) corners.Add(diagonal * 2, borders[i]);
+                else
+                {
+                    if (!corners.ContainsKey(diagonal * 2)) corners.Add(diagonal * 2, borders[i]);
+                }
+            }
+        }
+
+        #endregion
+
+        #region Place Trees
 
         private Vector3Int GetInnerTreePosition(Vector3Int pos)
         {
@@ -154,7 +190,30 @@ namespace Game.Scripts.Map.Hills
                 tree.SetPlace(treePos);
             }
         }
+        #endregion
 
+        #region Place Ores
+        private void PlaceOres()
+        {
+            StoreCornerTile();
+            int indexRandom = Random.Range(0, corners.Count);
+            int i = 0;
+            foreach(var kv in corners)
+            {
+                if(indexRandom == i)
+                {
+                    Vector3Int diagonalOppoisite = kv.Value - kv.Key;
+                    Vector3 spawnPos = grid.GridToWorld(diagonalOppoisite);
+                    Ore ore = spawner.OreSpawner.SpawnOre(Constants.GoldOre, spawnPos);
+                    TileCustom tileCs = grid.GetTile(diagonalOppoisite);
+                    tileCs.SetObstacle(ore);
+                    ore.SetPlace(diagonalOppoisite);
+                }
+
+                i++;
+            }
+        }
+        #endregion
     }
 
 }

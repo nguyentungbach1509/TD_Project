@@ -4,6 +4,7 @@ using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
+using Game.Scripts.StatsCharacter;
 using Game.Scripts.TileController.Mechanic;
 using Subscripts.Spawn;
 using System;
@@ -153,13 +154,6 @@ namespace Game.Scripts.BuildingLogic
             }
         }
 
-        public override bool InInteractRange()
-        {
-            PlayerController player = survivalMode.Player;
-            float distance = Vector3.Distance(player.transform.position, transform.position);
-            Debug.Log($"DISTANCE: {distance}");
-            return distance <= interactRange;
-        }
 
         #region Upgrade Building
         private void Upgrade()

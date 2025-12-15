@@ -1,5 +1,6 @@
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
+using Game.Scripts.Player.StateMachine;
 using Game.Scripts.StatsCharacter.WorldUI;
 using SubScripts;
 using SubScripts.Pooling;
@@ -14,23 +15,26 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] protected CharacterHUD hud;
         [SerializeField] protected AnimationController anim;
 
+        protected StateController stateController;
         private GridManager grid => GridManager.Instance;
         
         protected bool isInit;
         protected Character character;
         protected Obstacle targetObstacle;
         protected float saveSide;
-        
+        public StateController State => stateController;
+
 
         public AnimationController Anim => anim;
         public Character Stats => character;
         public Rigidbody2D Rb => rb;
-
+        public bool IsInit => isInit;
 
         public virtual void Init()
         {
             hud.Init();
             character = new Character(stats, hud);
+            stateController = new BuilderStateController(this);
             isInit = true;
         }
 
@@ -58,9 +62,17 @@ namespace Game.Scripts.StatsCharacter
 
         }
 
+        public bool InInteractRange()
+        {
+            if (targetObstacle == null) return false;
+            float distance = Vector2.Distance(transform.position, targetObstacle.transform.position);
+            return distance <= targetObstacle.InteractRange;
+        }
+
         public abstract void UpdateCharacter();
         
         public Vector3Int GridPos => grid.WorldToGrid(transform.position);
+        public CharacterHUD HUD => hud;
 
         public Obstacle CurrentObstacle
         {
