@@ -92,13 +92,15 @@ namespace Game.Scripts.BuildingLogic
         private void PlaceBuilding(Vector3Int pos)
         {
             if(currentBuild == null) return;
-            if (!survivalMode.SelectedUnit.InInteractRange()) return;
+            survivalMode.SelectedUnit.CurrentObstacle = currentBuild;
+            //if (!survivalMode.SelectedUnit.InInteractRange()) return;
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
             listBuildings.Add(currentBuild);
             currentRequirements.Add(
                 new RequiredBuilding(currentBuild.Stats.Type, currentBuild.Stats.Level));
             currentBuild = null;
+            survivalMode.SelectedUnit.CurrentObstacle = null;
             gridManager.ClearHoverTile();
         }
         
@@ -107,10 +109,10 @@ namespace Game.Scripts.BuildingLogic
             TileCustom tile = gridManager.GetTile(pos);
             Obstacle obstacle = tile.GetObstacle();
             if (obstacle == null || obstacle is not Building) return;
-            currentBuild = obstacle as Building;
+            survivalMode.SelectedUnit.CurrentObstacle = obstacle;
             if (!survivalMode.SelectedUnit.InInteractRange()) return;
-            currentBuild.Interact(pos);
-            currentBuild = null;
+            //currentBuild.Interact(pos);
+            //currentBuild = null;
         }
     }
 }

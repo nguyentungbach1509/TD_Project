@@ -697,7 +697,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 30
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -869,8 +869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2aa1bcc1168dff419c84e4fb9004ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 30
-  height: 30
+  width: 80
+  height: 80
   hillTileMap: {fileID: 1996474189}
   data: {fileID: 11400000, guid: b8abe812da95332499e578b872996bb9, type: 2}
   percentHill: 0.25

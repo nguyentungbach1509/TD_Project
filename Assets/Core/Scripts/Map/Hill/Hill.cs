@@ -2,6 +2,7 @@
 using Game.Scripts.ObstacleResource;
 using Game.Scripts.TileController.Mechanic;
 using Subscripts;
+using Subscripts.Extensions;
 using Subscripts.Spawn;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,7 @@ namespace Game.Scripts.Map.Hills
         private Dictionary<Vector3Int, Vector3Int> corners;
         private Vector3Int[] directions = new Vector3Int[4]
         {
-            Vector3Int.left, Vector3Int.right, Vector3Int.up, Vector3Int.down,
+            Vector3Int.left, Vector3Int.right, Vector3Int.up, Vector3Int.down
         };
         private int width;
         private int height;
@@ -127,26 +128,28 @@ namespace Game.Scripts.Map.Hills
         {
             corners.Clear();
 
-            for (int i = 0; i < borders.Count; i++)
+            int minX = int.MaxValue;
+            int maxX = int.MinValue;
+            int minY = int.MaxValue;
+            int maxY = int.MinValue;
+
+            foreach (var p in positions)
             {
-                int countOutBorders = 0;
-                Vector3Int diagonal = Vector3Int.zero;
-
-                for (int d = 0; d < directions.Length; d++)
-                {
-                    Vector3Int outBorderPos = borders[i] + directions[d];
-                    if (!positions.Contains(outBorderPos)) {
-                        countOutBorders++;
-                        diagonal += directions[d];
-                    } 
-                }
-
-                if (countOutBorders == 2) corners.Add(diagonal * 2, borders[i]);
-                else
-                {
-                    if (!corners.ContainsKey(diagonal * 2)) corners.Add(diagonal * 2, borders[i]);
-                }
+                if (p.x < minX) minX = p.x;
+                if (p.x > maxX) maxX = p.x;
+                if (p.y < minY) minY = p.y;
+                if (p.y > maxY) maxY = p.y;
             }
+
+            Vector3Int leftUp = new Vector3Int(minX, maxY, 0);
+            Vector3Int rightUp = new Vector3Int(maxX, minY, 0);
+            Vector3Int leftDown = new Vector3Int(minX, minY, 0);
+            Vector3Int rightDown = new Vector3Int(maxX, minY, 0);
+
+            corners.Add(Vector3IntExt.LeftUp * -2, leftUp);
+            //corners.Add(Vector3IntExt.RightUp * -2, rightUp);
+            //corners.Add(Vector3IntExt.LeftDown * -2, leftDown);
+            //corners.Add(Vector3IntExt.RightDown * -2, rightDown);
         }
 
         #endregion
@@ -202,7 +205,7 @@ namespace Game.Scripts.Map.Hills
             {
                 if(indexRandom == i)
                 {
-                    Vector3Int diagonalOppoisite = kv.Value - kv.Key;
+                    Vector3Int diagonalOppoisite = kv.Value + kv.Key;
                     Vector3 spawnPos = grid.GridToWorld(diagonalOppoisite);
                     Ore ore = spawner.OreSpawner.SpawnOre(Constants.GoldOre, spawnPos);
                     TileCustom tileCs = grid.GetTile(diagonalOppoisite);

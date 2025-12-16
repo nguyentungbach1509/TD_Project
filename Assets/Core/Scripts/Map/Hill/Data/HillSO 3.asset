@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cca274fac90a794dba83b9e3ea1c702, type: 3}
   m_Name: HillSO 3
   m_EditorClassIdentifier: 
-  width: 10
-  height: 10
+  width: 20
+  height: 20
   ruleTile: {fileID: 11400000, guid: 521afc618461d2d4d9f734af4e98dfc6, type: 2}

@@ -16,6 +16,15 @@ namespace Subscripts.Extensions
             }
         }
     }
+
+    public static class Vector3IntExt
+    {
+        public static readonly Vector3Int LeftDown = new Vector3Int(-1, -1, 0);
+        public static readonly Vector3Int LeftUp = new Vector3Int(-1, 1, 0);
+        public static readonly Vector3Int RightDown = new Vector3Int(1, -1, 0);
+        public static readonly Vector3Int RightUp = new Vector3Int(1, 1, 0);
+    }
+
 }
 
 
