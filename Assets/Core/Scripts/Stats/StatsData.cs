@@ -16,6 +16,8 @@ namespace Game.Scripts.StatsCharacter
     public class StatsData : ScriptableObject
     {
         [Header("General")]
+        [SerializeField] string charName;
+        [SerializeField] Sprite avatar;
         [SerializeField] float maxHp;
         [SerializeField] float moveSpeed;
         [SerializeField] float damage;
@@ -28,6 +30,8 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] float harvestAmount;
         [SerializeField] float harvestInterval;
 
+        public string Name => charName;
+        public Sprite Avatar => avatar;
         public float MaxHp => maxHp;    
         public float MoveSpeed => moveSpeed;
         public float Damage => damage;

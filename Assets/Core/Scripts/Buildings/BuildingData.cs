@@ -37,7 +37,7 @@ namespace Game.Scripts.BuildingLogic.Data
 
         [Header("Appearance Data")]
         [SerializeField] protected Sprite buildingIcon;
-        
+
 
         [Header("Cost Data")]
         [SerializeField] protected int golds;
@@ -62,6 +62,7 @@ namespace Game.Scripts.BuildingLogic.Data
         public float Damage => damage;  
         public float BuildTime => buildTime;
         public Sprite Icon => buildingIcon;
+        
         
         public int Golds => golds;
         public int Lumbers => lumbers;

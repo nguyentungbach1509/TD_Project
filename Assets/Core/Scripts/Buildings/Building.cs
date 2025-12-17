@@ -1,10 +1,7 @@
 ﻿using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
-using Game.Scripts.GamePlay;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
-using Game.Scripts.Player.Controller;
-using Game.Scripts.StatsCharacter;
 using Game.Scripts.TileController.Mechanic;
 using Subscripts.Spawn;
 using System;

@@ -19,15 +19,15 @@ namespace Game.Scripts.BuildingLogic
         private PlayerInputController inputCtrl => PlayerInputController.Instance;
 
         private Building currentBuild;
-        private List<Building> listBuildings;
+        private Dictionary<Vector3Int, Building> listBuildings;
         private HashSet<RequiredBuilding> currentRequirements;
         private SurvivalMode survivalMode => SurvivalMode.Instance;
-
-        public List<Building> Buildings => listBuildings;
-        public HashSet<RequiredBuilding> CurrentBuildings => currentRequirements;
-
         private bool isInit;
 
+
+        public Dictionary<Vector3Int, Building> Buildings => listBuildings;
+        public HashSet<RequiredBuilding> CurrentBuildings => currentRequirements;
+        
 
         public void Init()
         {
@@ -45,58 +45,30 @@ namespace Game.Scripts.BuildingLogic
         public void UpdateBuilder()
         {
             if (!isInit) return;
-            SelectBuilding();
+            //SelectBuilding();
             if (currentBuild == null) return;
             currentBuild.FollowMouseHover(inputCtrl.GridMousePos());
         }
 
-        #region Simple To Test
-        private void SelectBuilding()
+
+        public void SelectBuilding(EBuildingType group, string key)
         {
-
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (currentBuild != null)
             {
-                if (currentBuild != null)
-                {
-                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
-                    currentBuild = null;
-                }
-                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Wall, BuildingKey.Wall_Up,
-                    inputCtrl.GridMousePos(), Quaternion.identity);
-
+                spawner.BuildingSpawner.DespawnBuilding(currentBuild);
+                currentBuild = null;
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                if (currentBuild != null)
-                {
-                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
-                    currentBuild = null;
-                }
-                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Farm, BuildingKey.Farm,
-                    inputCtrl.GridMousePos(), Quaternion.identity);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                if (currentBuild != null)
-                {
-                    spawner.BuildingSpawner.DespawnBuilding(currentBuild);
-                    currentBuild = null;
-                }
-                currentBuild = spawner.BuildingSpawner.SpawnBuilding(EBuildingType.Basement, BuildingKey.Basement,
-                    inputCtrl.GridMousePos(), Quaternion.identity);
-            }
-
+            currentBuild = spawner.BuildingSpawner.SpawnBuilding(group, key,
+                inputCtrl.GridMousePos(), Quaternion.identity);
         }
-        #endregion
-
+        
         private void PlaceBuilding(Vector3Int pos)
         {
             if(currentBuild == null) return;
             survivalMode.SelectedUnit.CurrentObstacle = currentBuild;
-            //if (!survivalMode.SelectedUnit.InInteractRange()) return;
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
-            listBuildings.Add(currentBuild);
+            listBuildings.Add(pos, currentBuild);
             currentRequirements.Add(
                 new RequiredBuilding(currentBuild.Stats.Type, currentBuild.Stats.Level));
             currentBuild = null;
@@ -112,7 +84,12 @@ namespace Game.Scripts.BuildingLogic
             survivalMode.SelectedUnit.CurrentObstacle = obstacle;
             if (!survivalMode.SelectedUnit.InInteractRange()) return;
             //currentBuild.Interact(pos);
-            //currentBuild = null;
+        }
+
+        public Building GetBuilding(Vector3Int pos)
+        {
+            if(listBuildings.TryGetValue(pos, out var building)) return building;
+            return null;
         }
     }
 }

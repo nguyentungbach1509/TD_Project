@@ -52,6 +52,7 @@ namespace Game.Scripts.BuildingLogic
         public UpdateRequirement[] Requirements => requirements;
 
         public Action<float> OnHpChange;
+        public Action<float, float> OnHealthDetailChange;
 
         public BuildingStats(BuildingData data, BuildingHUD canvas)
         {
@@ -87,7 +88,8 @@ namespace Game.Scripts.BuildingLogic
             float lostHp = damage - armor;
             health = Mathf.Clamp(health - lostHp, 0, maxHp);
             OnHpChange?.Invoke(health/maxHp);
-            if(health == 0)
+            OnHealthDetailChange?.Invoke(health, maxHp);
+            if (health == 0)
             {
                 //Destroy Building
             }
@@ -96,7 +98,8 @@ namespace Game.Scripts.BuildingLogic
         public void BuffHealth(float hp)
         {
             health = Mathf.Clamp(health+hp, 0, maxHp);
-            OnHpChange?.Invoke(hp/maxHp);   
+            OnHpChange?.Invoke(hp/maxHp);
+            OnHealthDetailChange?.Invoke(health, maxHp);
         }
     }
 }

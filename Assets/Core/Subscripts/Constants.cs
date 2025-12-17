@@ -12,6 +12,7 @@ namespace Subscripts
 
         #region UI Keys
         public static readonly string ResourceTxt = "ResourceTxt";
+        public static readonly string SlotHUD = "SlotHUD";
         #endregion
 
         #region Resource Obstacle Keys

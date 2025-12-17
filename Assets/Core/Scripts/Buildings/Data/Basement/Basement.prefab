@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactRange: 1.5
+  obstacleType: 1
   model: {fileID: 0}
   hud: {fileID: 0}
   buildTime: 3

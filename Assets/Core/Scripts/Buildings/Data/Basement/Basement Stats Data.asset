@@ -22,10 +22,11 @@ MonoBehaviour:
   maxHp: 100
   armor: 10
   damage: 0
-  buildingIcon: {fileID: 0}
+  buildingIcon: {fileID: -1912358790, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
   golds: 0
   lumbers: 0
   foods: 0
+  buildTime: 0
   requirements:
   - TargetLevel: 1
     UpdateIcon: {fileID: 0}
@@ -37,6 +38,7 @@ MonoBehaviour:
     RequiredGolds: 0
     RequiredLumbers: 0
     RequiredFoods: 0
+    RequiredBuildTime: 0
   - TargetLevel: 2
     UpdateIcon: {fileID: 0}
     UpdateModel: {fileID: 11400000, guid: 1fc9f9115d17aaf4283e33800ab73167, type: 2}
@@ -47,6 +49,7 @@ MonoBehaviour:
     RequiredGolds: 0
     RequiredLumbers: 0
     RequiredFoods: 0
+    RequiredBuildTime: 0
   - TargetLevel: 3
     UpdateIcon: {fileID: 0}
     UpdateModel: {fileID: 11400000, guid: aa6fcc2ea457c9c48b32a36bffc58193, type: 2}
@@ -57,4 +60,5 @@ MonoBehaviour:
     RequiredGolds: 0
     RequiredLumbers: 0
     RequiredFoods: 0
+    RequiredBuildTime: 0
   prefab: {fileID: 3737771554494052079, guid: 9f23481aecdb2034a807df4a1074e6e9, type: 3}

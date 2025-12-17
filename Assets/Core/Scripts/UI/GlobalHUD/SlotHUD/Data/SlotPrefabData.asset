@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff2e30afe7f4304ebc63043f8631f89, type: 3}
+  m_Name: SlotPrefabData
+  m_EditorClassIdentifier: 
+  key: SlotHUD
+  prefab: {fileID: 6280790111990001344, guid: 88b91ef67fbd4eb40a0d23556b120a9f, type: 3}

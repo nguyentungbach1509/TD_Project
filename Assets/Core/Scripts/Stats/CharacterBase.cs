@@ -24,7 +24,6 @@ namespace Game.Scripts.StatsCharacter
         protected float saveSide;
         public StateController State => stateController;
 
-
         public AnimationController Anim => anim;
         public Character Stats => character;
         public Rigidbody2D Rb => rb;

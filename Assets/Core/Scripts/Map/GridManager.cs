@@ -77,7 +77,6 @@ namespace Game.Scripts.Map.Mechanic
         public Vector3 GridToWorld(Vector3Int position) => grid.CellToWorld(position);
         public Vector3Int WorldToGrid(Vector3 position) => grid.WorldToCell(position);
 
-
     }
 
 }

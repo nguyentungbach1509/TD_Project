@@ -20,6 +20,8 @@ namespace Game.Scripts.BuildingLogic.Data
         {
             return buildingData.Find(x => x.Key == key);
         }
+
+        public List<BuildingData> BuildingData => buildingData;
     }
 }
 

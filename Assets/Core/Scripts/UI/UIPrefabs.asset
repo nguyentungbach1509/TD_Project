@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: UIPrefabs
   m_EditorClassIdentifier: 
   ResourceTxts: {fileID: 11400000, guid: 8f547a60d31be61449113c3caaa05cfd, type: 2}
+  SlotPrefab: {fileID: 11400000, guid: 0362f9ebd66b3244d90907f99f5bcd0c, type: 2}

@@ -11,7 +11,6 @@ namespace Game.Scripts.GamePlay
 {
     public class SurvivalMode : GameMode
     {
-        private BuildManager buildManager => BuildManager.Instance;
         
         public static SurvivalMode Instance => GetInstance<SurvivalMode>();
 
@@ -23,6 +22,7 @@ namespace Game.Scripts.GamePlay
             mapGenerator.Init();
             buildManager.Init();
             cameraController.Init();
+            uiManger.Init();
         }
 
         public override void StartGame()
