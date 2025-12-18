@@ -22,10 +22,45 @@ MonoBehaviour:
   maxHp: 10
   armor: 5
   damage: 0
-  buildingIcon: {fileID: 0}
+  buildingIcon: {fileID: -3949213220010832002, guid: 9af7be3d8436b7a408b700fa89ff7ca1, type: 3}
   golds: 0
   lumbers: 0
   foods: 0
   buildTime: 0
-  requirements: []
+  requirements:
+  - TargetLevel: 1
+    UpdateIcon: {fileID: 0}
+    UpdateModel: {fileID: 11400000, guid: 3365bfa833f0e1144bca7c85eaa834b3, type: 2}
+    RequiredBuildings: []
+    MultiHp: 0
+    MultiArmor: 0
+    MultiDmg: 0
+    RequiredGolds: 0
+    RequiredLumbers: 0
+    RequiredFoods: 0
+    RequiredBuildTime: 0
+  - TargetLevel: 2
+    UpdateIcon: {fileID: 0}
+    UpdateModel: {fileID: 11400000, guid: aadcd773d564b6c4fbf74cb8325e05f3, type: 2}
+    RequiredBuildings: []
+    MultiHp: 0
+    MultiArmor: 0
+    MultiDmg: 0
+    RequiredGolds: 0
+    RequiredLumbers: 0
+    RequiredFoods: 0
+    RequiredBuildTime: 0
+  - TargetLevel: 3
+    UpdateIcon: {fileID: 0}
+    UpdateModel: {fileID: 11400000, guid: ce3e1a64700e8fe45855dd0a996f9b4d, type: 2}
+    RequiredBuildings: []
+    MultiHp: 0
+    MultiArmor: 0
+    MultiDmg: 0
+    RequiredGolds: 0
+    RequiredLumbers: 0
+    RequiredFoods: 0
+    RequiredBuildTime: 0
   prefab: {fileID: 5703195933383184496, guid: 96688bd718a08924e9b42b525ab347e8, type: 3}
+  slots:
+    List: []

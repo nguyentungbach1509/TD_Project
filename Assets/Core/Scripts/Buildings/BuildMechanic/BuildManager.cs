@@ -27,7 +27,8 @@ namespace Game.Scripts.BuildingLogic
 
         public Dictionary<Vector3Int, Building> Buildings => listBuildings;
         public HashSet<RequiredBuilding> CurrentBuildings => currentRequirements;
-        
+
+        #region Life Circle
 
         public void Init()
         {
@@ -50,7 +51,9 @@ namespace Game.Scripts.BuildingLogic
             currentBuild.FollowMouseHover(inputCtrl.GridMousePos());
         }
 
+        #endregion
 
+        #region Handle Building
         public void SelectBuilding(EBuildingType group, string key)
         {
             if (currentBuild != null)
@@ -70,7 +73,7 @@ namespace Game.Scripts.BuildingLogic
             currentBuild.SetPlace(pos);
             listBuildings.Add(pos, currentBuild);
             currentRequirements.Add(
-                new RequiredBuilding(currentBuild.Stats.Type, currentBuild.Stats.Level));
+                new RequiredBuilding(currentBuild.BuildingStats.Type, currentBuild.Stats.Level));
             currentBuild = null;
             survivalMode.SelectedUnit.CurrentObstacle = null;
             gridManager.ClearHoverTile();
@@ -85,6 +88,16 @@ namespace Game.Scripts.BuildingLogic
             if (!survivalMode.SelectedUnit.InInteractRange()) return;
             //currentBuild.Interact(pos);
         }
+
+        /*private void TargetBuilding(Vector3Int pos)
+        {
+            TileCustom tile = gridManager.GetTile(pos);
+            Obstacle obstacle = tile.GetObstacle();
+            if (obstacle == null || obstacle is not Building) return;
+
+        }*/
+
+        #endregion
 
         public Building GetBuilding(Vector3Int pos)
         {

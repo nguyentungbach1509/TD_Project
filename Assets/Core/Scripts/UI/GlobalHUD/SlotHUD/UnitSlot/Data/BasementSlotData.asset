@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab1711c0cea8fa429bb4997d93e1fdb, type: 3}
-  m_Name: WallUpModelData
+  m_Script: {fileID: 11500000, guid: d5f838b4b0b9b5f47bce5640a439089a, type: 3}
+  m_Name: BasementSlotData
   m_EditorClassIdentifier: 
-  id: 5
-  type: 6
-  prefab: {fileID: 2640652199100841408, guid: 91fb884426ba6174aa54b5234648610e, type: 3}
+  type: 1
+  key: Basement
+  icon: {fileID: -1912358790, guid: a05aebc9b62abad42a459acb9eeb312a, type: 3}
+  stats: {fileID: 11400000, guid: bd0b6bdfabd1e5a4189fdb551aec3a18, type: 2}

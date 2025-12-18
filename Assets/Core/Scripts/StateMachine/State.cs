@@ -19,10 +19,9 @@ namespace Game.Scripts.Player.StateMachine
         {
             this.character = character;
             anim = character.Anim;
-            stats = character.Stats;
+            stats = character.CharacterStats;
         }
 
-        public Rigidbody2D Rb => character.Rb;
 
         public abstract void Enter();
         public abstract void Exit();

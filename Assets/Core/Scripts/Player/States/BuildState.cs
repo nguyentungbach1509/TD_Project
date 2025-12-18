@@ -25,7 +25,7 @@ namespace Game.Scripts.Player.StateMachine
 
         private void OnBuild()
         {
-            building.OnFixBuilding(player.Stats.FixingDmg);
+            building.OnFixBuilding(player.CharacterStats.FixingDmg);
         }
     }
 }

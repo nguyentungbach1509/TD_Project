@@ -1,6 +1,8 @@
+using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.BuildingLogic;
 using Game.Scripts.StatsCharacter;
 using UnityEngine;
+using UnityEngine.InputSystem.Interactions;
 
 
 namespace Game.Scripts.UI.HUD
@@ -10,16 +12,21 @@ namespace Game.Scripts.UI.HUD
         [Header("Infor HUD")]
         [SerializeField] GlobalInforHUD inforHud;
         [Header("Slots HUD")]
-        [SerializeField] private GlobalSlotHUD slots;
+        [SerializeField] private GlobalSlotHUD slotsHud;
 
         public void Init()
         {
-            slots.Init();
+            slotsHud.Init();
         }
 
-        public void ChangeInforHUD(CharacterBase character, Building building = null)
+        public void ChangeInforHUD(IBaseGameObject baseGO)
         {
-            inforHud.ChangeHUD(character, building);
+            inforHud.ChangeHUD(baseGO);
+        }
+
+        public void ChangeSlotHUD(IBaseGameObject baseGO)
+        {
+            slotsHud.ChangeSlotHUD(baseGO);
         }
     }
 }

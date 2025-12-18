@@ -1,5 +1,7 @@
+using Game.Scripts.BaseScripts.Abstract;
 using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
+using Game.Scripts.UI.HUD;
 using System;
 using System.ComponentModel;
 using UnityEngine;
@@ -7,40 +9,29 @@ using UnityEngine.Rendering;
 
 namespace Game.Scripts.BuildingLogic
 {
-    public class BuildingStats
+    public class BuildingStats : Stats
     {
-        private string key;
-        private string name;
         private string description;
         private BuildingTileSize tileSize;
-        private int level;
+
 
         private EBuildingType type;
-        private float maxHp;
-        private float health;
-        private float armor;
-        private float damage;
         private Sprite buildingIcon;
         private Sprite buildingModel;
+
         private int golds;
         private int lumbers;
         private int foods;
         private float buildTime;
 
         private UpdateRequirement[] requirements;
-
         
-        public string Key => key;
         public string BuildingName => name;
         public string Description => description;
-        public BuildingTileSize Size => tileSize;
-        public int Level => level;  
+        public BuildingTileSize Size => tileSize; 
 
         public EBuildingType Type => type;
-        public float MaxHp => maxHp;
-        public float Health => health;
-        public float Armor => armor;
-        public float Damage => damage;
+
         public Sprite Icon => buildingIcon;
         public Sprite Model => buildingModel;
 
@@ -50,10 +41,7 @@ namespace Game.Scripts.BuildingLogic
         public float BuildTime => buildTime;
 
         public UpdateRequirement[] Requirements => requirements;
-
-        public Action<float> OnHpChange;
-        public Action<float, float> OnHealthDetailChange;
-
+        
         public BuildingStats(BuildingData data, BuildingHUD canvas)
         {
             key = data.Key;
@@ -61,22 +49,24 @@ namespace Game.Scripts.BuildingLogic
             description = data.Description;
             tileSize = data.Size;
             type = data.Type;
-            maxHp = data.MaxHp;
-            health = data.MaxHp;
+            maxhp = data.MaxHp;
+            hp = data.MaxHp;
             armor = data.Armor;
             damage = data.Damage;
             buildTime = data.BuildTime;
             requirements = data.Requirements;
             level = 1;
-            OnHpChange -= canvas.HpBar.UpdateHpBar;
-            OnHpChange += canvas.HpBar.UpdateHpBar;
+            slots = data.Slots;
+            OnTakeDamage -= canvas.HpBar.UpdateHpBar;
+            OnTakeDamage += canvas.HpBar.UpdateHpBar;
         }
+
 
         public void Upgrade(UpdateRequirement req)
         {
-            maxHp += req.MultiHp;
-            health = maxHp;
-            OnHpChange?.Invoke(1);
+            maxhp += req.MultiHp;
+            hp = maxhp;
+            OnTakeDamage?.Invoke(1);
             damage += req.MultiDmg;
             armor += req.MultiArmor;
             buildTime = req.RequiredBuildTime;
@@ -86,20 +76,20 @@ namespace Game.Scripts.BuildingLogic
         public void TakeDamage(float damage)
         {
             float lostHp = damage - armor;
-            health = Mathf.Clamp(health - lostHp, 0, maxHp);
-            OnHpChange?.Invoke(health/maxHp);
-            OnHealthDetailChange?.Invoke(health, maxHp);
-            if (health == 0)
+            hp = Mathf.Clamp(hp - lostHp, 0, maxhp);
+            OnTakeDamage?.Invoke(hp/maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
+            if (hp == 0)
             {
                 //Destroy Building
             }
         }
 
-        public void BuffHealth(float hp)
+        public void BuffHealth(float amount)
         {
-            health = Mathf.Clamp(health+hp, 0, maxHp);
-            OnHpChange?.Invoke(hp/maxHp);
-            OnHealthDetailChange?.Invoke(health, maxHp);
+            hp = Mathf.Clamp(hp+amount, 0, maxhp);
+            OnTakeDamage?.Invoke(hp/maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
         }
     }
 }

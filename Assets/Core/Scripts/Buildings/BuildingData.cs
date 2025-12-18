@@ -1,3 +1,4 @@
+using Game.Scripts.UI.HUD;
 using System;
 using UnityEngine;
 
@@ -51,6 +52,9 @@ namespace Game.Scripts.BuildingLogic.Data
         [Header("Prefab Data")]
         [SerializeField] protected Building prefab;
 
+        [Header("Slot Data")]
+        [SerializeField] protected SlotCollection slots;
+
         public string Key => key;   
         public string BuildingName => buildingName;
         public string Description => description;
@@ -68,7 +72,9 @@ namespace Game.Scripts.BuildingLogic.Data
         public int Lumbers => lumbers;
         public int Foods => foods;
         public UpdateRequirement[] Requirements => requirements;
-        public Building Prefab => prefab;    
+        public Building Prefab => prefab;
+
+        public SlotCollection Slots => slots;
     }
 
     [Serializable]

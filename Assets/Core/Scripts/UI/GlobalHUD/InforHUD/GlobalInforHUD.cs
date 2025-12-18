@@ -1,7 +1,9 @@
+using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.BuildingLogic;
 using Game.Scripts.StatsCharacter;
 using TMPro;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 namespace Game.Scripts.UI.HUD
@@ -16,30 +18,17 @@ namespace Game.Scripts.UI.HUD
         [SerializeField] private TMP_Text levelTxt;
         [SerializeField] private TMP_Text damageTxt;
 
-        public void ChangeHUD(CharacterBase character, Building building = null)
+        public void ChangeHUD(IBaseGameObject baseGO)
         {
-            if (character == null && building == null) return;
-            if (character != null)
-            {
-                character.Stats.OnHealthChange -= UpdateHealthText;
-                character.Stats.OnHealthChange += UpdateHealthText;
-                avatar.sprite = character.Stats.Avatar;
-                nameTxt.text = character.Stats.Name;
-                UpdateHealthText(character.Stats.Hp, character.Stats.MaxHp);
-                armorTxt.text = character.Stats.Armor.ToString();
-                levelTxt.text = character.Stats.Level.ToString();
-                damageTxt.text = character.Stats.Damage.ToString();
-                return;
-            }
-
-            building.Stats.OnHealthDetailChange -= UpdateHealthText;
-            building.Stats.OnHealthDetailChange += UpdateHealthText;
-            avatar.sprite = building.Stats.Model;
-            nameTxt.text = building.Stats.BuildingName;
-            UpdateHealthText(building.Stats.Health, building.Stats.MaxHp);
-            armorTxt.text = building.Stats.Armor.ToString();
-            levelTxt.text = building.Stats.Level.ToString();
-            damageTxt.text = building.Stats.Damage.ToString();
+            if (baseGO == null) return;
+            baseGO.Stats.OnHealthDetailChange -= UpdateHealthText;
+            baseGO.Stats.OnHealthDetailChange += UpdateHealthText;
+            avatar.sprite = baseGO.Stats.Avatar;
+            nameTxt.text = baseGO.Stats.Name;
+            UpdateHealthText(baseGO.Stats.HP, baseGO.Stats.MaxHP);
+            armorTxt.text = baseGO.Stats.Armor.ToString();
+            levelTxt.text = baseGO.Stats.Level.ToString();
+            damageTxt.text = baseGO.Stats.Damage.ToString();
             return;
         }
 

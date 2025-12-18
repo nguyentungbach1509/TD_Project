@@ -1,38 +1,43 @@
+using Game.Scripts.BaseScripts.Abstract;
+using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.StateMachine;
 using Game.Scripts.StatsCharacter.WorldUI;
+using Game.Scripts.UI.HUD;
 using SubScripts;
 using SubScripts.Pooling;
 using UnityEngine;
 
 namespace Game.Scripts.StatsCharacter
 {
-    public abstract class CharacterBase : PoolableComponent
+    public abstract class CharacterBase : PoolableComponent, IBaseGameObject
     {
-        [SerializeField] protected Rigidbody2D rb;
-        [SerializeField] protected StatsData stats;
+        [Header("References")]
+        [SerializeField] protected StatsData data;
         [SerializeField] protected CharacterHUD hud;
         [SerializeField] protected AnimationController anim;
+        
+        protected GridManager grid => GridManager.Instance;
 
         protected StateController stateController;
-        private GridManager grid => GridManager.Instance;
-        
+
+        protected Character stats;
         protected bool isInit;
-        protected Character character;
         protected Obstacle targetObstacle;
         protected float saveSide;
         public StateController State => stateController;
 
+
         public AnimationController Anim => anim;
-        public Character Stats => character;
-        public Rigidbody2D Rb => rb;
+        public Stats Stats => stats;
+        public Character CharacterStats => stats as Character;
         public bool IsInit => isInit;
 
         public virtual void Init()
         {
             hud.Init();
-            character = new Character(stats, hud);
+            stats = new Character(data, hud);
             stateController = new BuilderStateController(this);
             isInit = true;
         }
@@ -70,6 +75,7 @@ namespace Game.Scripts.StatsCharacter
 
         public abstract void UpdateCharacter();
         
+
         public Vector3Int GridPos => grid.WorldToGrid(transform.position);
         public CharacterHUD HUD => hud;
 
@@ -79,11 +85,8 @@ namespace Game.Scripts.StatsCharacter
             set => targetObstacle = value;
         }
 
-        public Character TargetCharacter
-        {
-            get => character;
-            set => character = value;
-        }
+
+        public SlotCollection Slots => stats.Slots;
     }
 }
 

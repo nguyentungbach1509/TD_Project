@@ -38,7 +38,6 @@ namespace Subscripts.Spawn
 
         public void Init()
         {
-            BuildingController.Init(gamePrefabs);
             builderSpawner = new BuilderSpawner(gamePrefabs);
             buildingSpawner = new BuildingSpawner(gamePrefabs);
             treeSpawner = new TreeSpawner(gamePrefabs);

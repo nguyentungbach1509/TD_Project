@@ -1,8 +1,11 @@
-﻿using Game.Scripts.BuildingLogic.Data;
+﻿using Game.Scripts.BaseScripts.Abstract;
+using Game.Scripts.BaseScripts.Interface;
+using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.TileController.Mechanic;
+using Game.Scripts.UI.HUD;
 using Subscripts.Spawn;
 using System;
 using System.Collections;
@@ -10,11 +13,12 @@ using UnityEngine;
 
 namespace Game.Scripts.BuildingLogic
 {
-    public class Building : Obstacle
+    public class Building : Obstacle, IBaseGameObject
     {
         [SerializeField] private BuildingModel model;
         [SerializeField] private BuildingHUD hud;
         [SerializeField] private float buildTime;
+
 
         private BuildingStats stats;
         private float currentProgress;
@@ -36,9 +40,14 @@ namespace Game.Scripts.BuildingLogic
         public Action<float> OnProgressChange;
         
 
-        public BuildingStats Stats => stats;
+        public Stats Stats => stats;
+        public BuildingStats BuildingStats => stats as BuildingStats;
+
         public BuildingModel Model => model;
 
+        public SlotCollection Slots => stats.Slots;
+
+        #region Initialize
         public void Init(BuildingData data)
         {
             currentProgress = 0;
@@ -59,7 +68,9 @@ namespace Game.Scripts.BuildingLogic
             OnProgressChange -= hud.ProgressBar.UpdateProgressBar;
             OnProgressChange += hud.ProgressBar.UpdateProgressBar;
         }
+        #endregion
 
+        #region Build 
         public override void SetPlace(Vector3Int pos)
         {
             for(int i = 0; i < positions.Count; i++)
@@ -151,9 +162,10 @@ namespace Game.Scripts.BuildingLogic
             }
         }
 
+        #endregion
 
-        #region Upgrade Building
-        private void Upgrade()
+        #region Upgrade/Fixing Building
+        public void Upgrade()
         {
             //check dieu kien du update chua
             RequiredBuilding[] req = stats.Requirements[stats.Level].RequiredBuildings;
@@ -206,12 +218,20 @@ namespace Game.Scripts.BuildingLogic
             }
             
         }
-        #endregion
 
         public void OnFixBuilding(float addHp)
         {
             stats.BuffHealth(addHp);
         }
+
+        public void DestroyBuilding()
+        {
+            spawner.BuildingSpawner.DespawnBuilding(this);
+        }
+
+        #endregion
+
+
     }
 
 }

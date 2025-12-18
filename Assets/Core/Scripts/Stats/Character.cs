@@ -1,22 +1,17 @@
+using Game.Scripts.BaseScripts.Abstract;
 using Game.Scripts.StatsCharacter.WorldUI;
+using Game.Scripts.UI.HUD;
 using SubScripts;
 using System;
 using UnityEngine;
 
 namespace Game.Scripts.StatsCharacter
 {
-    public class Character
+    public class Character : Stats
     {
         private StatsData data;
 
-        protected string charName;
-        protected Sprite avatar;
-        protected float maxHp;
-        protected float hp;
-        protected int level;
         protected float moveSpeed;
-        protected float damage;
-        protected float armor;
         protected ECharacterType characterType;
         protected ECharacterSide characterSide;
 
@@ -25,14 +20,7 @@ namespace Game.Scripts.StatsCharacter
         protected float harvestInterval;
 
 
-        public string Name => charName;
-        public Sprite Avatar => avatar; 
-        public float Hp => hp;
-        public float MaxHp => maxHp;
-        public int Level => level;  
         public float MoveSpeed => moveSpeed;
-        public float Damage => damage;
-        public float Armor => armor;
         public ECharacterSide Side => characterSide;
         public ECharacterType Type => characterType;
 
@@ -41,14 +29,15 @@ namespace Game.Scripts.StatsCharacter
         public float HarvestAmount => harvestAmount;
         public float HarvestInterval => harvestInterval;
 
-        public Action<float> OnTakeDamage;
-        public Action<float, float> OnHealthChange;
-
+       
         public Character(StatsData stats, CharacterHUD hud)
         {
             data = stats;
-            maxHp = stats.MaxHp;
-            hp = maxHp;
+            key = stats.Key;
+            name = stats.Name;
+            avatar = stats.Avatar;
+            maxhp = stats.MaxHp;
+            hp = maxhp;
             moveSpeed = stats.MoveSpeed;
             damage = stats.Damage;
             armor = stats.Armor;
@@ -58,6 +47,7 @@ namespace Game.Scripts.StatsCharacter
             fixingDmg = stats.FixingDamage;
             harvestAmount = stats.HarvestAmount;
             harvestInterval = stats.HarvestInterval;
+            slots = stats.Slots;
             OnTakeDamage -= hud.HpBar.UpdateHpBar;
             OnTakeDamage += hud.HpBar.UpdateHpBar;
         }
@@ -65,22 +55,22 @@ namespace Game.Scripts.StatsCharacter
         public void TakeDamage(float damage)
         {
             float realDmg = Mathf.Clamp(damage - armor, 0, damage);
-            hp = Mathf.Clamp(hp - realDmg, 0, maxHp);
-            OnTakeDamage?.Invoke(hp/maxHp);
-            OnHealthChange?.Invoke(hp, maxHp);
+            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
+            OnTakeDamage?.Invoke(hp/maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
         }
 
         public void TakeDamage(DamageInfor damageInfor)
         {
             float realDmg = Mathf.Clamp(damageInfor.Damage - armor, 0, damageInfor.Damage);
-            hp = Mathf.Clamp(hp - realDmg, 0, maxHp);
-            OnTakeDamage?.Invoke(hp/maxHp);
-            OnHealthChange?.Invoke(hp, maxHp);
+            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
+            OnTakeDamage?.Invoke(hp/maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
         }
 
         public void ChangeHp(float amount)
         {
-            hp = Mathf.Clamp(hp+amount, 0, maxHp);
+            hp = Mathf.Clamp(hp+amount, 0, maxhp);
         }
     }
 

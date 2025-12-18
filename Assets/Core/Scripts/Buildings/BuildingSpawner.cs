@@ -63,7 +63,7 @@ namespace Game.Scripts.BuildingLogic
         public void DespawnBuilding(Building building)
         {
             ObjectPool<Building> pool = poolBuilding[building.Stats.Key];
-            ObjectPool<BuildingModel> modelPool = GetModelPool(building.Stats.Type, building.Stats.Key, building.Stats.Level);
+            ObjectPool<BuildingModel> modelPool = GetModelPool(building.BuildingStats.Type, building.Stats.Key, building.Stats.Level);
             modelPool.Despawn(building.Model);
             pool.Despawn(building);
         }
@@ -99,7 +99,7 @@ namespace Game.Scripts.BuildingLogic
 
         public void DespawnModel(Building building)
         {
-            ObjectPool<BuildingModel> modelPool = GetModelPool(building.Stats.Type, building.Stats.Key, building.Stats.Level);
+            ObjectPool<BuildingModel> modelPool = GetModelPool(building.BuildingStats.Type, building.Stats.Key, building.Stats.Level);
             modelPool.Despawn(building.Model);
         }
         #endregion

@@ -19,6 +19,7 @@ namespace Game.Scripts.Map.Mechanic
         [SerializeField] RuleTile ruleTile;
         [SerializeField] Tilemap groundTile;
         [SerializeField] Tilemap hoverTile;
+        [SerializeField] Tilemap skillHoverTile;
 
         [Header("Respawn Tile Settings")]
         [SerializeField] Tilemap respawnTileMap;
@@ -39,8 +40,11 @@ namespace Game.Scripts.Map.Mechanic
             hoverTile.SetTile(position, hover);
         }
 
+        public void SetSkillHover(Vector3Int position) => skillHoverTile.SetTile(position, hover);
+
 
         public void ClearHoverTile() => hoverTile.ClearAllTiles();
+        public void ClearSkillHoverTile() => skillHoverTile.ClearAllTiles();
 
         public void SetGround(Vector3Int position)
         {

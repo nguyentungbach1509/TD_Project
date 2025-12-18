@@ -1,3 +1,5 @@
+using Game.Scripts.UI.HUD;
+using Unity.Collections;
 using UnityEngine;
 
 namespace Game.Scripts.StatsCharacter
@@ -16,6 +18,7 @@ namespace Game.Scripts.StatsCharacter
     public class StatsData : ScriptableObject
     {
         [Header("General")]
+        [SerializeField] string key;
         [SerializeField] string charName;
         [SerializeField] Sprite avatar;
         [SerializeField] float maxHp;
@@ -30,6 +33,10 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] float harvestAmount;
         [SerializeField] float harvestInterval;
 
+        [Header("Slot Data")]
+        [SerializeField] SlotCollection slots;
+
+        public string Key => key;
         public string Name => charName;
         public Sprite Avatar => avatar;
         public float MaxHp => maxHp;    
@@ -42,6 +49,8 @@ namespace Game.Scripts.StatsCharacter
         public float FixingDamage => fixingDamage;
         public float HarvestAmount => harvestAmount;
         public float HarvestInterval => harvestInterval;
+
+        public SlotCollection Slots => slots;
     }
 }
 

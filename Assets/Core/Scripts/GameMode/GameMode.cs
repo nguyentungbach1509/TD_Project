@@ -6,10 +6,8 @@ using Game.Scripts.StatsCharacter;
 using Game.Scripts.UI;
 using Subscripts.Spawn;
 using SubScripts.Singleton;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 namespace Game.Scripts.GamePlay
 {
@@ -57,7 +55,7 @@ namespace Game.Scripts.GamePlay
 
             if(character != null)
             {
-                if (character.Stats.Side == ECharacterSide.Ally)
+                if (character.CharacterStats.Side == ECharacterSide.Ally)
                 {
                     UnitController.ClearAllSelectedDetection();
                     selectedUnit = character;
@@ -66,10 +64,10 @@ namespace Game.Scripts.GamePlay
                     playerInputController.OnMouseRightClick += selectedUnit.State.SetTarget;
                 }
 
-                uiManger.HUD.ChangeInforHUD(character);
+                uiManger.ChangeHUDOnSelect(character);
                 return;
             }
-            uiManger.HUD.ChangeInforHUD(null, building);
+            uiManger.ChangeHUDOnSelect(building);
         }
     }
 }

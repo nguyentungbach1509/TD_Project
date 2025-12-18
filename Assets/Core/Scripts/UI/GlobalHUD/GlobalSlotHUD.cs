@@ -1,7 +1,8 @@
+using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.BuildingLogic;
+using Game.Scripts.StatsCharacter;
 using Subscripts.Spawn;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Game.Scripts.UI.HUD
@@ -17,11 +18,28 @@ namespace Game.Scripts.UI.HUD
         {
             slots ??= new();
             slots.Clear();
+        }
 
-            for(int i = 0; i < BuildingController.GetAllData.Count; i++)
+        #region Updage Hud 
+        public void ChangeSlotHUD(IBaseGameObject baseGO)
+        {
+            if (baseGO == null) return;
+            
+            List<SlotData> slotData = baseGO.Slots.List;
+            
+            SetupSlotHudHelper(slotData, baseGO);
+
+            return;
+        }
+
+        private void SetupSlotHudHelper(List<SlotData> collection, IBaseGameObject baseGO)
+        {
+            slots.Clear();
+
+            for (int i = 0; i < collection.Count; i++)
             {
                 SlotHUD slot = spawner.SlotHUDSpawner.SpawnSlotHUD(slotContainer);
-                slot.Init(this, BuildingController.GetDataAt(i));
+                slot.Init(this, baseGO, collection[i]);
                 slots.Add(slot);
             }
         }
@@ -33,6 +51,16 @@ namespace Game.Scripts.UI.HUD
                 slots[i].HideSelectedBorder();
             }
         }
+        #endregion
+
+        #region Editor Call
+        [ContextMenu("Store Slot In List")]
+        public void SetupSlot()
+        {
+            slots.Clear();
+            slots.AddRange(GetComponentsInChildren<SlotHUD>(true));
+        }
+        #endregion
     }
 
 }
