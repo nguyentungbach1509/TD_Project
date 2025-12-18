@@ -1,6 +1,4 @@
 using Game.Scripts.BaseScripts.Interface;
-using Game.Scripts.BuildingLogic;
-using Game.Scripts.StatsCharacter;
 using Subscripts.Spawn;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,6 +1,4 @@
 using Game.Scripts.BaseScripts.Interface;
-using Game.Scripts.BuildingLogic;
-using Game.Scripts.StatsCharacter;
 using Game.Scripts.UI.HUD;
 using SubScripts.Singleton;
 using UnityEngine;

@@ -1,8 +1,5 @@
 using Game.Scripts.BaseScripts.Interface;
-using Game.Scripts.BuildingLogic;
-using Game.Scripts.StatsCharacter;
 using UnityEngine;
-using UnityEngine.InputSystem.Interactions;
 
 
 namespace Game.Scripts.UI.HUD

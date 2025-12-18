@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillName: 
   skillKey: 
-  skillType: 0
+  skillType: 1
   skillDescription: 
   skillIcon: {fileID: 0}
   skillRange: 0
