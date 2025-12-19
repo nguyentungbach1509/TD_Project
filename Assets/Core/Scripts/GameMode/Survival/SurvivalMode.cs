@@ -1,9 +1,5 @@
-using Game.Scripts.BuildingLogic;
-using Game.Scripts.Player.Controller;
-using Game.Scripts.StatsCharacter;
-using NUnit.Framework;
+
 using Subscripts;
-using System.Collections.Generic;
 using UnityEngine;
 
 

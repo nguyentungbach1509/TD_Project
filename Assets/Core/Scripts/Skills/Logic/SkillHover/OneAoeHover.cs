@@ -8,8 +8,12 @@ namespace Game.Scripts.SkillMechanic
     {
         public override void ShowHoverAoe(Vector3Int pos, int range)
         {
+            trackPositions ??= new();
+            trackPositions.Clear();
+
             grid.ClearSkillHoverTile();
             grid.SetSkillHover(pos);
+            trackPositions.Add(pos);
         }
     }
 }

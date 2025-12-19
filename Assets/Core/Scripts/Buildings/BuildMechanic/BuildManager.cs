@@ -1,5 +1,6 @@
 using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.GamePlay;
+using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
@@ -21,7 +22,7 @@ namespace Game.Scripts.BuildingLogic
         private Building currentBuild;
         private Dictionary<Vector3Int, Building> listBuildings;
         private HashSet<RequiredBuilding> currentRequirements;
-        private SurvivalMode survivalMode => SurvivalMode.Instance;
+        private GameMode mode => GameManager.Instance.CurrentMode;
         private bool isInit;
 
 
@@ -68,14 +69,14 @@ namespace Game.Scripts.BuildingLogic
         private void PlaceBuilding(Vector3Int pos)
         {
             if(currentBuild == null) return;
-            survivalMode.SelectedUnit.CurrentObstacle = currentBuild;
+            mode.SelectedUnit.CurrentObstacle = currentBuild;
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
             listBuildings.Add(pos, currentBuild);
             currentRequirements.Add(
                 new RequiredBuilding(currentBuild.BuildingStats.Type, currentBuild.Stats.Level));
             currentBuild = null;
-            survivalMode.SelectedUnit.CurrentObstacle = null;
+            mode.SelectedUnit.CurrentObstacle = null;
             gridManager.ClearHoverTile();
         }
         
@@ -84,8 +85,8 @@ namespace Game.Scripts.BuildingLogic
             TileCustom tile = gridManager.GetTile(pos);
             Obstacle obstacle = tile.GetObstacle();
             if (obstacle == null || obstacle is not Building) return;
-            survivalMode.SelectedUnit.CurrentObstacle = obstacle;
-            if (!survivalMode.SelectedUnit.InInteractRange()) return;
+            mode.SelectedUnit.CurrentObstacle = obstacle;
+            if (!mode.SelectedUnit.InInteractRange()) return;
             //currentBuild.Interact(pos);
         }
 

@@ -45,7 +45,7 @@ namespace Game.Scripts.GamePlay
             {
                 character.HUD.HideSelectedDetection();
             }
-        }
+        } 
     }
 }
 

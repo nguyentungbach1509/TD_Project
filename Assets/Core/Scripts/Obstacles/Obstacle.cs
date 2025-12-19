@@ -1,4 +1,5 @@
 ﻿using Game.Scripts.GamePlay;
+using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
@@ -28,7 +29,7 @@ namespace Game.Scripts.Map.Obstacles
         
         protected PathFinding pathFinder => PathFinding.Instance;
         protected GridManager grid => GridManager.Instance;
-        protected SurvivalMode survivalMode => SurvivalMode.Instance;
+        protected GameMode mode => GameManager.Instance.CurrentMode;
         protected PlayerInputController inputCtrl => PlayerInputController.Instance;
 
         public List<Vector3Int> Positions => positions;
@@ -101,7 +102,7 @@ namespace Game.Scripts.Map.Obstacles
         /// <returns></returns>
         public Vector3Int FindBestInteractionTile()
         {
-            Vector3Int playerPos = survivalMode.SelectedUnit.GridPos;
+            Vector3Int playerPos = mode.SelectedUnit.GridPos;
             var candidates = GetWalkableInteractionTiles();
 
             // sort theo khoảng cách đến player

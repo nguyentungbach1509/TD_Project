@@ -73,24 +73,6 @@ namespace Game.Scripts.BuildingLogic
             level++;
         }
 
-        public void TakeDamage(float damage)
-        {
-            float lostHp = damage - armor;
-            hp = Mathf.Clamp(hp - lostHp, 0, maxhp);
-            OnTakeDamage?.Invoke(hp/maxhp);
-            OnHealthDetailChange?.Invoke(hp, maxhp);
-            if (hp == 0)
-            {
-                //Destroy Building
-            }
-        }
-
-        public void BuffHealth(float amount)
-        {
-            hp = Mathf.Clamp(hp+amount, 0, maxhp);
-            OnTakeDamage?.Invoke(hp/maxhp);
-            OnHealthDetailChange?.Invoke(hp, maxhp);
-        }
     }
 }
 

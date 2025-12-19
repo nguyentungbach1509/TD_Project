@@ -7,6 +7,9 @@ namespace Game.Scripts.SkillMechanic
     {
         public override void ShowHoverAoe(Vector3Int pos, int range)
         {
+            trackPositions ??= new();
+            trackPositions.Clear();
+
             grid.ClearSkillHoverTile();
             int x = -range / 2;
             int y = -range / 2;
@@ -15,13 +18,16 @@ namespace Game.Scripts.SkillMechanic
             {
                 Vector3Int position = pos + new Vector3Int(x, 0, 0);
                 grid.SetSkillHover(position);
+                trackPositions.Add(position);
                 x++;
             }
 
             for(int j = 0; j < range; j++)
             {
+                if (y == 0) continue;
                 Vector3Int position = pos + new Vector3Int(0, y, 0);
                 grid.SetSkillHover(position);
+                trackPositions.Add(position);
                 y++;
             }
         }

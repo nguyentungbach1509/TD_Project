@@ -11,19 +11,19 @@ namespace Game.Scripts.Manager
     {
         private float positionZ;
         private Vector3 velocity = Vector3.zero;
-        private SurvivalMode survivalMode;
+        private GameMode mode;
 
         public void Init()
         {
-            survivalMode = SurvivalMode.Instance;
+            mode = GameManager.Instance.CurrentMode;
             positionZ = transform.position.z;
         }
 
         public void FollowPlayer()
         {
-            if (survivalMode.SelectedUnit == null) return;
+            if (mode.SelectedUnit == null) return;
 
-            Vector3 target = new Vector3(survivalMode.SelectedUnit.transform.position.x, survivalMode.SelectedUnit.transform.position.y, positionZ);
+            Vector3 target = new Vector3(mode.SelectedUnit.transform.position.x, mode.SelectedUnit.transform.position.y, positionZ);
             transform.position = Vector3.SmoothDamp(transform.position, target, ref velocity, .15f);
         }
     }

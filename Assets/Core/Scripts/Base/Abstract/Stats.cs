@@ -1,4 +1,5 @@
 using Game.Scripts.UI.HUD;
+using SubScripts;
 using System;
 using UnityEngine;
 
@@ -29,6 +30,29 @@ namespace Game.Scripts.BaseScripts.Abstract
 
         public Action<float> OnTakeDamage;
         public Action<float, float> OnHealthDetailChange;
+
+        public virtual void TakeDamage(float damage)
+        {
+            float realDmg = Mathf.Clamp(damage - armor, 0, damage);
+            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
+            OnTakeDamage?.Invoke(hp / maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
+        }
+
+        public virtual void TakeDamage(DamageInfor damageInfor)
+        {
+            float realDmg = Mathf.Clamp(damageInfor.Damage - armor, 0, damageInfor.Damage);
+            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
+            OnTakeDamage?.Invoke(hp / maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
+        }
+
+        public virtual void BuffHealth(float amount)
+        {
+            hp = Mathf.Clamp(hp + amount, 0, maxhp);
+            OnTakeDamage?.Invoke(hp / maxhp);
+            OnHealthDetailChange?.Invoke(hp, maxhp);
+        }
     }
 
 }

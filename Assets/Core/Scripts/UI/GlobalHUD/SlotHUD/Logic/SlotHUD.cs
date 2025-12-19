@@ -1,6 +1,8 @@
+using DG.Tweening;
 using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.BuildingLogic;
 using Game.Scripts.BuildingLogic.Data;
+using Game.Scripts.SkillMechanic;
 using Game.Scripts.StatsCharacter;
 using Game.Scripts.UI.HUD;
 using SubScripts.Pooling;
@@ -14,13 +16,16 @@ namespace Game.Scripts.UI
     public class SlotHUD : PoolableComponent, IPointerClickHandler
     {
         [SerializeField] protected Image iconSlot;
+        [SerializeField] protected Image blurImage;
         [SerializeField] protected GameObject selectedBorder;
 
         protected SlotData data;
         protected IBaseGameObject baseGO;
         protected GlobalSlotHUD slotHUD;
         protected BuildManager buildManager => BuildManager.Instance;
+        protected SkillManager skillManager => SkillManager.Instance;
 
+        protected Tween cooldownTween;
 
         public void Init(GlobalSlotHUD globalSlot, IBaseGameObject baseGameObject, SlotData slotData)
         {
@@ -47,6 +52,15 @@ namespace Game.Scripts.UI
             ShowSelectedBorder();
         }
 
+        private void UpdateSlotCooldown(float percent)
+        {
+            cooldownTween?.Kill();
+
+            cooldownTween = blurImage
+                .DOFillAmount(percent, 0.15f)
+                .SetEase(Ease.OutCubic);
+        }
+
         private void OnUse()
         {
             switch(data.Type)
@@ -64,6 +78,10 @@ namespace Game.Scripts.UI
                     break;
                 case ESlot.Destroy:
                     (baseGO as Building).DestroyBuilding();
+                    break;
+                case ESlot.Skill:
+                    Skill skill = (data as SkillSlotData).GetSkill();
+                    skillManager.SelectSkill(skill, UpdateSlotCooldown);
                     break;
             }
         }

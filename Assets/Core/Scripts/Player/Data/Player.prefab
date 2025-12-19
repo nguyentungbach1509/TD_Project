@@ -969,8 +969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3915c9cf2a4b76498632a61afe79440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 4814880510918119910}
-  stats: {fileID: 11400000, guid: 4bfd29ad464f67c47bd5e0a6fc6133bb, type: 2}
+  data: {fileID: 11400000, guid: 4bfd29ad464f67c47bd5e0a6fc6133bb, type: 2}
   hud: {fileID: 5988863107693066230}
   anim: {fileID: 2113788314675912089}
 --- !u!50 &4814880510918119910

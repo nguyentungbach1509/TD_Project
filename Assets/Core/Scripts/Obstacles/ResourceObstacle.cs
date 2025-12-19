@@ -1,8 +1,4 @@
-using Game.Scripts.GamePlay;
-using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
-using Game.Scripts.Player.Controller;
-using Game.Scripts.StatsCharacter;
 using System;
 using UnityEngine;
 
@@ -34,7 +30,7 @@ namespace Game.Scripts.ObstacleResource
         public override void Interact(Vector3Int pos)
         {
             if (!positions.Contains(pos)) return;
-            survivalMode.SelectedUnit.CurrentObstacle = this;
+            mode.SelectedUnit.CurrentObstacle = this;
         }
 
         public override void SetPlace(Vector3Int pos)

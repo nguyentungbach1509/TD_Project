@@ -52,26 +52,6 @@ namespace Game.Scripts.StatsCharacter
             OnTakeDamage += hud.HpBar.UpdateHpBar;
         }
 
-        public void TakeDamage(float damage)
-        {
-            float realDmg = Mathf.Clamp(damage - armor, 0, damage);
-            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
-            OnTakeDamage?.Invoke(hp/maxhp);
-            OnHealthDetailChange?.Invoke(hp, maxhp);
-        }
-
-        public void TakeDamage(DamageInfor damageInfor)
-        {
-            float realDmg = Mathf.Clamp(damageInfor.Damage - armor, 0, damageInfor.Damage);
-            hp = Mathf.Clamp(hp - realDmg, 0, maxhp);
-            OnTakeDamage?.Invoke(hp/maxhp);
-            OnHealthDetailChange?.Invoke(hp, maxhp);
-        }
-
-        public void ChangeHp(float amount)
-        {
-            hp = Mathf.Clamp(hp+amount, 0, maxhp);
-        }
     }
 
 }

@@ -11,6 +11,7 @@ namespace Game.Scripts.Manager
         private GameMode currentMode;
         private bool isInit;
 
+        public GameMode CurrentMode => currentMode;
 
         private void Start()
         {
