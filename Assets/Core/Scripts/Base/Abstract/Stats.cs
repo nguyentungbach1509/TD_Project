@@ -26,7 +26,7 @@ namespace Game.Scripts.BaseScripts.Abstract
         public int Level => level;
         public float Damage => damage;
 
-        public SlotCollection Slots { get; }
+        public SlotCollection Slots => slots;
 
         public Action<float> OnTakeDamage;
         public Action<float, float> OnHealthDetailChange;

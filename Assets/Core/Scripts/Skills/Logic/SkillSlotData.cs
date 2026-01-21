@@ -1,14 +1,14 @@
+using Game.Scripts.StatsCharacter;
 using Game.Scripts.UI.HUD;
 using UnityEngine;
 
 namespace Game.Scripts.SkillMechanic
 {
-    [CreateAssetMenu(fileName = "SkillSlotData", menuName = "Data/Skills/Slots/SkillSlotData")]
-    public class SkillSlotData : SlotData
+    public abstract class SkillSlotData : SlotData
     {
-        [SerializeField] private SkillData skillData;
+        [SerializeField] protected SkillData skillData;
 
-        public Skill GetSkill() => new Skill(skillData);
+        public abstract Skill GetSkill(CharacterBase character);
     }
 }
 

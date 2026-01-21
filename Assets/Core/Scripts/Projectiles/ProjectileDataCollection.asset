@@ -9,17 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee2f4d14e4b4841499c982d166eb50eb, type: 3}
-  m_Name: SkillData
+  m_Script: {fileID: 11500000, guid: 2393fc9a78e4406409cfe66479f3d1f3, type: 3}
+  m_Name: ProjectileDataCollection
   m_EditorClassIdentifier: 
-  skillName: 
-  skillKey: 
-  skillType: 1
-  skillDescription: 
-  skillIcon: {fileID: 0}
-  skillRange: 0
-  skillDmg: 0
-  skillCd: 0
-  typeHover: 0
-  skillAoe: 0
-  skillHover: {fileID: 0}
+  prefabs:
+  - key: FireBall
+    prefab: {fileID: 8001256572592933393, guid: cb4dfbe0262b33440aa50b3bad9b5d05, type: 3}

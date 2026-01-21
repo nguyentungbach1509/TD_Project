@@ -9,9 +9,13 @@ namespace Game.Scripts.BaseScripts
     {
         protected GridManager grid => GridManager.Instance;
         protected HashSet<Vector3Int> trackPositions;
+        protected Vector3Int targetPoint;
 
+
+        public Vector3Int TargetPoint => targetPoint;
         public HashSet<Vector3Int> TrackPos => trackPositions;
         public abstract void ShowHoverAoe(Vector3Int pos, int range);   
+        
         public void ClearHoverAoe()
         {
             grid.ClearSkillHoverTile();

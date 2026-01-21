@@ -7,7 +7,6 @@ namespace Game.Scripts.GamePlay
 {
     public class SurvivalMode : GameMode
     {
-        
         public static SurvivalMode Instance => GetInstance<SurvivalMode>();
 
         public override void Init()
@@ -19,6 +18,7 @@ namespace Game.Scripts.GamePlay
             buildManager.Init();
             cameraController.Init();
             uiManger.Init();
+            skillManager.Init();
         }
 
         public override void StartGame()
@@ -31,6 +31,7 @@ namespace Game.Scripts.GamePlay
         {
             if(selectedUnit != null) selectedUnit.UpdateCharacter();
             buildManager.UpdateBuilder();
+            skillManager.UpdateSkill();
         }
 
         public override void LateUpdateGame()

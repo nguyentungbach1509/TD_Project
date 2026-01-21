@@ -18,7 +18,7 @@ namespace Game.Scripts.ObstacleResource
             InitOrePool();
         }
 
-        public void InitOrePool()
+        private void InitOrePool()
         {
             if (gamePrefabs == null)
             {

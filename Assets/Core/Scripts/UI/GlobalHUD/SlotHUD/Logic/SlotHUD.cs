@@ -80,7 +80,7 @@ namespace Game.Scripts.UI
                     (baseGO as Building).DestroyBuilding();
                     break;
                 case ESlot.Skill:
-                    Skill skill = (data as SkillSlotData).GetSkill();
+                    Skill skill = (data as SkillSlotData).GetSkill(baseGO as CharacterBase);
                     skillManager.SelectSkill(skill, UpdateSlotCooldown);
                     break;
             }

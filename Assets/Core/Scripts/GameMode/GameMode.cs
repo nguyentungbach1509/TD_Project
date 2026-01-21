@@ -2,6 +2,7 @@ using Game.Scripts.BuildingLogic;
 using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Player.Controller;
+using Game.Scripts.SkillMechanic;
 using Game.Scripts.StatsCharacter;
 using Game.Scripts.UI;
 using Subscripts.Spawn;
@@ -27,6 +28,7 @@ namespace Game.Scripts.GamePlay
         protected CameraController cameraController => CameraController.Instance;
         protected SpawnManager spawnManager => SpawnManager.Instance;
         protected UIManager uiManger => UIManager.Instance;
+        protected SkillManager skillManager => SkillManager.Instance;
 
         public CharacterBase SelectedUnit => selectedUnit;
 

@@ -9,6 +9,7 @@ namespace Game.Scripts.SkillMechanic
         {
             trackPositions ??= new();
             trackPositions.Clear();
+            targetPoint = pos;
 
             grid.ClearSkillHoverTile();
             int x = -range / 2;

@@ -17,7 +17,8 @@ namespace Game.Scripts.StatsCharacter
         [SerializeField] protected StatsData data;
         [SerializeField] protected CharacterHUD hud;
         [SerializeField] protected AnimationController anim;
-        
+        [SerializeField] protected Transform firePoint;
+
         protected GridManager grid => GridManager.Instance;
 
         protected StateController stateController;
@@ -26,12 +27,12 @@ namespace Game.Scripts.StatsCharacter
         protected bool isInit;
         protected Obstacle targetObstacle;
         protected float saveSide;
+        
         public StateController State => stateController;
-
-
         public AnimationController Anim => anim;
         public Stats Stats => stats;
         public Character CharacterStats => stats as Character;
+        public Transform FirePoint => firePoint;
         public bool IsInit => isInit;
 
         public virtual void Init()

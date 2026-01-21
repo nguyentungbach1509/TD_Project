@@ -4,6 +4,7 @@ using SubScripts.Singleton;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace Game.Scripts.Player.Controller
@@ -81,23 +82,31 @@ namespace Game.Scripts.Player.Controller
         #region Mouse Input
         private void MouseLeftInput_OnClick(InputAction.CallbackContext ctx)
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+                return; // click vào UI → bỏ qua world
             Vector3Int mousePos = GridMousePos();
             OnMouseLeftClick?.Invoke(mousePos);
         }
 
         private void MouseLeftInput_OnUp(InputAction.CallbackContext ctx)
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+                return; // click vào UI → bỏ qua world
             OnMouseLeftUp?.Invoke();
         }
 
         private void MouseRightInput_OnClick(InputAction.CallbackContext ctx)
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+                return; // click vào UI → bỏ qua world
             Vector3Int mousePos = GridMousePos();
             OnMouseRightClick?.Invoke(mousePos);
         }
 
         private void MouseRightInput_OnUp(InputAction.CallbackContext ctx)
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+                return; // click vào UI → bỏ qua world
             OnMouseRightUp?.Invoke();
         }
 

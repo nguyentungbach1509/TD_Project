@@ -44,6 +44,9 @@ namespace Game.Scripts.SkillMechanic
         [SerializeField] int skillAoe;
         [SerializeField] SkillHover skillHover;
 
+        [Header("Projectiles")]
+        [SerializeField] string projectileKey;
+
 
         public string SkillName => skillName;
         public string SkillKey => skillKey;
@@ -58,6 +61,7 @@ namespace Game.Scripts.SkillMechanic
         public ECharacterSide SideTarget => sideTarget;
         public float SkillDmg => skillDmg;
         public float SkillCd => skillCd;    
+        public string ProjectileKey => projectileKey;
     }
 
 }

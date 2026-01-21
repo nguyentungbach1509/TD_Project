@@ -1,13 +1,10 @@
 using Game.Scripts.BuildingLogic;
-using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.ObstacleResource;
 using Game.Scripts.Player;
+using Game.Scripts.Projectiles;
 using Game.Scripts.UI;
 using Game.Scripts.UI.HUD;
-using Mono.Cecil;
-using NUnit.Framework;
 using SubScripts.Singleton;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Subscripts.Spawn
@@ -21,7 +18,7 @@ namespace Subscripts.Spawn
         private TreeSpawner treeSpawner;
         private OreSpawner oreSpawner;
         private BuilderSpawner builderSpawner;
-
+        private ProjectileSpawner projectileSpawner;
         
         #region UISpawner
         private ResourceTxtSpawner resourceTxtSpawner;
@@ -35,6 +32,7 @@ namespace Subscripts.Spawn
         
         public ResourceTxtSpawner ResourceTxtSpawner => resourceTxtSpawner;
         public SlotHUDSpawner SlotHUDSpawner => slotHUDSpawner;
+        public ProjectileSpawner ProjectileSpawner => projectileSpawner;
 
         public void Init()
         {
@@ -44,6 +42,7 @@ namespace Subscripts.Spawn
             oreSpawner = new OreSpawner(gamePrefabs);
             resourceTxtSpawner = new ResourceTxtSpawner(uiPrefabs);
             slotHUDSpawner = new SlotHUDSpawner(uiPrefabs);
+            projectileSpawner = new ProjectileSpawner(gamePrefabs);
         }
     }
 }

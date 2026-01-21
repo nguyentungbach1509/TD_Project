@@ -21,6 +21,7 @@ namespace Game.Scripts.SkillMechanic
         protected float skillDmg;
         protected float skillCd;
         protected float skillTime;
+        protected string projectileKey;
 
         protected SpawnManager spawner => SpawnManager.Instance;
 
@@ -32,7 +33,8 @@ namespace Game.Scripts.SkillMechanic
 
         protected SkillData data;
         protected Coroutine cdCoroutine;
-        
+        protected CharacterBase owner;
+
         public string SkillName => skillName;
         public string SkillKey => skillKey;
         public string SkillDescription => skillDescription;
@@ -46,11 +48,11 @@ namespace Game.Scripts.SkillMechanic
         public SkillHover SkillHover => skillHover;
         public float SkillDmg => skillDmg;
         public float SkillCd => skillCd;
-
+        public string ProjectileKey => projectileKey;
         public bool OnCooldown { get; set; }
 
 
-        public Skill(SkillData skillData)
+        public Skill(CharacterBase character, SkillData skillData)
         {
             data = skillData;
             skillName = skillData.name;
@@ -66,6 +68,9 @@ namespace Game.Scripts.SkillMechanic
             sideTarget = skillData.SideTarget;
             skillHover = skillData.SkillHover;
             skillAoe = skillData.SkillAoe;
+            skillTargetType = skillData.SkillTargetType;
+            projectileKey = skillData.ProjectileKey;
+            owner = character;
         }
 
         public virtual void UsePassive()
@@ -84,7 +89,7 @@ namespace Game.Scripts.SkillMechanic
                 CharacterBase character = UnitController.GetCharacter(pos);
                 if (character == null || character.CharacterStats.Side != sideTarget) continue;
                 //Dinh hieu ung va damage cua skill
-                character.Stats.TakeDamage(skillDmg);
+                //character.Stats.TakeDamage(skillDmg);
             }
 
             skillHover.TrackPos.Clear();

@@ -16,3 +16,6 @@ MonoBehaviour:
   BuildingPrefabs: {fileID: 11400000, guid: 8cee69ff5e02eb348bfafad0a2154e76, type: 2}
   TreePrefabs: {fileID: 11400000, guid: 6fe601783b194014080fd658c50ce947, type: 2}
   OrePrefabs: {fileID: 11400000, guid: 89ffa73aabab5b9438731a776b6507c4, type: 2}
+  ProjectilePrefabs: {fileID: 11400000, guid: e204b83d1ad9797499bf5d0b7c236900, type: 2}
+  PlayerPrefab: {fileID: 11400000, guid: 28e7b7f14aa7e1549824191c3f171886, type: 2}
+  UnitPrefabs: {fileID: 0}

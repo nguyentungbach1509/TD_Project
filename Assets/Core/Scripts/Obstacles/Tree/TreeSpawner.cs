@@ -2,7 +2,6 @@
 using Game.Scripts.Map.Mechanic;
 using SubScripts.Pooling;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Game.Scripts.ObstacleResource
@@ -30,7 +29,7 @@ namespace Game.Scripts.ObstacleResource
             isInitialized = true;
         }
 
-        public void InitTreePool()
+        private void InitTreePool()
         {
             if(gamePrefabs == null)
             {

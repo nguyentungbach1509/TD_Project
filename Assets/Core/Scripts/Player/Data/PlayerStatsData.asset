@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da30a7230182d1468e142152929d7bb, type: 3}
   m_Name: PlayerStatsData
   m_EditorClassIdentifier: 
-  charName: 
-  avatar: {fileID: 0}
+  key: Player
+  charName: Player
+  avatar: {fileID: 4641991687608325381, guid: ebd47a41e4f9e1240b6ebd41d3641bef, type: 3}
   maxHp: 100
   moveSpeed: 8
   damage: 0
@@ -28,3 +29,4 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 3bb548fd18e1c494eafb37f3357ac83a, type: 2}
     - {fileID: 11400000, guid: 31ff2df2ac69e3341afa37e87c3ae955, type: 2}
     - {fileID: 11400000, guid: 233daea70fc761246986f2e26e5cda5f, type: 2}
+    - {fileID: 11400000, guid: 3d48a45b88260d44c80cd13f1bda42cb, type: 2}

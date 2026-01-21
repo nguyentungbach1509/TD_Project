@@ -32,7 +32,7 @@ namespace Game.Scripts.UI.HUD
 
         private void SetupSlotHudHelper(List<SlotData> collection, IBaseGameObject baseGO)
         {
-            slots.Clear();
+            ClearSlots();
 
             for (int i = 0; i < collection.Count; i++)
             {
@@ -48,6 +48,16 @@ namespace Game.Scripts.UI.HUD
             {
                 slots[i].HideSelectedBorder();
             }
+        }
+
+        public void ClearSlots()
+        {
+            for(int i = 0; i < slots.Count; i++)
+            {
+                spawner.SlotHUDSpawner.DespawnSlotHUD(slots[i]);
+            }
+            slots.Clear();
+
         }
         #endregion
 

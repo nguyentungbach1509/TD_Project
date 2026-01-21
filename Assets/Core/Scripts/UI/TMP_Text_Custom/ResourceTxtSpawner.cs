@@ -23,7 +23,7 @@ namespace Game.Scripts.UI
             InitTextPool();
         }
 
-        public void InitTextPool()
+        private void InitTextPool()
         {
             if (uiPrefabs == null)
             {
