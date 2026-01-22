@@ -130,7 +130,7 @@ namespace Game.Scripts.BuildingLogic
         }
 
 
-        private void StartBuild(Vector3Int pos)
+        protected virtual void StartBuild(Vector3Int pos)
         {
             if (progressingCoroutine != null) StopCoroutine(progressingCoroutine);
             progressingCoroutine = StartCoroutine(StartProgress());

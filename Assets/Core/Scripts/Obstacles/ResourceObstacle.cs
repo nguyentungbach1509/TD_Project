@@ -1,3 +1,4 @@
+using Game.Scripts.Manager;
 using Game.Scripts.Map.Obstacles;
 using System;
 using UnityEngine;
@@ -41,6 +42,15 @@ namespace Game.Scripts.ObstacleResource
         public void OnHarvestResources()
         {
             onHarvestTextChange?.Invoke(eachHarvest);
+            switch (obstacleType)
+            {
+                case EObstacleType.Chopable:
+                    CollectedResourcesController.AddLumbers(eachHarvest);
+                    break;
+                case EObstacleType.Miningable:
+                    CollectedResourcesController.AddGolds(eachHarvest);
+                    break;
+            }
         }
     }
 

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   key: FireBall
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 7490077973482054380, guid: 507bc3892d645914f97b85e8b397ecea, type: 3}
   skillData: {fileID: 11400000, guid: 91cd6bc51e7374a49ad46a7c93d69834, type: 2}

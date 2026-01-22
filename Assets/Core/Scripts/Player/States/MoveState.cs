@@ -12,7 +12,7 @@ namespace Game.Scripts.Player.StateMachine
     {
         private List<Vector3Int> path;
         private Sequence moveSequence;
-
+        private Vector3Int currentPos;
         public MoveState(BuilderController player) : base(player)
         {
         }
@@ -21,7 +21,6 @@ namespace Game.Scripts.Player.StateMachine
         {
             Debug.Log("Move State");
             path = pathFinder.GetPath(player.GridPos, State.Target);
-            
             PathFindingMove();
         }
 
@@ -32,8 +31,9 @@ namespace Game.Scripts.Player.StateMachine
             {
                 moveSequence.Kill();
             }
+            else currentPos = path[0];
 
-            moveSequence = DOTween.Sequence();
+                moveSequence = DOTween.Sequence();
             player.Anim.PlayAnimation(AnimationKey.Move);
             
             foreach (var step in path)
@@ -45,14 +45,13 @@ namespace Game.Scripts.Player.StateMachine
 
             moveSequence.OnComplete(() =>
             {
-                UnitController.UpdatePosition(player.GridPos, State.Target);
+                UnitController.UpdatePosition(currentPos, State.Target);
                 // nếu sau khi đi xong mà gặp obstacle → đổi state  
                 if (player.CurrentObstacle != null && player.InInteractRange())
                 {
                     StateByObstacle();
                     return;
                 }
-
                 State.ChangeState(AnimationKey.Idle);
             });
         }

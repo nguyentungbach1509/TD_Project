@@ -8,12 +8,13 @@ namespace Game.Scripts.UI
     public class UIManager : SingletonBase<UIManager>
     {
         [SerializeField] GlobalHUD globalHud;
-
+        [SerializeField] ResourcesHUD resourcesHUD;
         public GlobalHUD HUD => globalHud;
 
         public void Init()
         {
             globalHud.Init();
+            resourcesHUD.Init();
         }
 
         #region Global HUD

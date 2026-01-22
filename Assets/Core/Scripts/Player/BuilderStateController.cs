@@ -18,7 +18,6 @@ namespace Game.Scripts.Player.StateMachine
             currentState.Enter();
         }
 
-        
 
         protected override State DetectState(AnimationKey key)
         {

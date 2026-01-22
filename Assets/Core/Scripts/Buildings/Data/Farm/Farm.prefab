@@ -49,3 +49,4 @@ MonoBehaviour:
   model: {fileID: 0}
   hud: {fileID: 0}
   buildTime: 1.25
+  foodProducts: 10
