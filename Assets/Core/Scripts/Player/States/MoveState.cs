@@ -33,7 +33,7 @@ namespace Game.Scripts.Player.StateMachine
             }
             else currentPos = path[0];
 
-                moveSequence = DOTween.Sequence();
+            moveSequence = DOTween.Sequence();
             player.Anim.PlayAnimation(AnimationKey.Move);
             
             foreach (var step in path)
