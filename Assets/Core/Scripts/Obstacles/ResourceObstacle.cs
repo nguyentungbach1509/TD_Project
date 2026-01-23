@@ -31,6 +31,7 @@ namespace Game.Scripts.ObstacleResource
         public override void Interact(Vector3Int pos)
         {
             if (!positions.Contains(pos)) return;
+            if(mode.SelectedUnit == null) return;
             mode.SelectedUnit.CurrentObstacle = this;
         }
 
@@ -45,10 +46,10 @@ namespace Game.Scripts.ObstacleResource
             switch (obstacleType)
             {
                 case EObstacleType.Chopable:
-                    CollectedResourcesController.AddLumbers(eachHarvest);
+                    StorageController.AddLumbers(eachHarvest);
                     break;
                 case EObstacleType.Miningable:
-                    CollectedResourcesController.AddGolds(eachHarvest);
+                    StorageController.AddGolds(eachHarvest);
                     break;
             }
         }

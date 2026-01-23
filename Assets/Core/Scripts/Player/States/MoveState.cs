@@ -19,6 +19,7 @@ namespace Game.Scripts.Player.StateMachine
 
         public override void Enter()
         {
+            if (gameMode.SelectedUnit != character || gameMode.SelectedUnit == null) return;
             Debug.Log("Move State");
             path = pathFinder.GetPath(player.GridPos, State.Target);
             PathFindingMove();

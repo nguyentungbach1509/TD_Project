@@ -64,11 +64,12 @@ namespace Game.Scripts.BuildingLogic
             }
             currentBuild = spawner.BuildingSpawner.SpawnBuilding(group, key,
                 inputCtrl.GridMousePos(), Quaternion.identity);
+            inputCtrl.IsLockLeftClick = true;
         }
         
         private void PlaceBuilding(Vector3Int pos)
         {
-            if(currentBuild == null) return;
+            if (currentBuild == null) return;
             mode.SelectedUnit.CurrentObstacle = currentBuild;
             if (!currentBuild.IsAvailableTile(pos)) return;
             currentBuild.SetPlace(pos);
@@ -78,8 +79,9 @@ namespace Game.Scripts.BuildingLogic
             currentBuild = null;
             mode.SelectedUnit.CurrentObstacle = null;
             gridManager.ClearHoverTile();
+            inputCtrl.IsLockLeftClick = false;
         }
-        
+
         private void InteractBuild(Vector3Int pos)
         {
             TileCustom tile = gridManager.GetTile(pos);

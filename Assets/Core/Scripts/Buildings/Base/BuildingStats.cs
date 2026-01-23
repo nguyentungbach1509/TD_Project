@@ -23,6 +23,7 @@ namespace Game.Scripts.BuildingLogic
         private int lumbers;
         private int foods;
         private float buildTime;
+        private EBuildLimit limitBuild;
 
         private UpdateRequirement[] requirements;
         
@@ -39,6 +40,7 @@ namespace Game.Scripts.BuildingLogic
         public int Lumbers => lumbers;
         public int Foods => foods;
         public float BuildTime => buildTime;
+        public EBuildLimit Limit => limitBuild;
 
         public UpdateRequirement[] Requirements => requirements;
         
@@ -54,6 +56,7 @@ namespace Game.Scripts.BuildingLogic
             armor = data.Armor;
             damage = data.Damage;
             buildTime = data.BuildTime;
+            limitBuild = data.Limit;
             requirements = data.Requirements;
             level = 1;
             slots = data.Slots;

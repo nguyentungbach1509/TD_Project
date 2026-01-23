@@ -6,8 +6,8 @@ namespace Game.Scripts.UI
     {
         public override void Init()
         {
-            CollectedResourcesController.OnGoldChange -= UpdateValue;
-            CollectedResourcesController.OnGoldChange += UpdateValue;
+            StorageController.OnGoldChange -= UpdateValue;
+            StorageController.OnGoldChange += UpdateValue;
         }
 
         public override void UpdateValue(int value)

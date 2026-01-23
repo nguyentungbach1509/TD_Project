@@ -6,8 +6,8 @@ namespace Game.Scripts.UI
     {
         public override void Init()
         {
-            CollectedResourcesController.OnFoodChange -= UpdateValue;
-            CollectedResourcesController.OnFoodChange += UpdateValue;
+            StorageController.OnFoodChange -= UpdateValue;
+            StorageController.OnFoodChange += UpdateValue;
         }
 
         public override void UpdateValue(int value)

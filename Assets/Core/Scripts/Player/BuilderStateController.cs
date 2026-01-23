@@ -1,9 +1,7 @@
-using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
-using Game.Scripts.TileController.Mechanic;
 using SubScripts.Constants;
-using UnityEngine;
+
 
 namespace Game.Scripts.Player.StateMachine
 {

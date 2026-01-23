@@ -27,6 +27,8 @@ namespace Game.Scripts.UI
 
         protected Tween cooldownTween;
 
+        public SlotData Data => data;
+
         public void Init(GlobalSlotHUD globalSlot, IBaseGameObject baseGameObject, SlotData slotData)
         {
             data = slotData;
@@ -85,6 +87,7 @@ namespace Game.Scripts.UI
                     break;
             }
         }
+
     }
 }
 

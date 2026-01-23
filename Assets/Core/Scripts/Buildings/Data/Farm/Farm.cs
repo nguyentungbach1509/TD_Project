@@ -9,7 +9,7 @@ namespace Game.Scripts.BuildingLogic
         protected override void StartBuild(Vector3Int pos)
         {
             base.StartBuild(pos);
-            CollectedResourcesController.AddFoods(foodProducts);
+            StorageController.AddFoods(foodProducts);
         }
     }
 }

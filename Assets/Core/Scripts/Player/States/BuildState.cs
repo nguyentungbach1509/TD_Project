@@ -18,6 +18,7 @@ namespace Game.Scripts.Player.StateMachine
 
         public override void Enter()
         {
+            if (gameMode.SelectedUnit != character || gameMode.SelectedUnit == null) return;
             Debug.Log("Building State");
             building = player.CurrentObstacle as Building;
             anim.PlayAnimation(AnimationKey.Build);

@@ -11,6 +11,7 @@ namespace Game.Scripts.UI.HUD
         [Header("Slots HUD")]
         [SerializeField] private GlobalSlotHUD slotsHud;
 
+
         public void Init()
         {
             slotsHud.Init();
@@ -25,6 +26,7 @@ namespace Game.Scripts.UI.HUD
         {
             slotsHud.ChangeSlotHUD(baseGO);
         }
+
     }
 }
 

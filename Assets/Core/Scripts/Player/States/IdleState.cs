@@ -11,7 +11,7 @@ namespace Game.Scripts.Player.StateMachine
         }
 
         public override void Enter()
-        {
+        { 
             Debug.Log("Idle State");
             anim.PlayAnimation(AnimationKey.Idle);
         }

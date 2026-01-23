@@ -28,6 +28,7 @@ namespace Game.Scripts.GamePlay
 
         public static void UpdatePosition(Vector3Int from, Vector3Int to)
         {
+            if(from == to) return;
             CharacterBase character = GetCharacter(from);
             if(character == null) return;
             characterDictPos[to] = character;

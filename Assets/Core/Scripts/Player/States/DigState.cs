@@ -13,6 +13,7 @@ namespace Game.Scripts.Player.StateMachine
 
         public override void Enter()
         {
+            if (gameMode.SelectedUnit != character || gameMode.SelectedUnit == null) return;
             Debug.Log("Dig State");
             anim.PlayAnimation(AnimationKey.Dig);
         }

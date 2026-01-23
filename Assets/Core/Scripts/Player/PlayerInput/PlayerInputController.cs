@@ -25,6 +25,8 @@ namespace Game.Scripts.Player.Controller
         public Action<Vector3Int> OnMouseRightClick;
         public Action OnMouseRightUp;
 
+        public bool IsLockLeftClick { get; set; }
+
         public void Init()
         {
             var playerMap = inputActions.FindActionMap("Player");
@@ -82,16 +84,17 @@ namespace Game.Scripts.Player.Controller
         #region Mouse Input
         private void MouseLeftInput_OnClick(InputAction.CallbackContext ctx)
         {
-            if (EventSystem.current.IsPointerOverGameObject())
-                return; // click vào UI → bỏ qua world
+            if (EventSystem.current.IsPointerOverGameObject()) return; // click vào UI → bỏ qua world
+            if (IsLockLeftClick) return;
             Vector3Int mousePos = GridMousePos();
             OnMouseLeftClick?.Invoke(mousePos);
         }
 
         private void MouseLeftInput_OnUp(InputAction.CallbackContext ctx)
         {
-            if (EventSystem.current.IsPointerOverGameObject())
-                return; // click vào UI → bỏ qua world
+            if (EventSystem.current.IsPointerOverGameObject()) return; // click vào UI → bỏ qua world
+            if (IsLockLeftClick) return;
+
             OnMouseLeftUp?.Invoke();
         }
 

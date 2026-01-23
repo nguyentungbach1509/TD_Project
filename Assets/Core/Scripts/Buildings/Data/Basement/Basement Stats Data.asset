@@ -19,6 +19,7 @@ MonoBehaviour:
   size:
     Width: 3
     Height: 3
+  limitBuild: 0
   maxHp: 100
   armor: 10
   damage: 0
@@ -62,3 +63,6 @@ MonoBehaviour:
     RequiredFoods: 0
     RequiredBuildTime: 0
   prefab: {fileID: 3737771554494052079, guid: 9f23481aecdb2034a807df4a1074e6e9, type: 3}
+  slots:
+    List:
+    - {fileID: 11400000, guid: 3f98a69ea14464648861039dfb38d252, type: 2}

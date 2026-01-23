@@ -17,6 +17,7 @@ namespace Game.Scripts.Player.StateMachine
 
         public override void Enter()
         {
+            if (gameMode.SelectedUnit != character || gameMode.SelectedUnit == null) return;
             Debug.Log("Mining State");
             resource = player.CurrentObstacle as ResourceObstacle;
             anim.PlayAnimation(AnimationKey.Mining);

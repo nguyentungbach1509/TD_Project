@@ -6,8 +6,8 @@ namespace Game.Scripts.UI
     {
         public override void Init()
         {
-            CollectedResourcesController.OnLumberChange -= UpdateValue;
-            CollectedResourcesController.OnLumberChange += UpdateValue;
+            StorageController.OnLumberChange -= UpdateValue;
+            StorageController.OnLumberChange += UpdateValue;
         }
 
         public override void UpdateValue(int value)

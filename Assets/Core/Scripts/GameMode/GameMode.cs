@@ -47,6 +47,9 @@ namespace Game.Scripts.GamePlay
         {
             CharacterBase character = UnitController.GetCharacter(position);
             Building building = buildManager.GetBuilding(position);
+
+            selectedUnit = null;
+
             if (building == null && character == null)
             {
                 uiManger.HideHUD();

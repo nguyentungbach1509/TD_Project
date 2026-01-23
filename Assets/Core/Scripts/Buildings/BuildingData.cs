@@ -21,6 +21,12 @@ namespace Game.Scripts.BuildingLogic.Data
         ArmyUnits
     }
 
+    public enum EBuildLimit
+    {
+        One,
+        Multi
+    }
+
     [CreateAssetMenu(menuName = "Data/Buildings/Stats")]
     public class BuildingData : ScriptableObject
     {
@@ -30,6 +36,7 @@ namespace Game.Scripts.BuildingLogic.Data
         [SerializeField] protected string description;
         [SerializeField] protected EBuildingType type;
         [SerializeField] protected BuildingTileSize size;
+        [SerializeField] protected EBuildLimit limitBuild;
 
         [Header("Stats Data")]
         [SerializeField] protected float maxHp;
@@ -65,6 +72,7 @@ namespace Game.Scripts.BuildingLogic.Data
         public float Armor => armor;
         public float Damage => damage;  
         public float BuildTime => buildTime;
+        public EBuildLimit Limit => limitBuild;
         public Sprite Icon => buildingIcon;
         
         

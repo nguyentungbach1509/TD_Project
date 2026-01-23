@@ -2,6 +2,8 @@
 using Game.Scripts.BaseScripts.Interface;
 using Game.Scripts.BuildingLogic.Data;
 using Game.Scripts.BuildingLogic.WorldUI;
+using Game.Scripts.GamePlay;
+using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.TileController.Mechanic;
@@ -20,7 +22,7 @@ namespace Game.Scripts.BuildingLogic
         [SerializeField] private float buildTime;
 
 
-        private BuildingStats stats;
+        protected BuildingStats stats;
         private float currentProgress;
 
         private bool inProgressing;
@@ -34,7 +36,7 @@ namespace Game.Scripts.BuildingLogic
         private GridManager gridManager => GridManager.Instance;
         private BuildManager buildManager => BuildManager.Instance;
         private SpawnManager spawner => SpawnManager.Instance;
-
+        
         public BuildingHUD Hud => hud;
 
         public Action<float> OnProgressChange;
@@ -46,6 +48,9 @@ namespace Game.Scripts.BuildingLogic
         public BuildingModel Model => model;
 
         public SlotCollection Slots => stats.Slots;
+
+        public static Action<Building> OnBuild;
+        public static Action<Building> OnDestroy;
 
         #region Initialize
         public void Init(BuildingData data)
@@ -137,6 +142,7 @@ namespace Game.Scripts.BuildingLogic
 
             IEnumerator StartProgress()
             {
+                Vector3Int oldPos = mode.SelectedUnit.GridPos;
                 if(!inProgressing) transform.position = gridManager.GridToWorld(pos);
 
                 float timer = 0f;
@@ -158,6 +164,8 @@ namespace Game.Scripts.BuildingLogic
                 gridManager.ClearHoverTile();
                 hud.HideProgressBar();
                 hud.ShowHealthBar();
+                UnitController.UpdatePosition(oldPos, mode.SelectedUnit.GridPos);
+                OnBuild?.Invoke(this);
                 yield return null;
             }
         }
@@ -179,9 +187,9 @@ namespace Game.Scripts.BuildingLogic
             }
 
             //Check dieu kien
-            //if(player.Storage.Gold < requirements[level].RequiredGolds && 
-            //player.Storage.Lumbers < requirements[Level].RequiredLumbers &&
-            //player.Storage.Foods < requirements[level].RequiredFoods) return;
+            if(StorageController.Golds < stats.Requirements[stats.Level].RequiredGolds && 
+            StorageController.Lumbers < stats.Requirements[stats.Level].RequiredLumbers &&
+            StorageController.Foods < stats.Requirements[stats.Level].RequiredFoods) return;
 
             if (upgradeCoroutine != null) StopCoroutine(upgradeCoroutine);
             upgradeCoroutine = StartCoroutine(UpgradeCoroutine());
@@ -230,6 +238,12 @@ namespace Game.Scripts.BuildingLogic
         }
 
         #endregion
+
+        public override void OnDespawn()
+        {
+            base.OnDespawn();
+            OnDestroy?.Invoke(this);
+        }
 
 
     }

@@ -1,3 +1,5 @@
+using Game.Scripts.GamePlay;
+using Game.Scripts.Manager;
 using Game.Scripts.Path;
 using Game.Scripts.Player.Controller;
 using Game.Scripts.StatsCharacter;
@@ -13,6 +15,7 @@ namespace Game.Scripts.Player.StateMachine
         protected CharacterBase character;
         protected Character stats;
         protected AnimationController anim;
+        protected GameMode gameMode => GameManager.Instance.CurrentMode;
         protected PathFinding pathFinder => PathFinding.Instance;
 
         public State(CharacterBase character)
@@ -24,6 +27,7 @@ namespace Game.Scripts.Player.StateMachine
 
 
         public abstract void Enter();
+        
         public abstract void Exit();
         public abstract void Execute();
     }

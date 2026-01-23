@@ -1,4 +1,5 @@
 using Game.Scripts.GamePlay;
+using Game.Scripts.Manager;
 using Game.Scripts.Map.Mechanic;
 using Game.Scripts.Map.Obstacles;
 using Game.Scripts.Path;
@@ -15,7 +16,7 @@ namespace Game.Scripts.Player.StateMachine
     {
         protected CharacterBase character;
         protected State currentState;
-
+        protected GameMode gameMode => GameManager.Instance.CurrentMode;
 
         protected Vector3Int target;
 
@@ -32,6 +33,7 @@ namespace Game.Scripts.Player.StateMachine
 
         public virtual void SetTarget(Vector3Int target)
         {
+            if (gameMode.SelectedUnit == null || gameMode.SelectedUnit != character) return;
             TileCustom tileCustom = grid.GetTile(target);
             Obstacle obstacle = tileCustom.GetObstacle();
             if (obstacle != null)
